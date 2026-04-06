@@ -1,6 +1,7 @@
 #ifndef MY_NVBLOX_ESDF_BUILDER_HPP_
 #define MY_NVBLOX_ESDF_BUILDER_HPP_
 
+#include <Eigen/Geometry>
 #include <nvblox/nvblox.h>
 #include <memory>
 

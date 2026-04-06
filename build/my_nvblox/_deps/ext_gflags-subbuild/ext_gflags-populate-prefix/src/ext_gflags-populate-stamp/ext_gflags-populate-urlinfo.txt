@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz'
+tag='MD5=b99048d9ab82d8c56e876fb1456c285e'

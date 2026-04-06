@@ -1,0 +1,9 @@
+CMake Error at /home/czz/nvblox_ws/src/nvblox/cmake/cuda/setup_compute_capability.cmake:38 (message):
+  ERROR: Detecting CCs of GPUs :
+  /home/czz/nvblox_ws/src/nvblox/cmake/cuda/compute_capability.cpp - No
+  CUDA-capable GPU found.  Use CMAKE_CUDA_ARCHITECTURES=XY to set target
+  architecture
+Call Stack (most recent call first):
+  /home/czz/nvblox_ws/src/nvblox/CMakeLists.txt:42 (include)
+
+

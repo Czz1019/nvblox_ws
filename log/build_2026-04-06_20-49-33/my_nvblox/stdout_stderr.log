@@ -1,0 +1,133 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_eigen: 0.25.17 (/opt/ros/humble/share/tf2_eigen/cmake)
+-- Building vendored nvblox with CUDA architectures: 52
+-- TORCH_CUDA_ARCH_LIST: 5.2
+-- Building without pre-C++11 ABI support (PyTorch wrapper disabled)
+-- Found CUDAToolkit: /usr/local/cuda/include (found version "12.6.20") 
+-- Downloading 3rdparty dependencies
+-- Downloading GFLAGS
+[ 12%] Creating directories for 'ext_gflags-populate'
+[ 25%] Performing download step (download, verify and extract) for 'ext_gflags-populate'
+-- Downloading...
+   dst='/home/czz/nvblox_ws/build/my_nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/v2.2.0.tar.gz'
+   timeout='none'
+   inactivity timeout='none'
+-- Using src='https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz'
+-- Retrying...
+-- Using src='https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz'
+-- Retry after 5 seconds (attempt #2) ...
+-- Using src='https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz'
+-- Retry after 5 seconds (attempt #3) ...
+-- Using src='https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz'
+-- Retry after 15 seconds (attempt #4) ...
+-- Using src='https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz'
+-- Retry after 60 seconds (attempt #5) ...
+-- Using src='https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz'
+CMake Error at ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/download-ext_gflags-populate.cmake:170 (message):
+  Each download failed!
+
+    error: downloading 'https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz' failed
+          status_code: 6
+          status_string: "Couldn't resolve host name"
+          log:
+          --- LOG BEGIN ---
+          Could not resolve host: github.com
+
+  Closing connection 0
+
+  
+
+          --- LOG END ---
+          error: downloading 'https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz' failed
+          status_code: 6
+          status_string: "Couldn't resolve host name"
+          log:
+          --- LOG BEGIN ---
+          Could not resolve host: github.com
+
+  Closing connection 0
+
+  
+
+          --- LOG END ---
+          error: downloading 'https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz' failed
+          status_code: 6
+          status_string: "Couldn't resolve host name"
+          log:
+          --- LOG BEGIN ---
+          Could not resolve host: github.com
+
+  Closing connection 0
+
+  
+
+          --- LOG END ---
+          error: downloading 'https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz' failed
+          status_code: 6
+          status_string: "Couldn't resolve host name"
+          log:
+          --- LOG BEGIN ---
+          Could not resolve host: github.com
+
+  Closing connection 0
+
+  
+
+          --- LOG END ---
+          error: downloading 'https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz' failed
+          status_code: 6
+          status_string: "Couldn't resolve host name"
+          log:
+          --- LOG BEGIN ---
+          Could not resolve host: github.com
+
+  Closing connection 0
+
+  
+
+          --- LOG END ---
+          error: downloading 'https://github.com/gflags/gflags/archive/refs/tags/v2.2.0.tar.gz' failed
+          status_code: 6
+          status_string: "Couldn't resolve host name"
+          log:
+          --- LOG BEGIN ---
+          Could not resolve host: github.com
+
+  Closing connection 0
+
+  
+
+          --- LOG END ---
+          
+    
+
+
+gmake[2]: *** [CMakeFiles/ext_gflags-populate.dir/build.make:98：ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-download] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:83：CMakeFiles/ext_gflags-populate.dir/all] 错误 2
+gmake: *** [Makefile:91：all] 错误 2
+
+CMake Error at /usr/share/cmake-3.22/Modules/FetchContent.cmake:1087 (message):
+  Build step for ext_gflags failed: 2
+Call Stack (most recent call first):
+  /usr/share/cmake-3.22/Modules/FetchContent.cmake:1216:EVAL:2 (__FetchContent_directPopulate)
+  /usr/share/cmake-3.22/Modules/FetchContent.cmake:1216 (cmake_language)
+  /usr/share/cmake-3.22/Modules/FetchContent.cmake:1259 (FetchContent_Populate)
+  /home/czz/nvblox_ws/src/nvblox/nvblox/thirdparty/gflags/gflags.cmake:13 (FetchContent_MakeAvailable)
+  /home/czz/nvblox_ws/src/nvblox/nvblox/CMakeLists.txt:12 (include)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/CMakeOutput.log".

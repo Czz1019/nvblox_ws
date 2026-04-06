@@ -1,5 +1,7 @@
 #include "my_nvblox/esdf_ros2_node.hpp"
 
+#include <functional>
+
 EsdfRos2Node::EsdfRos2Node() : Node("nvblox_esdf_node") {
     // 实例化 Builder，设置体素分辨率为 5cm
     esdf_builder_ = std::make_unique<EsdfBuilder>(0.05f); 
