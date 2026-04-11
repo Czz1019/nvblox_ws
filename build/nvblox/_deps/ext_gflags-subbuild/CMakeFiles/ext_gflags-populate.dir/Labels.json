@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/CMakeFiles/ext_gflags-populate"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/CMakeFiles/ext_gflags-populate.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/CMakeFiles/ext_gflags-populate-complete.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-build.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-configure.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-download.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-install.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-patch.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-subbuild/ext_gflags-populate-prefix/src/ext_gflags-populate-stamp/ext_gflags-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ext_gflags-populate"
+		],
+		"name" : "ext_gflags-populate"
+	}
+}

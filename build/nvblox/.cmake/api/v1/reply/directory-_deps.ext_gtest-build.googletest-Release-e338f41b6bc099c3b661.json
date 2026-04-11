@@ -1,0 +1,169 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"install_project"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-src/googletest/CMakeLists.txt",
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-src/googletest/cmake/internal_utils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 158,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 301,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 305,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 329,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 329,
+				"parent" : 3
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "gtest",
+			"destination" : "lib/cmake/GTest",
+			"exportName" : "GTestTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "gtest::@30522f0ca6e17c92ea13",
+					"index" : 47
+				},
+				{
+					"id" : "gtest_main::@30522f0ca6e17c92ea13",
+					"index" : 48
+				},
+				{
+					"id" : "gmock::@d15f3261d98fcbdb337d",
+					"index" : 45
+				},
+				{
+					"id" : "gmock_main::@d15f3261d98fcbdb337d",
+					"index" : 46
+				}
+			],
+			"paths" : 
+			[
+				"_deps/ext_gtest-build/googletest/CMakeFiles/Export/lib/cmake/GTest/GTestTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "gtest",
+			"destination" : "lib/cmake/GTest",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-build/googletest/generated/GTestConfigVersion.cmake",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-build/googletest/generated/GTestConfig.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "gtest",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-src/googletest/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "gtest",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libgtest.a"
+			],
+			"targetId" : "gtest::@30522f0ca6e17c92ea13",
+			"targetIndex" : 47,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "gtest",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"lib/libgtest_main.a"
+			],
+			"targetId" : "gtest_main::@30522f0ca6e17c92ea13",
+			"targetIndex" : 48,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "gtest",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-build/googletest/generated/gtest.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "gtest",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-build/googletest/generated/gtest_main.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/ext_gtest-build/googletest",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-src/googletest"
+	}
+}

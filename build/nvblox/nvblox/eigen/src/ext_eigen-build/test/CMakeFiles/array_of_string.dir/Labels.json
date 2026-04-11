@@ -1,0 +1,16 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen/test/array_of_string.cpp"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"BuildOfficial"
+		],
+		"name" : "array_of_string"
+	}
+}

@@ -1,0 +1,171 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- The C compiler identification is GNU 11.4.0
+-- The CUDA compiler identification is NVIDIA 12.6.20
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CUDA compiler ABI info
+-- Detecting CUDA compiler ABI info - done
+-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped
+-- Detecting CUDA compile features
+-- Detecting CUDA compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found CUDAToolkit: /usr/local/cuda/include (found version "12.6.20") 
+-- Found Unwind: /usr/include/x86_64-linux-gnu (found suitable version "1.3.2", minimum required is "1.3.2") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/czz/nvblox_ws/build/my_nvblox
+[ 50%] [32mBuilding CXX object CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mapper_node[0m
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::Image<float>::Image(int, int, nvblox::MemoryType)':
+mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0xfc): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0x108): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0x129): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0x191): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0x19d): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0x1be): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0x20d): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageIfEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageIfEC5EiiNS_10MemoryTypeE]+0x21d): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::Image<nvblox::Color>::Image(int, int, nvblox::MemoryType)':
+mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0xfc): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0x108): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0x129): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0x191): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0x19d): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0x1be): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0x20d): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox5ImageINS_5ColorEEC2EiiNS_10MemoryTypeE[_ZN6nvblox5ImageINS_5ColorEEC5EiiNS_10MemoryTypeE]+0x21d): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >* google::MakeCheckOpString<int, int>(int const&, int const&, char const*)':
+mapper_node.cpp:(.text._ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc[_ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc]+0x37): undefined reference to `google::base::CheckOpMessageBuilder::CheckOpMessageBuilder(char const*)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc[_ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc]+0x61): undefined reference to `google::base::CheckOpMessageBuilder::ForVar2()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc[_ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc]+0x7f): undefined reference to `google::base::CheckOpMessageBuilder::NewString[abi:cxx11]()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc[_ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc]+0x8f): undefined reference to `google::base::CheckOpMessageBuilder::~CheckOpMessageBuilder()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc[_ZN6google17MakeCheckOpStringIiiEEPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_RKT0_PKc]+0xb6): undefined reference to `google::base::CheckOpMessageBuilder::~CheckOpMessageBuilder()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::TsdfVoxel> const* nvblox::LayerCake::getConstPtr<nvblox::VoxelBlockLayer<nvblox::TsdfVoxel> >() const':
+mapper_node.cpp:(.text._ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v[_ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v]+0x10e): undefined reference to `google::LogMessage::LogMessage(char const*, int, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v[_ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v]+0x11a): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v[_ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v]+0x16d): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v[_ZNK6nvblox9LayerCake11getConstPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPKT_v]+0x196): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::TsdfVoxel> const*& google::CheckNotNull<nvblox::VoxelBlockLayer<nvblox::TsdfVoxel> const*&>(char const*, int, char const*, nvblox::VoxelBlockLayer<nvblox::TsdfVoxel> const*&)':
+mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPKN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciSA_OS8_[_ZN6google12CheckNotNullIRPKN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciSA_OS8_]+0x8a): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPKN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciSA_OS8_[_ZN6google12CheckNotNullIRPKN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciSA_OS8_]+0x96): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::MaskedImageView<float const>::MaskedImageView<nvblox::Image<float> const>(nvblox::Image<float> const&, std::optional<nvblox::ImageView<unsigned char const> > const&, nvblox::MaskMode)':
+mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0xc7): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0xd8): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x130): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x17f): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x190): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x1e8): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x220): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKfEC2IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKfEC5IKNS_5ImageIfEEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x239): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `void nvblox::Mapper::integrateDepth<nvblox::Camera>(nvblox::MaskedImageView<float const> const&, Eigen::Transform<float, 3, 1, 0> const&, nvblox::Camera const&)':
+mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0x7a): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0x8e): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0xef): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0x385): undefined reference to `google::LogMessage::LogMessage(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0x394): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0x3b8): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0x628): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_[_ZN6nvblox6Mapper14integrateDepthINS_6CameraEEEvRKNS_15MaskedImageViewIKfEERKN5Eigen9TransformIfLi3ELi1ELi0EEERKT_]+0x691): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::MaskedImageView<nvblox::Color const>::MaskedImageView<nvblox::Image<nvblox::Color> const>(nvblox::Image<nvblox::Color> const&, std::optional<nvblox::ImageView<unsigned char const> > const&, nvblox::MaskMode)':
+mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0xc7): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0xd8): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x130): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x17f): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x190): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x1e8): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x220): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox15MaskedImageViewIKNS_5ColorEEC2IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE[_ZN6nvblox15MaskedImageViewIKNS_5ColorEEC5IKNS_5ImageIS1_EEEERT_RKSt8optionalINS_9ImageViewIKhEEENS_8MaskModeE]+0x239): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::ImageBase<float const>::strideFromBytesToElements(int)':
+mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi]+0x53): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi]+0x64): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi]+0xbc): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIKfE25strideFromBytesToElementsEi]+0xea): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::TsdfVoxel>* nvblox::LayerCake::getPtr<nvblox::VoxelBlockLayer<nvblox::TsdfVoxel> >()':
+mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v]+0x10e): undefined reference to `google::LogMessage::LogMessage(char const*, int, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v]+0x11a): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v]+0x16d): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_9TsdfVoxelEEEEEPT_v]+0x196): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::OccupancyVoxel>* nvblox::LayerCake::getPtr<nvblox::VoxelBlockLayer<nvblox::OccupancyVoxel> >()':
+mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v]+0x10e): undefined reference to `google::LogMessage::LogMessage(char const*, int, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v]+0x11a): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v]+0x16d): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_14OccupancyVoxelEEEEEPT_v]+0x196): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::ColorVoxel>* nvblox::LayerCake::getPtr<nvblox::VoxelBlockLayer<nvblox::ColorVoxel> >()':
+mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v]+0x10e): undefined reference to `google::LogMessage::LogMessage(char const*, int, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v]+0x11a): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v]+0x16d): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v[_ZN6nvblox9LayerCake6getPtrINS_15VoxelBlockLayerINS_10ColorVoxelEEEEEPT_v]+0x196): undefined reference to `google::LogMessage::~LogMessage()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::unified_vector<nvblox::Color>::reserveAsync(unsigned long, nvblox::CudaStream const&)':
+mapper_node.cpp:(.text._ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE]+0x184): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE]+0x195): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE]+0x1d8): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorINS_5ColorEE12reserveAsyncEmRKNS_10CudaStreamE]+0x339): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::unified_vector<float>::reserveAsync(unsigned long, nvblox::CudaStream const&)':
+mapper_node.cpp:(.text._ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE]+0x17b): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE]+0x18c): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE]+0x1cf): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE[_ZN6nvblox14unified_vectorIfE12reserveAsyncEmRKNS_10CudaStreamE]+0x32f): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::TsdfVoxel>*& google::CheckNotNull<nvblox::VoxelBlockLayer<nvblox::TsdfVoxel>*&>(char const*, int, char const*, nvblox::VoxelBlockLayer<nvblox::TsdfVoxel>*&)':
+mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciS9_OS7_[_ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciS9_OS7_]+0x8a): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciS9_OS7_[_ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_9TsdfVoxelEEEEET_PKciS9_OS7_]+0x96): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::OccupancyVoxel>*& google::CheckNotNull<nvblox::VoxelBlockLayer<nvblox::OccupancyVoxel>*&>(char const*, int, char const*, nvblox::VoxelBlockLayer<nvblox::OccupancyVoxel>*&)':
+mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_14OccupancyVoxelEEEEET_PKciS9_OS7_[_ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_14OccupancyVoxelEEEEET_PKciS9_OS7_]+0x8a): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_14OccupancyVoxelEEEEET_PKciS9_OS7_[_ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_14OccupancyVoxelEEEEET_PKciS9_OS7_]+0x96): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::PosedDepthImage<nvblox::Camera> const* nvblox::TypeIndexedStore::getPtr<nvblox::PosedDepthImage<nvblox::Camera> >() const':
+mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x93): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0xa4): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0xfc): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x142): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x153): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x1ab): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x21e): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x22f): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x287): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x2b4): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x2d0): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v[_ZNK6nvblox16TypeIndexedStore6getPtrINS_15PosedDepthImageINS_6CameraEEEEEPKT_v]+0x2ec): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::VoxelBlockLayer<nvblox::ColorVoxel>*& google::CheckNotNull<nvblox::VoxelBlockLayer<nvblox::ColorVoxel>*&>(char const*, int, char const*, nvblox::VoxelBlockLayer<nvblox::ColorVoxel>*&)':
+mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_10ColorVoxelEEEEET_PKciS9_OS7_[_ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_10ColorVoxelEEEEET_PKciS9_OS7_]+0x8a): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int, google::CheckOpString const&)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_10ColorVoxelEEEEET_PKciS9_OS7_[_ZN6google12CheckNotNullIRPN6nvblox15VoxelBlockLayerINS1_10ColorVoxelEEEEET_PKciS9_OS7_]+0x96): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o: in function `nvblox::ImageBase<float>::strideFromBytesToElements(int)':
+mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi]+0x53): undefined reference to `google::LogMessageFatal::LogMessageFatal(char const*, int)'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi]+0x64): undefined reference to `google::LogMessage::stream()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi]+0xbc): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+/usr/bin/ld: mapper_node.cpp:(.text._ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi[_ZN6nvblox9ImageBaseIfE25strideFromBytesToElementsEi]+0xea): undefined reference to `google::LogMessageFatal::~LogMessageFatal()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mapper_node.dir/build.make:211：mapper_node] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/mapper_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

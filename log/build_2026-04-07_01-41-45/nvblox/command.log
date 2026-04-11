@@ -1,0 +1,2 @@
+Invoking command in '/home/czz/nvblox_ws/build/nvblox': /usr/bin/cmake /home/czz/nvblox_ws/src/nvblox -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/czz/nvblox_ws/install/nvblox
+Invoked command in '/home/czz/nvblox_ws/build/nvblox' returned '1': /usr/bin/cmake /home/czz/nvblox_ws/src/nvblox -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/czz/nvblox_ws/install/nvblox

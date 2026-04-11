@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://github.com/google/benchmark/archive/refs/tags/v1.9.0.tar.gz'
+tag='MD5=21a2604efeded8b4cbabc72f3e1c7a2a'

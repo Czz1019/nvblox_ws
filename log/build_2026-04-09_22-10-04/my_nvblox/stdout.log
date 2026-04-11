@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target mapper_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mapper_node[0m
+[100%] Built target mapper_node
+-- Install configuration: ""
+-- Installing: /home/czz/nvblox_ws/install/my_nvblox/lib/my_nvblox/mapper_node
+-- Set runtime path of "/home/czz/nvblox_ws/install/my_nvblox/lib/my_nvblox/mapper_node" to ""
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/launch
+-- Installing: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/launch/mapping.launch.py
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/package_run_dependencies/my_nvblox
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/parent_prefix_path/my_nvblox
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/ament_prefix_path.sh
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/path.sh
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/path.dsv
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.bash
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.sh
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.zsh
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.dsv
+-- Installing: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.dsv
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/packages/my_nvblox
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/cmake/my_nvbloxConfig.cmake
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/cmake/my_nvbloxConfig-version.cmake
+-- Up-to-date: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.xml

@@ -1,0 +1,2 @@
+# Empty dependencies file for test_masked_image_view.
+# This may be replaced when dependencies are built.

@@ -1,0 +1,502 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "nvblox/executables/fuse_replica"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_nvblox_binary",
+			"add_nvblox_executable",
+			"install",
+			"target_link_libraries",
+			"add_dependencies",
+			"include",
+			"target_compile_options",
+			"add_host_compiler_option",
+			"set_nvblox_compiler_options_internal",
+			"set_nvblox_compiler_options",
+			"target_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"cmake/nvblox_targets.cmake",
+			"nvblox/executables/CMakeLists.txt",
+			"nvblox/CMakeLists.txt",
+			"nvblox/thirdparty/eigen/eigen.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 208,
+				"parent" : 2
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 2,
+				"line" : 200,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 16,
+				"parent" : 4
+			},
+			{
+				"file" : 3,
+				"parent" : 7
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 23,
+				"parent" : 8
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 2
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 14
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 108,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 109,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 18
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 20
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 138,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 22
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 24
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 11
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 11
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 11
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 11
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 35,
+				"parent" : 4
+			},
+			{
+				"command" : 12,
+				"file" : 2,
+				"line" : 38,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG -fPIE"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-fno-omit-frame-pointer"
+				},
+				{
+					"backtrace" : 15,
+					"fragment" : "-std=gnu++17"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-O3"
+				},
+				{
+					"backtrace" : 25,
+					"fragment" : "-DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 26,
+					"define" : "C10_USE_GLOG=1"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "CUB_WRAPPED_NAMESPACE=nvblox"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "GFLAGS_IS_A_DLL=0"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA"
+				},
+				{
+					"backtrace" : 28,
+					"define" : "THRUST_DISABLE_ABI_NAMESPACE"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "THRUST_IGNORE_ABI_NAMESPACE_ERROR"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 30,
+					"path" : "/home/czz/nvblox_ws/src/nvblox/nvblox/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-src/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/czz/nvblox_ws/src/nvblox/nvblox/executables/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/src"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/src/stdgpu/.."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/src/stdgpu/include"
+				},
+				{
+					"backtrace" : 31,
+					"isSystem" : true,
+					"path" : "/usr/local/cuda/targets/x86_64-linux/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/usr/local/cuda/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/include/eigen3"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 9,
+			"id" : "ext_eigen::@1f05a77c997284e844eb"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "nvblox_gpu_hash::@1f05a77c997284e844eb"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "nvblox_lib::@1f05a77c997284e844eb"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "gflags_nothreads_static::@640cdaef2eb3a17b9a5b"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "stdgpu::@ce4db3224d651836423e"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "glog::@c298f60377d79fc19d95"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "nvblox_datasets::@e8b2af423890c905f0d4"
+		}
+	],
+	"id" : "fuse_replica::@e8b2af423890c905f0d4",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 5,
+				"path" : "bin/nvblox"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/czz/nvblox_ws/install/nvblox"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-L/usr/local/cuda/targets/x86_64-linux/lib/stubs",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-L/usr/local/cuda/targets/x86_64-linux/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"\\$$ORIGIN:\\$$ORIGIN/../:/usr/local/cuda/lib64:\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "libnvblox_datasets.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../libnvblox_gpu_hash.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../libnvblox_lib.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../_deps/ext_stdgpu-build/bin/libstdgpu.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/cuda/lib64/libcudart.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../_deps/ext_glog-build/libglog.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libunwind.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libunwind-x86_64.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../_deps/ext_gflags-build/libgflags_nothreads.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcudadevrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcudart_static",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "fuse_replica",
+	"nameOnDisk" : "fuse_replica",
+	"paths" : 
+	{
+		"build" : "nvblox/executables",
+		"source" : "nvblox/executables"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "nvblox/executables/src/fuse_replica.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

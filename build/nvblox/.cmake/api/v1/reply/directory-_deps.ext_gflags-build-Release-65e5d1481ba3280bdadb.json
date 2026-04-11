@@ -1,0 +1,204 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"register_gflags_package"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src/CMakeLists.txt",
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src/cmake/utils.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 511,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 511,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 517,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 518,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 523,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 527,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 529,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 535,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 546,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 195,
+				"parent" : 9
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/ext_gflags-build/libgflags.a"
+			],
+			"targetId" : "gflags_static::@640cdaef2eb3a17b9a5b",
+			"targetIndex" : 39,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/ext_gflags-build/libgflags_nothreads.a"
+			],
+			"targetId" : "gflags_nothreads_static::@640cdaef2eb3a17b9a5b",
+			"targetIndex" : 38,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/gflags",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include/gflags/gflags.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include/gflags/gflags_declare.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include/gflags/gflags_completions.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include/gflags/gflags_gflags.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/gflags",
+			"paths" : 
+			[
+				{
+					"from" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/gflags-config-install.cmake",
+					"to" : "gflags-config.cmake"
+				}
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/gflags",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/gflags-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/gflags",
+			"exportName" : "gflags-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "gflags_static::@640cdaef2eb3a17b9a5b",
+					"index" : 39
+				},
+				{
+					"id" : "gflags_nothreads_static::@640cdaef2eb3a17b9a5b",
+					"index" : 38
+				}
+			],
+			"paths" : 
+			[
+				"_deps/ext_gflags-build/CMakeFiles/Export/lib/cmake/gflags/gflags-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 7,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src/src/gflags_completions.sh"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 8,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/gflags.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 10,
+			"component" : "Unspecified",
+			"destination" : "/home/czz/.cmake/packages/gflags",
+			"paths" : 
+			[
+				{
+					"from" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/gflags-registry-entry",
+					"to" : "18bec54d6fadf45dbbedffa8b8610988"
+				}
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/ext_gflags-build",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src"
+	}
+}

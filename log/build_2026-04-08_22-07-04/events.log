@@ -1,0 +1,341 @@
+[0.000000] (-) TimerEvent: {}
+[0.000485] (-) JobUnselected: {'identifier': 'nvblox'}
+[0.000569] (my_nvblox) JobQueued: {'identifier': 'my_nvblox', 'dependencies': OrderedDict()}
+[0.000639] (my_nvblox) JobStarted: {'identifier': 'my_nvblox'}
+[0.008151] (my_nvblox) JobProgress: {'identifier': 'my_nvblox', 'progress': 'cmake'}
+[0.008373] (my_nvblox) Command: {'cmd': ['/usr/bin/cmake', '/home/czz/nvblox_ws/src/my_nvblox', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/czz/nvblox_ws/install/my_nvblox'], 'cwd': '/home/czz/nvblox_ws/build/my_nvblox', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'czz'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('LC_TIME', 'en_US.UTF-8'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/czz/nvblox_ws/install/nvblox/lib:/usr/local/cuda/lib64:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/lib:/home/czz/ros_pack/install/moveit_task_constructor_visualization/lib:/home/czz/ros_pack/install/moveit_task_constructor_demo/lib:/home/czz/ros_pack/install/moveit_task_constructor_capabilities/lib:/home/czz/ros_pack/install/moveit_task_constructor_core/lib:/home/czz/ros_pack/install/rviz_marker_tools/lib:/home/czz/ros_pack/install/negotiated_examples/lib:/home/czz/ros_pack/install/negotiated/lib:/home/czz/ros_pack/install/negotiated_interfaces/lib:/home/czz/ros_pack/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/tritonserver/lib'), ('HOME', '/home/czz'), ('OLDPWD', '/home/czz'), ('DESKTOP_SESSION', 'ubuntu'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '2032'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/czz/nvblox_ws/install:/home/czz/ros_pack/install:/home/czz/workspaces/isaac_ros-dev/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'czz'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'czz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/czz/workspaces/isaac_ros-dev/'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/czz/nvblox_ws/install/nvblox/bin:/usr/local/cuda/bin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/bin:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/czz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvidia/tao'), ('SESSION_MANAGER', 'local/czz-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2003,unix/czz-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2003'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/159daebc_ab6f_462a_88b1_898a81ec85f1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.169'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/home/czz/ros_pack/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/czz/nvblox_ws/build/my_nvblox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/negotiated_interfaces/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/czz/nvblox_ws/install/nvblox:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[0.100002] (-) TimerEvent: {}
+[0.119155] (my_nvblox) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.192126] (my_nvblox) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.200095] (-) TimerEvent: {}
+[0.200191] (my_nvblox) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.255498] (my_nvblox) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.261421] (my_nvblox) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.262007] (my_nvblox) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.262580] (my_nvblox) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.264830] (my_nvblox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300185] (-) TimerEvent: {}
+[0.324728] (my_nvblox) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.328726] (my_nvblox) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.328823] (my_nvblox) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.329090] (my_nvblox) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.338988] (my_nvblox) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400259] (-) TimerEvent: {}
+[0.500441] (-) TimerEvent: {}
+[0.600664] (-) TimerEvent: {}
+[0.700881] (-) TimerEvent: {}
+[0.741971] (my_nvblox) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.784958] (my_nvblox) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.801061] (-) TimerEvent: {}
+[0.830292] (my_nvblox) StdoutLine: {'line': b'-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.882154] (my_nvblox) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.888407] (my_nvblox) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.897758] (my_nvblox) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.901126] (-) TimerEvent: {}
+[0.910414] (my_nvblox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.928718] (my_nvblox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.964137] (my_nvblox) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.001240] (-) TimerEvent: {}
+[1.007365] (my_nvblox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.011352] (my_nvblox) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.101359] (-) TimerEvent: {}
+[1.103246] (my_nvblox) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.126367] (my_nvblox) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.154663] (my_nvblox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.165760] (my_nvblox) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.201498] (-) TimerEvent: {}
+[1.228405] (my_nvblox) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.228530] (my_nvblox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.281342] (my_nvblox) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.282002] (my_nvblox) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.301570] (-) TimerEvent: {}
+[1.316372] (my_nvblox) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.330266] (my_nvblox) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.401694] (-) TimerEvent: {}
+[1.408519] (my_nvblox) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.17 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[1.420425] (my_nvblox) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.494320] (my_nvblox) StdoutLine: {'line': b'-- Building vendored nvblox with CUDA architectures: 72;75;80;86;87;89\n'}
+[1.501764] (-) TimerEvent: {}
+[1.601977] (-) TimerEvent: {}
+[1.702247] (-) TimerEvent: {}
+[1.802530] (-) TimerEvent: {}
+[1.902742] (-) TimerEvent: {}
+[2.002989] (-) TimerEvent: {}
+[2.103228] (-) TimerEvent: {}
+[2.203469] (-) TimerEvent: {}
+[2.303744] (-) TimerEvent: {}
+[2.403989] (-) TimerEvent: {}
+[2.504382] (-) TimerEvent: {}
+[2.604709] (-) TimerEvent: {}
+[2.704966] (-) TimerEvent: {}
+[2.805206] (-) TimerEvent: {}
+[2.905562] (-) TimerEvent: {}
+[2.976641] (my_nvblox) StdoutLine: {'line': b'-- The CUDA compiler identification is NVIDIA 12.6.20\n'}
+[2.981599] (my_nvblox) StdoutLine: {'line': b'-- Detecting CUDA compiler ABI info\n'}
+[3.005741] (-) TimerEvent: {}
+[3.105971] (-) TimerEvent: {}
+[3.206207] (-) TimerEvent: {}
+[3.306423] (-) TimerEvent: {}
+[3.406642] (-) TimerEvent: {}
+[3.507031] (-) TimerEvent: {}
+[3.607352] (-) TimerEvent: {}
+[3.707679] (-) TimerEvent: {}
+[3.807897] (-) TimerEvent: {}
+[3.908132] (-) TimerEvent: {}
+[4.008474] (-) TimerEvent: {}
+[4.108790] (-) TimerEvent: {}
+[4.209032] (-) TimerEvent: {}
+[4.234460] (my_nvblox) StdoutLine: {'line': b'-- Detecting CUDA compiler ABI info - done\n'}
+[4.254509] (my_nvblox) StdoutLine: {'line': b'-- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped\n'}
+[4.254692] (my_nvblox) StdoutLine: {'line': b'-- Detecting CUDA compile features\n'}
+[4.254917] (my_nvblox) StdoutLine: {'line': b'-- Detecting CUDA compile features - done\n'}
+[4.255319] (my_nvblox) StdoutLine: {'line': b'-- TORCH_CUDA_ARCH_LIST: 7.2;7.5;8.0;8.6;8.7;8.9\n'}
+[4.255507] (my_nvblox) StdoutLine: {'line': b'-- Building without pre-C++11 ABI support (PyTorch wrapper disabled)\n'}
+[4.261088] (my_nvblox) StdoutLine: {'line': b'-- Found CUDAToolkit: /usr/local/cuda/include (found version "12.6.20") \n'}
+[4.305285] (my_nvblox) StdoutLine: {'line': b'-- Downloading 3rdparty dependencies\n'}
+[4.305417] (my_nvblox) StdoutLine: {'line': b'-- Downloading GFLAGS\n'}
+[4.306740] (my_nvblox) StdoutLine: {'line': b'-- Downloading SQLITE\n'}
+[4.308691] (my_nvblox) StdoutLine: {'line': b'-- Found SQLite3: /usr/include (found version "3.37.2") \n'}
+[4.308788] (my_nvblox) StdoutLine: {'line': b'-- Downloading Eigen\n'}
+[4.308997] (my_nvblox) StdoutLine: {'line': b'-- Downloading STDGPU\n'}
+[4.309026] (-) TimerEvent: {}
+[4.409183] (-) TimerEvent: {}
+[4.509421] (-) TimerEvent: {}
+[4.609763] (-) TimerEvent: {}
+[4.709946] (-) TimerEvent: {}
+[4.810378] (-) TimerEvent: {}
+[4.910717] (-) TimerEvent: {}
+[5.010966] (-) TimerEvent: {}
+[5.111213] (-) TimerEvent: {}
+[5.211428] (-) TimerEvent: {}
+[5.311700] (-) TimerEvent: {}
+[5.411972] (-) TimerEvent: {}
+[5.512228] (-) TimerEvent: {}
+[5.612626] (-) TimerEvent: {}
+[5.712835] (-) TimerEvent: {}
+[5.813073] (-) TimerEvent: {}
+[5.913284] (-) TimerEvent: {}
+[6.013555] (-) TimerEvent: {}
+[6.113761] (-) TimerEvent: {}
+[6.214082] (-) TimerEvent: {}
+[6.314304] (-) TimerEvent: {}
+[6.414599] (-) TimerEvent: {}
+[6.514812] (-) TimerEvent: {}
+[6.614999] (-) TimerEvent: {}
+[6.715200] (-) TimerEvent: {}
+[6.815431] (-) TimerEvent: {}
+[6.915632] (-) TimerEvent: {}
+[7.015938] (-) TimerEvent: {}
+[7.116085] (-) TimerEvent: {}
+[7.216362] (-) TimerEvent: {}
+[7.316709] (-) TimerEvent: {}
+[7.416959] (-) TimerEvent: {}
+[7.517201] (-) TimerEvent: {}
+[7.617439] (-) TimerEvent: {}
+[7.717636] (-) TimerEvent: {}
+[7.818125] (-) TimerEvent: {}
+[7.918375] (-) TimerEvent: {}
+[8.018736] (-) TimerEvent: {}
+[8.119147] (-) TimerEvent: {}
+[8.219690] (-) TimerEvent: {}
+[8.319927] (-) TimerEvent: {}
+[8.413687] (my_nvblox) StdoutLine: {'line': b'-- Configuring with CMake 3.22.1\n'}
+[8.420006] (-) TimerEvent: {}
+[8.520226] (-) TimerEvent: {}
+[8.606299] (my_nvblox) StdoutLine: {'line': b'-- Could NOT find ClangFormat: Found unsuitable version "14.0.0-1ubuntu1.1", but required is exact version "10" (found /usr/bin/clang-format)\n'}
+[8.620305] (-) TimerEvent: {}
+[8.623395] (my_nvblox) StdoutLine: {'line': b'-- Found thrust: /usr/local/cuda/include (found suitable version "2.5.0", minimum required is "1.9.9") \n'}
+[8.625208] (my_nvblox) StdoutLine: {'line': b'-- Found CUDAToolkit: /usr/local/cuda/include (found suitable version "12.6.20", minimum required is "11.0") \n'}
+[8.636949] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637045] (my_nvblox) StdoutLine: {'line': b'-- ************************ stdgpu Configuration Summary *************************\n'}
+[8.637092] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637119] (my_nvblox) StdoutLine: {'line': b'-- General:\n'}
+[8.637146] (my_nvblox) StdoutLine: {'line': b'--   Version                                   :   1.3.0\n'}
+[8.637170] (my_nvblox) StdoutLine: {'line': b'--   System                                    :   Linux\n'}
+[8.637195] (my_nvblox) StdoutLine: {'line': b'--   Build type                                :   Release\n'}
+[8.637218] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637243] (my_nvblox) StdoutLine: {'line': b'-- Build:\n'}
+[8.637267] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_BACKEND                            :   STDGPU_BACKEND_CUDA\n'}
+[8.637290] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_BUILD_SHARED_LIBS                  :   OFF\n'}
+[8.637314] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_SETUP_COMPILER_FLAGS               :   OFF\n'}
+[8.637336] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_COMPILE_WARNING_AS_ERROR           :   OFF\n'}
+[8.637362] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_ANALYZE_WITH_CLANG_TIDY            :   OFF\n'}
+[8.637384] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_ANALYZE_WITH_CPPCHECK              :   OFF\n'}
+[8.637406] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637427] (my_nvblox) StdoutLine: {'line': b'-- Configuration:\n'}
+[8.637448] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_ENABLE_CONTRACT_CHECKS             :   OFF\n'}
+[8.637470] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_USE_32_BIT_INDEX                   :   ON\n'}
+[8.637491] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637512] (my_nvblox) StdoutLine: {'line': b'-- Examples:\n'}
+[8.637534] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_BUILD_EXAMPLES                     :   OFF\n'}
+[8.637564] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637585] (my_nvblox) StdoutLine: {'line': b'-- Benchmarks:\n'}
+[8.637606] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_BUILD_BENCHMARKS                   :   OFF\n'}
+[8.637626] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637648] (my_nvblox) StdoutLine: {'line': b'-- Tests:\n'}
+[8.637668] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_BUILD_TESTS                        :   OFF\n'}
+[8.637688] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_BUILD_TEST_COVERAGE                :   OFF\n'}
+[8.637709] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637730] (my_nvblox) StdoutLine: {'line': b'-- Documentation:\n'}
+[8.637751] (my_nvblox) StdoutLine: {'line': b'--   STDGPU_BUILD_DOCUMENTATION                :   OFF\n'}
+[8.637772] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637793] (my_nvblox) StdoutLine: {'line': b'-- *******************************************************************************\n'}
+[8.637814] (my_nvblox) StdoutLine: {'line': b'-- \n'}
+[8.637847] (my_nvblox) StdoutLine: {'line': b'-- Downloading GLOG\n'}
+[8.641961] (my_nvblox) StdoutLine: {'line': b'-- Found Unwind: /usr/include/x86_64-linux-gnu (found suitable version "1.3.2", minimum required is "1.3.2") \n'}
+[8.642417] (my_nvblox) StdoutLine: {'line': b'-- Downloading GTEST\n'}
+[8.720392] (-) TimerEvent: {}
+[8.820716] (-) TimerEvent: {}
+[8.921004] (-) TimerEvent: {}
+[9.021554] (-) TimerEvent: {}
+[9.121920] (-) TimerEvent: {}
+[9.222186] (-) TimerEvent: {}
+[9.322536] (-) TimerEvent: {}
+[9.422889] (-) TimerEvent: {}
+[9.523172] (-) TimerEvent: {}
+[9.623400] (-) TimerEvent: {}
+[9.723659] (-) TimerEvent: {}
+[9.823866] (-) TimerEvent: {}
+[9.924128] (-) TimerEvent: {}
+[10.024346] (-) TimerEvent: {}
+[10.124601] (-) TimerEvent: {}
+[10.224869] (-) TimerEvent: {}
+[10.325109] (-) TimerEvent: {}
+[10.425427] (-) TimerEvent: {}
+[10.525658] (-) TimerEvent: {}
+[10.626032] (-) TimerEvent: {}
+[10.726344] (-) TimerEvent: {}
+[10.826654] (-) TimerEvent: {}
+[10.926897] (-) TimerEvent: {}
+[10.963223] (my_nvblox) StdoutLine: {'line': b'-- Downloading benchmark\n'}
+[11.026989] (-) TimerEvent: {}
+[11.127229] (-) TimerEvent: {}
+[11.227567] (-) TimerEvent: {}
+[11.327827] (-) TimerEvent: {}
+[11.428162] (-) TimerEvent: {}
+[11.528428] (-) TimerEvent: {}
+[11.628643] (-) TimerEvent: {}
+[11.728917] (-) TimerEvent: {}
+[11.829088] (-) TimerEvent: {}
+[11.929303] (-) TimerEvent: {}
+[12.029534] (-) TimerEvent: {}
+[12.129772] (-) TimerEvent: {}
+[12.229997] (-) TimerEvent: {}
+[12.330376] (-) TimerEvent: {}
+[12.430588] (-) TimerEvent: {}
+[12.530894] (-) TimerEvent: {}
+[12.631223] (-) TimerEvent: {}
+[12.731487] (-) TimerEvent: {}
+[12.831726] (-) TimerEvent: {}
+[12.932118] (-) TimerEvent: {}
+[13.032322] (-) TimerEvent: {}
+[13.132584] (-) TimerEvent: {}
+[13.200450] (my_nvblox) StdoutLine: {'line': b'-- Failed to find LLVM FileCheck\n'}
+[13.201139] (my_nvblox) StdoutLine: {'line': b'-- Found Git: /usr/bin/git (found version "2.34.1") \n'}
+[13.203786] (my_nvblox) StdoutLine: {'line': b'-- Google Benchmark version: v1.9.0, normalized to 1.9.0\n'}
+[13.205326] (my_nvblox) StdoutLine: {'line': b'-- Looking for shm_open in rt\n'}
+[13.232778] (-) TimerEvent: {}
+[13.255297] (my_nvblox) StdoutLine: {'line': b'-- Looking for shm_open in rt - found\n'}
+[13.255763] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WALL\n'}
+[13.317429] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WALL - Success\n'}
+[13.318089] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WEXTRA\n'}
+[13.332910] (-) TimerEvent: {}
+[13.384652] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WEXTRA - Success\n'}
+[13.385310] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSHADOW\n'}
+[13.433030] (-) TimerEvent: {}
+[13.449280] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSHADOW - Success\n'}
+[13.450002] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL\n'}
+[13.511071] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WFLOAT_EQUAL - Success\n'}
+[13.511758] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST\n'}
+[13.533147] (-) TimerEvent: {}
+[13.570595] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WOLD_STYLE_CAST - Success\n'}
+[13.571241] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WCONVERSION\n'}
+[13.633237] (-) TimerEvent: {}
+[13.635623] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WCONVERSION - Success\n'}
+[13.636284] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE\n'}
+[13.694829] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE - Success\n'}
+[13.695225] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_PEDANTIC\n'}
+[13.733339] (-) TimerEvent: {}
+[13.750701] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_PEDANTIC - Success\n'}
+[13.751448] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS\n'}
+[13.810749] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS - Success\n'}
+[13.811086] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32\n'}
+[13.833423] (-) TimerEvent: {}
+[13.837163] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 - Failed\n'}
+[13.837907] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING\n'}
+[13.897572] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING - Success\n'}
+[13.897987] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS\n'}
+[13.933553] (-) TimerEvent: {}
+[13.959331] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS - Success\n'}
+[13.959738] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING\n'}
+[14.021219] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING - Success\n'}
+[14.021650] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WD654\n'}
+[14.033692] (-) TimerEvent: {}
+[14.040456] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WD654 - Failed\n'}
+[14.040886] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY\n'}
+[14.068739] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY - Failed\n'}
+[14.069150] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_COVERAGE\n'}
+[14.132689] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_CXX_FLAG_COVERAGE - Success\n'}
+[14.132882] (my_nvblox) StdoutLine: {'line': b'-- Compiling and running to test HAVE_STD_REGEX\n'}
+[14.133761] (-) TimerEvent: {}
+[14.234004] (-) TimerEvent: {}
+[14.334247] (-) TimerEvent: {}
+[14.434520] (-) TimerEvent: {}
+[14.534769] (-) TimerEvent: {}
+[14.635058] (-) TimerEvent: {}
+[14.735272] (-) TimerEvent: {}
+[14.835489] (-) TimerEvent: {}
+[14.935728] (-) TimerEvent: {}
+[15.035964] (-) TimerEvent: {}
+[15.136168] (-) TimerEvent: {}
+[15.236409] (-) TimerEvent: {}
+[15.237145] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_STD_REGEX -- success\n'}
+[15.237249] (my_nvblox) StdoutLine: {'line': b'-- Compiling and running to test HAVE_GNU_POSIX_REGEX\n'}
+[15.260781] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile\n'}
+[15.260884] (my_nvblox) StdoutLine: {'line': b'-- Compiling and running to test HAVE_POSIX_REGEX\n'}
+[15.336546] (-) TimerEvent: {}
+[15.387423] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_POSIX_REGEX -- success\n'}
+[15.387575] (my_nvblox) StdoutLine: {'line': b'-- Compiling and running to test HAVE_STEADY_CLOCK\n'}
+[15.436690] (-) TimerEvent: {}
+[15.481303] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_STEADY_CLOCK -- success\n'}
+[15.482499] (my_nvblox) StdoutLine: {'line': b'-- Compiling and running to test HAVE_PTHREAD_AFFINITY\n'}
+[15.536809] (-) TimerEvent: {}
+[15.543859] (my_nvblox) StdoutLine: {'line': b'-- Performing Test HAVE_PTHREAD_AFFINITY -- success\n'}
+[15.547658] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox static library: nvblox_gpu_hash\n'}
+[15.547879] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox shared library: nvblox_lib\n'}
+[15.548169] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: sphere_benchmark\n'}
+[15.549139] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox shared library: nvblox_datasets\n'}
+[15.549319] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: fuse_3dmatch\n'}
+[15.549563] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: fuse_replica\n'}
+[15.549716] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: fuse_redwood\n'}
+[15.549918] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: fuse_cusfm\n'}
+[15.550064] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: fuse_lidarply\n'}
+[15.550894] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: esdf_query\n'}
+[15.551021] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: load_map_and_mesh\n'}
+[15.552532] (my_nvblox) StdoutLine: {'line': b'-- Adding nvblox executable library: test_bench\n'}
+[15.557309] (my_nvblox) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:74 (target_link_libraries):\n'}
+[15.557369] (my_nvblox) StderrLine: {'line': b'  The plain signature for target_link_libraries has already been used with\n'}
+[15.557395] (my_nvblox) StderrLine: {'line': b'  the target "esdf_node".  All uses of target_link_libraries with a target\n'}
+[15.557418] (my_nvblox) StderrLine: {'line': b'  must be either all-keyword or all-plain.\n'}
+[15.557440] (my_nvblox) StderrLine: {'line': b'\n'}
+[15.557462] (my_nvblox) StderrLine: {'line': b'  The uses of the plain signature are here:\n'}
+[15.557489] (my_nvblox) StderrLine: {'line': b'\n'}
+[15.557510] (my_nvblox) StderrLine: {'line': b'   * /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries)\n'}
+[15.557533] (my_nvblox) StderrLine: {'line': b'\n'}
+[15.557553] (my_nvblox) StderrLine: {'line': b'\n'}
+[15.557575] (my_nvblox) StderrLine: {'line': b'\x1b[0m\n'}
+[15.561152] (my_nvblox) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[15.561249] (my_nvblox) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/czz/nvblox_ws/src/my_nvblox/include>\n'}
+[15.561277] (my_nvblox) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[15.562123] (my_nvblox) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[15.562820] (my_nvblox) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[15.563512] (my_nvblox) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[15.564296] (my_nvblox) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[15.564354] (my_nvblox) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[15.565073] (my_nvblox) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[15.566985] (my_nvblox) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[15.567016] (my_nvblox) StdoutLine: {'line': b'See also "/home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/CMakeOutput.log".\n'}
+[15.567040] (my_nvblox) StdoutLine: {'line': b'See also "/home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/CMakeError.log".\n'}
+[15.576903] (my_nvblox) CommandEnded: {'returncode': 1}
+[15.597702] (my_nvblox) JobEnded: {'identifier': 'my_nvblox', 'rc': 1}
+[15.608082] (-) EventReactorShutdown: {}

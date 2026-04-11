@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/CMakeFiles/ext_sqlite3-populate"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/CMakeFiles/ext_sqlite3-populate.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/CMakeFiles/ext_sqlite3-populate-complete.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/ext_sqlite3-populate-prefix/src/ext_sqlite3-populate-stamp/ext_sqlite3-populate-build.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/ext_sqlite3-populate-prefix/src/ext_sqlite3-populate-stamp/ext_sqlite3-populate-configure.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/ext_sqlite3-populate-prefix/src/ext_sqlite3-populate-stamp/ext_sqlite3-populate-download.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/ext_sqlite3-populate-prefix/src/ext_sqlite3-populate-stamp/ext_sqlite3-populate-install.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/ext_sqlite3-populate-prefix/src/ext_sqlite3-populate-stamp/ext_sqlite3-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/ext_sqlite3-populate-prefix/src/ext_sqlite3-populate-stamp/ext_sqlite3-populate-patch.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_sqlite3-subbuild/ext_sqlite3-populate-prefix/src/ext_sqlite3-populate-stamp/ext_sqlite3-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ext_sqlite3-populate"
+		],
+		"name" : "ext_sqlite3-populate"
+	}
+}

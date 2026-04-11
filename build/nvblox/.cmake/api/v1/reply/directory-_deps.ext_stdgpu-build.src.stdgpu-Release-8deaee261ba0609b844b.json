@@ -1,0 +1,116 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/src/stdgpu/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 162,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 167,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 180,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 184,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "stdgpu",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/ext_stdgpu-build/bin/libstdgpu.a"
+			],
+			"targetId" : "stdgpu::@ce4db3224d651836423e",
+			"targetIndex" : 60,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "stdgpu",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/src/stdgpu/..",
+					"to" : "."
+				},
+				{
+					"from" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/src/stdgpu/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "stdgpu",
+			"destination" : "lib/cmake/stdgpu",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/src/stdgpu/cmake/stdgpu-dependencies.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "stdgpu",
+			"destination" : "lib/cmake/stdgpu",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/cmake/Findthrust.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "stdgpu",
+			"destination" : "lib/cmake/stdgpu/cuda",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/cmake/cuda/determine_thrust_paths.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/ext_stdgpu-build/src/stdgpu",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/src/stdgpu"
+	}
+}

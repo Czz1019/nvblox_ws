@@ -1,0 +1,155 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-src/src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 128,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 134,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 138,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 142,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 176,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/ext_benchmark-build/src/libbenchmark.a"
+			],
+			"targetId" : "benchmark::@eb57726270b9eea53ca6",
+			"targetIndex" : 28,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/ext_benchmark-build/src/libbenchmark_main.a"
+			],
+			"targetId" : "benchmark_main::@eb57726270b9eea53ca6",
+			"targetIndex" : 29,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-src/include/benchmark",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-build/include/benchmark"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/benchmark",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-build/benchmarkConfig.cmake",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-build/benchmarkConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-build/benchmark.pc",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-build/benchmark_main.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/benchmark",
+			"exportName" : "benchmarkTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "benchmark::@eb57726270b9eea53ca6",
+					"index" : 28
+				},
+				{
+					"id" : "benchmark_main::@eb57726270b9eea53ca6",
+					"index" : 29
+				}
+			],
+			"paths" : 
+			[
+				"_deps/ext_benchmark-build/src/CMakeFiles/Export/lib/cmake/benchmark/benchmarkTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "share/doc/benchmark",
+			"paths" : 
+			[
+				{
+					"from" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-src/docs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/ext_benchmark-build/src",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_benchmark-src/src"
+	}
+}

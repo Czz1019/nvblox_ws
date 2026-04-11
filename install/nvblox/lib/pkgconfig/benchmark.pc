@@ -1,0 +1,12 @@
+prefix=/home/czz/nvblox_ws/install/nvblox
+exec_prefix=${prefix}
+libdir=/home/czz/nvblox_ws/install/nvblox/lib
+includedir=/home/czz/nvblox_ws/install/nvblox/include
+
+Name: benchmark
+Description: Google microbenchmark framework
+Version: v1.9.0
+
+Libs: -L${libdir} -lbenchmark
+Libs.private: -lpthread 
+Cflags: -I${includedir}

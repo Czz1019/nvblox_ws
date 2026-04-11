@@ -1,0 +1,644 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "nvblox/examples/esdf_query"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"add_nvblox_binary",
+			"add_nvblox_executable",
+			"target_link_libraries",
+			"add_dependencies",
+			"include",
+			"target_compile_options",
+			"add_device_compiler_option",
+			"add_host_compiler_option",
+			"set_nvblox_compiler_options_internal",
+			"set_nvblox_compiler_options",
+			"target_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"cmake/nvblox_targets.cmake",
+			"nvblox/examples/CMakeLists.txt",
+			"nvblox/thirdparty/eigen/eigen.cmake",
+			"nvblox/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 245,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 208,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 2
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 16,
+				"parent" : 5
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 23,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 215,
+				"parent" : 2
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 2
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 12
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 108,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 18
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 19
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 109,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 21
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 22
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 24
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 25
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 138,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 27
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 28
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 30
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 31
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 33
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 142,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 35
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 151,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 37
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 153,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 39
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 155,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 41
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 161,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 43
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 165,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 45
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 168,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 47
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 11
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 11
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 11
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 11
+			},
+			{
+				"command" : 12,
+				"file" : 3,
+				"line" : 35,
+				"parent" : 5
+			},
+			{
+				"command" : 12,
+				"file" : 3,
+				"line" : 38,
+				"parent" : 5
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG --generate-code=arch=compute_89,code=[compute_89,sm_89] --generate-code=arch=compute_89,code=[compute_89,sm_89] -Xcompiler=-fPIE"
+				},
+				{
+					"backtrace" : 14,
+					"fragment" : "-Xcompiler=-fno-omit-frame-pointer"
+				},
+				{
+					"backtrace" : 17,
+					"fragment" : "-Xcompiler=-std=gnu++17"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Xcompiler=-Wall"
+				},
+				{
+					"backtrace" : 23,
+					"fragment" : "-Xcompiler=-Wextra"
+				},
+				{
+					"backtrace" : 26,
+					"fragment" : "-Xcompiler=-Wshadow"
+				},
+				{
+					"backtrace" : 29,
+					"fragment" : "-Xcompiler=-O3"
+				},
+				{
+					"backtrace" : 32,
+					"fragment" : "-Xcompiler=-DNDEBUG"
+				},
+				{
+					"backtrace" : 34,
+					"fragment" : "-DNDEBUG"
+				},
+				{
+					"backtrace" : 36,
+					"fragment" : "-O3"
+				},
+				{
+					"backtrace" : 38,
+					"fragment" : "--extended-lambda"
+				},
+				{
+					"backtrace" : 40,
+					"fragment" : "--expt-relaxed-constexpr"
+				},
+				{
+					"backtrace" : 42,
+					"fragment" : "-Xcudafe=--display_error_number"
+				},
+				{
+					"backtrace" : 44,
+					"fragment" : "--diag-suppress=20054"
+				},
+				{
+					"backtrace" : 46,
+					"fragment" : "--diag-suppress=20091"
+				},
+				{
+					"backtrace" : 48,
+					"fragment" : "-diag-suppress=737"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 49,
+					"define" : "C10_USE_GLOG=1"
+				},
+				{
+					"backtrace" : 50,
+					"define" : "CUB_WRAPPED_NAMESPACE=nvblox"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "GFLAGS_IS_A_DLL=0"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "THRUST_DEVICE_SYSTEM=THRUST_DEVICE_SYSTEM_CUDA"
+				},
+				{
+					"backtrace" : 51,
+					"define" : "THRUST_DISABLE_ABI_NAMESPACE"
+				},
+				{
+					"backtrace" : 52,
+					"define" : "THRUST_IGNORE_ABI_NAMESPACE_ERROR"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 53,
+					"path" : "/home/czz/nvblox_ws/src/nvblox/nvblox/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-src/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/src"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/src/stdgpu/.."
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/src/stdgpu/include"
+				},
+				{
+					"backtrace" : 54,
+					"isSystem" : true,
+					"path" : "/usr/local/cuda/targets/x86_64-linux/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/usr/local/cuda/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/include/eigen3"
+				}
+			],
+			"language" : "CUDA",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					4294967295
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "ext_eigen::@1f05a77c997284e844eb"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "nvblox_lib::@1f05a77c997284e844eb"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "gflags_nothreads_static::@640cdaef2eb3a17b9a5b"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "stdgpu::@ce4db3224d651836423e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "glog::@c298f60377d79fc19d95"
+		}
+	],
+	"id" : "esdf_query::@92376e26a7f40fbc9d0e",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-L/usr/local/cuda/targets/x86_64-linux/lib/stubs",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-L/usr/local/cuda/targets/x86_64-linux/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,\"\\$$ORIGIN/../:/usr/local/cuda/lib64\"",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../libnvblox_lib.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../_deps/ext_glog-build/libglog.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libunwind.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libunwind-x86_64.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../_deps/ext_gflags-build/libgflags_nothreads.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "../../_deps/ext_stdgpu-build/bin/libstdgpu.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/cuda/lib64/libcudart.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcudadevrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcudart_static",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "esdf_query",
+	"nameOnDisk" : "esdf_query",
+	"paths" : 
+	{
+		"build" : "nvblox/examples",
+		"source" : "nvblox/examples"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "nvblox/examples/src/esdf_query.cu",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

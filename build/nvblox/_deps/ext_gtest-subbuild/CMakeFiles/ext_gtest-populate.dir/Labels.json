@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/CMakeFiles/ext_gtest-populate"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/CMakeFiles/ext_gtest-populate.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/CMakeFiles/ext_gtest-populate-complete.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/ext_gtest-populate-prefix/src/ext_gtest-populate-stamp/ext_gtest-populate-build.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/ext_gtest-populate-prefix/src/ext_gtest-populate-stamp/ext_gtest-populate-configure.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/ext_gtest-populate-prefix/src/ext_gtest-populate-stamp/ext_gtest-populate-download.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/ext_gtest-populate-prefix/src/ext_gtest-populate-stamp/ext_gtest-populate-install.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/ext_gtest-populate-prefix/src/ext_gtest-populate-stamp/ext_gtest-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/ext_gtest-populate-prefix/src/ext_gtest-populate-stamp/ext_gtest-populate-patch.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gtest-subbuild/ext_gtest-populate-prefix/src/ext_gtest-populate-stamp/ext_gtest-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ext_gtest-populate"
+		],
+		"name" : "ext_gtest-populate"
+	}
+}

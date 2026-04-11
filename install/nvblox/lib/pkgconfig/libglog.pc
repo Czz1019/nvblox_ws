@@ -1,0 +1,10 @@
+prefix=/home/czz/nvblox_ws/install/nvblox
+exec_prefix=/home/czz/nvblox_ws/install/nvblox/bin
+libdir=/home/czz/nvblox_ws/install/nvblox/lib
+includedir=/home/czz/nvblox_ws/install/nvblox/include
+
+Name: libglog
+Description: Google Log (glog) C++ logging framework
+Version: 0.5.0
+Libs: -L${libdir} -lglog
+Cflags: -I${includedir}

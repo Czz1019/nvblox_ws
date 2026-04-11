@@ -1,0 +1,28 @@
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MyNvbloxNode::publishMesh()[m[K’:
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:283:61:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kconst nvblox::unified_vector<Eigen::Matrix<float, 3, 1> >[m[K’ to non-scalar type ‘[01m[Kstd::vector<Eigen::Matrix<float, 3, 1>, std::allocator<Eigen::Matrix<float, 3, 1> > >[m[K’ requested
+  283 |             std::vector<nvblox::Vector3f> vertices = [01;31m[Kblock->vertices[m[K;
+      |                                                      [01;31m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:284:49:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kconst nvblox::unified_vector<int>[m[K’ to non-scalar type ‘[01m[Kstd::vector<int>[m[K’ requested
+  284 |             std::vector<int> triangles = [01;31m[Kblock->triangles[m[K;
+      |                                          [01;31m[K~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:285:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = const struct nvblox::MeshBlock<nvblox::Color>[m[K’ {aka ‘[01m[Kconst struct nvblox::MeshBlock<nvblox::Color>[m[K’} has no member named ‘[01m[Kcolors[m[K’
+  285 |             std::vector<nvblox::Color> colors = block->[01;31m[Kcolors[m[K;
+      |                                                        [01;31m[K^~~~~~[m[K
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:314:43:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K<unresolved overloaded function type>[m[K’ and ‘[01m[Kfloat[m[K’ to binary ‘[01m[Koperator/[m[K’
+  314 |                     c.r = colors[v_idx].r [01;31m[K/[m[K [32m[K255.0f[m[K;
+      |                                           [01;31m[K^[m[K [32m[K~~~~~~[m[K
+      |                                             [32m[K|[m[K
+      |                                             [32m[Kfloat[m[K
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:315:43:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K<unresolved overloaded function type>[m[K’ and ‘[01m[Kfloat[m[K’ to binary ‘[01m[Koperator/[m[K’
+  315 |                     c.g = colors[v_idx].g [01;31m[K/[m[K [32m[K255.0f[m[K;
+      |                                           [01;31m[K^[m[K [32m[K~~~~~~[m[K
+      |                                             [32m[K|[m[K
+      |                                             [32m[Kfloat[m[K
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:316:43:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[K<unresolved overloaded function type>[m[K’ and ‘[01m[Kfloat[m[K’ to binary ‘[01m[Koperator/[m[K’
+  316 |                     c.b = colors[v_idx].b [01;31m[K/[m[K [32m[K255.0f[m[K;
+      |                                           [01;31m[K^[m[K [32m[K~~~~~~[m[K
+      |                                             [32m[K|[m[K
+      |                                             [32m[Kfloat[m[K
+gmake[2]: *** [CMakeFiles/mapper_node.dir/build.make:76：CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/mapper_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

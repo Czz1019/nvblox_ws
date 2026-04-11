@@ -1,0 +1,168 @@
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_30f8a/fast && gmake[3]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_30f8a.dir/build.make CMakeFiles/cmTC_30f8a.dir/build
+gmake[4]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_30f8a.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wshorten64to32  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror   -Wshorten-64-to-32 -o CMakeFiles/cmTC_30f8a.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+gmake[4]: *** [CMakeFiles/cmTC_30f8a.dir/build.make:78: CMakeFiles/cmTC_30f8a.dir/src.cxx.o] Error 1
+gmake[4]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_30f8a/fast] Error 2
+gmake[3]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e91a/fast && gmake[3]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_5e91a.dir/build.make CMakeFiles/cmTC_5e91a.dir/build
+gmake[4]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e91a.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Wcpp11extensions  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror   -Wc++11-extensions -o CMakeFiles/cmTC_5e91a.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+gmake[4]: *** [CMakeFiles/cmTC_5e91a.dir/build.make:78: CMakeFiles/cmTC_5e91a.dir/src.cxx.o] Error 1
+gmake[4]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_5e91a/fast] Error 2
+gmake[3]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c2d14/fast && gmake[3]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_c2d14.dir/build.make CMakeFiles/cmTC_c2d14.dir/build
+gmake[4]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c2d14.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd981  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd981 -o CMakeFiles/cmTC_c2d14.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd981'
+gmake[4]: *** [CMakeFiles/cmTC_c2d14.dir/build.make:78: CMakeFiles/cmTC_c2d14.dir/src.cxx.o] Error 1
+gmake[4]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_c2d14/fast] Error 2
+gmake[3]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d0d15/fast && gmake[3]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_d0d15.dir/build.make CMakeFiles/cmTC_d0d15.dir/build
+gmake[4]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0d15.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_wd2304  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -wd2304 -o CMakeFiles/cmTC_d0d15.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd2304'
+gmake[4]: *** [CMakeFiles/cmTC_d0d15.dir/build.make:78: CMakeFiles/cmTC_d0d15.dir/src.cxx.o] Error 1
+gmake[4]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_d0d15/fast] Error 2
+gmake[3]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_STRICTANSI failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f67fd/fast && gmake[3]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_f67fd.dir/build.make CMakeFiles/cmTC_f67fd.dir/build
+gmake[4]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f67fd.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_STRICTANSI  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -strict-ansi -o CMakeFiles/cmTC_f67fd.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-strict-ansi'; did you mean '-fstrict-enums'?
+gmake[4]: *** [CMakeFiles/cmTC_f67fd.dir/build.make:78: CMakeFiles/cmTC_f67fd.dir/src.cxx.o] Error 1
+gmake[4]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_f67fd/fast] Error 2
+gmake[3]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Qunusedarguments failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1c676/fast && gmake[3]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_1c676.dir/build.make CMakeFiles/cmTC_1c676.dir/build
+gmake[4]: Entering directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1c676.dir/src.cxx.o
+/usr/bin/c++ -DCOMPILER_SUPPORT_Qunusedarguments  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror   -Qunused-arguments -o CMakeFiles/cmTC_1c676.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Qunused-arguments'
+gmake[4]: *** [CMakeFiles/cmTC_1c676.dir/build.make:78: CMakeFiles/cmTC_1c676.dir/src.cxx.o] Error 1
+gmake[4]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+gmake[3]: *** [Makefile:127: cmTC_1c676/fast] Error 2
+gmake[3]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test SCOTCH_Num_4 failed with the following compile output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_74315/fast && gmake[3]: 进入目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+/usr/bin/gmake  -f CMakeFiles/cmTC_74315.dir/build.make CMakeFiles/cmTC_74315.dir/build
+gmake[4]: 进入目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_74315.dir/src.c.o
+/usr/bin/cc -DSCOTCH_Num_4  -fopenmp -o CMakeFiles/cmTC_74315.dir/src.c.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.c
+/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.c:4:10: fatal error: scotch.h: 没有那个文件或目录
+    4 | #include <scotch.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_74315.dir/build.make:78：CMakeFiles/cmTC_74315.dir/src.c.o] 错误 1
+gmake[4]: 离开目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+gmake[3]: *** [Makefile:127：cmTC_74315/fast] 错误 2
+gmake[3]: 离开目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <stdio.h>
+#include <stdint.h>
+#include <scotch.h>
+int main(int argc, char **argv) {
+  if (sizeof(SCOTCH_Num) == 4)
+    return 0;
+  else
+    return 1;
+}
+
+Performing C SOURCE FILE Test SCOTCH_Num_8 failed with the following compile output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_be85b/fast && gmake[3]: 进入目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+/usr/bin/gmake  -f CMakeFiles/cmTC_be85b.dir/build.make CMakeFiles/cmTC_be85b.dir/build
+gmake[4]: 进入目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_be85b.dir/src.c.o
+/usr/bin/cc -DSCOTCH_Num_8  -fopenmp -o CMakeFiles/cmTC_be85b.dir/src.c.o -c /home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.c
+/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp/src.c:4:10: fatal error: scotch.h: 没有那个文件或目录
+    4 | #include <scotch.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+gmake[4]: *** [CMakeFiles/cmTC_be85b.dir/build.make:78：CMakeFiles/cmTC_be85b.dir/src.c.o] 错误 1
+gmake[4]: 离开目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+gmake[3]: *** [Makefile:127：cmTC_be85b/fast] 错误 2
+gmake[3]: 离开目录“/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-build/CMakeFiles/CMakeTmp”
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+#include <stdio.h>
+#include <stdint.h>
+#include <scotch.h>
+int main(int argc, char **argv) {
+  if (sizeof(SCOTCH_Num) == 8)
+    return 0;
+  else
+    return 1;
+}
+

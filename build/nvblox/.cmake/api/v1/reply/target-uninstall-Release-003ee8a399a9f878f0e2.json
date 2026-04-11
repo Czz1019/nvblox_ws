@@ -1,0 +1,78 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/cmake/add_uninstall_target.cmake",
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 185,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 2
+			}
+		]
+	},
+	"id" : "uninstall::@8fbda1b75c64c8dbae87",
+	"name" : "uninstall",
+	"paths" : 
+	{
+		"build" : "_deps/ext_stdgpu-build",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/CMakeFiles/uninstall",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/CMakeFiles/uninstall.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

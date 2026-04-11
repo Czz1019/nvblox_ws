@@ -1,92 +1,130 @@
-cmake_minimum_required(VERSION 3.22.1)
+# # cmake_minimum_required(VERSION 3.8)
+# # project(my_nvblox)
+
+# # if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+# #   add_compile_options(-Wall -Wextra -Wpedantic)
+# # endif()
+
+# # # find dependencies
+# # find_package(ament_cmake REQUIRED)
+# # find_package(rclcpp REQUIRED)
+# # find_package(sensor_msgs REQUIRED)
+# # find_package(geometry_msgs REQUIRED)
+# # find_package(tf2 REQUIRED)
+# # find_package(tf2_ros REQUIRED)
+# # find_package(tf2_geometry_msgs REQUIRED)
+# # find_package(cv_bridge REQUIRED)
+# # find_package(message_filters REQUIRED)
+# # find_package(std_msgs REQUIRED)
+
+# # if(BUILD_TESTING)
+# #   find_package(ament_lint_auto REQUIRED)
+# #   # the following line skips the linter which checks for copyrights
+# #   # comment the line when a copyright and license is added to all source files
+# #   set(ament_cmake_copyright_FOUND TRUE)
+# #   # the following line skips cpplint (only works in a git repo)
+# #   # comment the line when this package is in a git repo and when
+# #   # a copyright and license is added to all source files
+# #   set(ament_cmake_cpplint_FOUND TRUE)
+# #   ament_lint_auto_find_test_dependencies()
+# # endif()
+
+# # ament_package()
+# cmake_minimum_required(VERSION 3.8)
+# project(my_nvblox LANGUAGES CXX C CUDA) # 启用 CUDA 语言支持
+
+# if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+#   add_compile_options(-Wall -Wextra -Wpedantic)
+# endif()
+
+# # 1. 寻找 ROS 2 相关的依赖
+# find_package(ament_cmake REQUIRED)
+# find_package(rclcpp REQUIRED)
+# find_package(sensor_msgs REQUIRED)
+# find_package(geometry_msgs REQUIRED)
+# find_package(tf2 REQUIRED)
+# find_package(tf2_ros REQUIRED)
+# find_package(tf2_geometry_msgs REQUIRED)
+# find_package(cv_bridge REQUIRED)
+# find_package(message_filters REQUIRED)
+# find_package(visualization_msgs REQUIRED)
+
+# # --- 新增：寻找 nvblox 的底层依赖库 ---
+# find_package(CUDAToolkit REQUIRED)
+# find_package(glog REQUIRED)
+# find_package(gflags REQUIRED)
+
+# # 2. 寻找系统中的 nvblox 核心库
+# find_package(nvblox REQUIRED)
+
+# # 3. 编译我们的 C++ 节点
+# add_executable(mapper_node src/mapper_node.cpp)
+# add_executable(nvblox_node 
+#   src/nvblox_node.cpp
+#   src/mesh_publisher.cpp
+#   src/esdf_publisher.cpp
+# )
+
+# target_include_directories(mapper_node PUBLIC
+#   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+#   $<INSTALL_INTERFACE:include>
+#   ${CUDAToolkit_INCLUDE_DIRS}
+# )
+
+# ament_target_dependencies(mapper_node
+#   rclcpp sensor_msgs geometry_msgs tf2 tf2_ros tf2_geometry_msgs cv_bridge message_filters visualization_msgs
+# )
+
+# # 4. 核心：将 nvblox 的库文件链接到我们的可执行文件中
+# # target_link_libraries(mapper_node nvblox_lib CUDA::cudart)
+# # 链接 nvblox_lib、CUDA 运行时以及底层日志库
+# target_link_libraries(mapper_node nvblox_lib CUDA::cudart glog::glog gflags)
+
+# # 5. 安装规则
+# install(TARGETS mapper_node
+#   DESTINATION lib/${PROJECT_NAME})
+
+# install(DIRECTORY launch
+#   DESTINATION share/${PROJECT_NAME})
+
+# install(PROGRAMS
+#   scripts/esdf_node.py
+#   DESTINATION lib/${PROJECT_NAME}
+# )
+
+# install(DIRECTORY
+#   launch
+#   DESTINATION share/${PROJECT_NAME}
+# )
+
+# ament_package()
+
+cmake_minimum_required(VERSION 3.8)
 project(my_nvblox)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
-
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-set(MY_NVBLOX_PACKAGE_NAME ${PROJECT_NAME})
-set(NVBLOX_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../nvblox")
-
-if(NOT DEFINED CMAKE_CUDA_ARCHITECTURES)
-  set(CMAKE_CUDA_ARCHITECTURES "72;75;80;86;87;89" CACHE STRING
-      "CUDA architectures to build nvblox for when GPU auto-detection is unavailable" FORCE)
-endif()
-
-# find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(tf2 REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(message_filters REQUIRED)
 find_package(tf2_ros REQUIRED)
-find_package(tf2_eigen REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(nvblox REQUIRED) # 链接您源码编译的底层库
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
+add_executable(nvblox_node src/nvblox_node.cpp)
 
-if(EXISTS "${NVBLOX_SOURCE_DIR}/CMakeLists.txt")
-  message(STATUS "Building vendored nvblox with CUDA architectures: ${CMAKE_CUDA_ARCHITECTURES}")
-  set(BUILD_EXPERIMENTS OFF CACHE BOOL "Disable nvblox experiments" FORCE)
-  set(BUILD_PYTORCH_WRAPPER OFF CACHE BOOL "Disable nvblox torch bindings" FORCE)
-  set(BUILD_TESTING OFF CACHE BOOL "Disable nvblox tests" FORCE)
-  set(USE_SYSTEM_EIGEN ON CACHE BOOL "Use system Eigen for vendored nvblox" FORCE)
-  set(USE_SYSTEM_GFLAGS ON CACHE BOOL "Use system gflags for vendored nvblox" FORCE)
-  set(USE_SYSTEM_GLOG ON CACHE BOOL "Use system glog for vendored nvblox" FORCE)
-  add_subdirectory("${NVBLOX_SOURCE_DIR}" "${CMAKE_CURRENT_BINARY_DIR}/nvblox")
-else()
-  message(FATAL_ERROR "Expected vendored nvblox source tree at ${NVBLOX_SOURCE_DIR}")
-endif()
+target_include_directories(nvblox_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
 
-add_executable(esdf_node
-  src/esdf_builder.cpp
-  src/esdf_ros2_node.cpp
+# 链接核心库与 CUDA 相关库
+target_link_libraries(nvblox_node
+  nvblox::nvblox_lib
 )
 
-target_include_directories(esdf_node
-  PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<INSTALL_INTERFACE:include>
+ament_target_dependencies(nvblox_node
+  rclcpp sensor_msgs cv_bridge message_filters tf2_ros
 )
 
-ament_target_dependencies(esdf_node
-  geometry_msgs
-  rclcpp
-  sensor_msgs
-  tf2
-  tf2_eigen
-  tf2_ros
-)
-
-target_link_libraries(esdf_node
-  PRIVATE
-    nvblox_lib
-    nvblox_gpu_hash
-    nvblox_stdgpu
-)
-
-install(TARGETS esdf_node
-  DESTINATION lib/${MY_NVBLOX_PACKAGE_NAME}
-)
-
-install(DIRECTORY include/
-  DESTINATION include
-)
-
-install(DIRECTORY launch
-  DESTINATION share/${MY_NVBLOX_PACKAGE_NAME}
-)
-
+install(TARGETS nvblox_node DESTINATION lib/${PROJECT_NAME})
 ament_package()

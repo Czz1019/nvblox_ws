@@ -1,0 +1,68 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 164,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "stdgpu",
+			"destination" : "lib/cmake/stdgpu",
+			"exportName" : "stdgpu-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "stdgpu::@ce4db3224d651836423e",
+					"index" : 60
+				}
+			],
+			"paths" : 
+			[
+				"_deps/ext_stdgpu-build/CMakeFiles/Export/lib/cmake/stdgpu/stdgpu-targets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "stdgpu",
+			"destination" : "lib/cmake/stdgpu",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/stdgpu-config.cmake",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-build/stdgpu-config-version.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/ext_stdgpu-build",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_stdgpu-src"
+	}
+}

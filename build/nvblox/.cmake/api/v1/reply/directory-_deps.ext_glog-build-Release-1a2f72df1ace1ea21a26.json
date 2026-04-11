@@ -1,0 +1,144 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 805,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 813,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 863,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 876,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 882,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 888,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"_deps/ext_glog-build/libglog.a"
+			],
+			"targetId" : "glog::@c298f60377d79fc19d95",
+			"targetIndex" : 44,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/glog",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/glog/export.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/glog/logging.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/glog/raw_logging.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/glog/stl_logging.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/glog/vlog_is_on.h",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-src/src/glog/log_severity.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/libglog.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Development",
+			"type" : "code"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/glog",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/glog-config.cmake",
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/glog-config-version.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Development",
+			"destination" : "share/glog",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-build/share/glog/cmake"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/glog",
+			"exportName" : "glog-targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "glog::@c298f60377d79fc19d95",
+					"index" : 44
+				}
+			],
+			"paths" : 
+			[
+				"_deps/ext_glog-build/CMakeFiles/Export/lib/cmake/glog/glog-targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/ext_glog-build",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-src"
+	}
+}

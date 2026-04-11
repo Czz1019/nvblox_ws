@@ -1,0 +1,84 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "share/nvblox/cmake",
+			"paths" : 
+			[
+				"/home/czz/nvblox_ws/build/nvblox/nvbloxConfig.cmake",
+				"/home/czz/nvblox_ws/build/nvblox/nvbloxConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/nvblox/cmake",
+			"exportName" : "nvbloxTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "nvblox_lib::@1f05a77c997284e844eb",
+					"index" : 54
+				},
+				{
+					"id" : "nvblox_datasets::@e8b2af423890c905f0d4",
+					"index" : 52
+				},
+				{
+					"id" : "nvblox_eigen::@1f05a77c997284e844eb",
+					"index" : 0
+				},
+				{
+					"id" : "fuse_3dmatch::@e8b2af423890c905f0d4",
+					"index" : 32
+				},
+				{
+					"id" : "fuse_replica::@e8b2af423890c905f0d4",
+					"index" : 36
+				}
+			],
+			"paths" : 
+			[
+				"CMakeFiles/Export/share/nvblox/cmake/nvbloxTargets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

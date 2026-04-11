@@ -1,0 +1,6 @@
+Invoking command in '/home/czz/nvblox_ws/build/nvblox': /usr/bin/cmake /home/czz/nvblox_ws/src/nvblox -DBUILD_PYTORCH_WRAPPER=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/czz/nvblox_ws/install/nvblox
+Invoked command in '/home/czz/nvblox_ws/build/nvblox' returned '0': /usr/bin/cmake /home/czz/nvblox_ws/src/nvblox -DBUILD_PYTORCH_WRAPPER=OFF -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/czz/nvblox_ws/install/nvblox
+Invoking command in '/home/czz/nvblox_ws/build/nvblox': /usr/bin/cmake --build /home/czz/nvblox_ws/build/nvblox -- -j20 -l20
+Invoked command in '/home/czz/nvblox_ws/build/nvblox' returned '0': /usr/bin/cmake --build /home/czz/nvblox_ws/build/nvblox -- -j20 -l20
+Invoking command in '/home/czz/nvblox_ws/build/nvblox': /usr/bin/cmake --install /home/czz/nvblox_ws/build/nvblox
+Invoked command in '/home/czz/nvblox_ws/build/nvblox' returned '0': /usr/bin/cmake --install /home/czz/nvblox_ws/build/nvblox

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/CMakeFiles/ext_glog-populate"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/CMakeFiles/ext_glog-populate.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/CMakeFiles/ext_glog-populate-complete.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/ext_glog-populate-prefix/src/ext_glog-populate-stamp/ext_glog-populate-build.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/ext_glog-populate-prefix/src/ext_glog-populate-stamp/ext_glog-populate-configure.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/ext_glog-populate-prefix/src/ext_glog-populate-stamp/ext_glog-populate-download.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/ext_glog-populate-prefix/src/ext_glog-populate-stamp/ext_glog-populate-install.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/ext_glog-populate-prefix/src/ext_glog-populate-stamp/ext_glog-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/ext_glog-populate-prefix/src/ext_glog-populate-stamp/ext_glog-populate-patch.rule"
+		},
+		{
+			"file" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_glog-subbuild/ext_glog-populate-prefix/src/ext_glog-populate-stamp/ext_glog-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ext_glog-populate"
+		],
+		"name" : "ext_glog-populate"
+	}
+}

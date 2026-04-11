@@ -1,0 +1,12 @@
+source;share/nvblox/hook/cmake_prefix_path.ps1
+source;share/nvblox/hook/cmake_prefix_path.dsv
+source;share/nvblox/hook/cmake_prefix_path.sh
+source;share/nvblox/hook/ld_library_path_lib.ps1
+source;share/nvblox/hook/ld_library_path_lib.dsv
+source;share/nvblox/hook/ld_library_path_lib.sh
+source;share/nvblox/hook/path.ps1
+source;share/nvblox/hook/path.dsv
+source;share/nvblox/hook/path.sh
+source;share/nvblox/hook/pythonscriptspath.ps1
+source;share/nvblox/hook/pythonscriptspath.dsv
+source;share/nvblox/hook/pythonscriptspath.sh

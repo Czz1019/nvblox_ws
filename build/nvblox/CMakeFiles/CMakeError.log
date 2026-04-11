@@ -1,0 +1,279 @@
+Determining size of unsigned __int16 failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_227b2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_227b2.dir/build.make CMakeFiles/cmTC_227b2.dir/build
+gmake[1]: 进入目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_227b2.dir/HAVE___UINT16.cpp.o
+/usr/bin/c++    -o CMakeFiles/cmTC_227b2.dir/HAVE___UINT16.cpp.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:22: error: expected primary-expression before ‘unsigned’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |                      ^~~~~~~~
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:22: error: expected ‘)’ before ‘unsigned’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |                     ~^~~~~~~~
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:38:7: error: expected ‘)’ before ‘}’ token
+   38 |   '\0'};
+      |       ^
+      |       )
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:27:14: note: to match this ‘(’
+   27 | #define SIZE (sizeof(unsigned __int16))
+      |              ^
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:12: note: in expansion of macro ‘SIZE’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:38:7: error: expected ‘)’ before ‘}’ token
+   38 |   '\0'};
+      |       ^
+      |       )
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:11: note: to match this ‘(’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |           ^
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:38:7: error: expected ‘)’ before ‘}’ token
+   38 |   '\0'};
+      |       ^
+      |       )
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:10: note: to match this ‘(’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |          ^
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:38:7: error: expected ‘)’ before ‘}’ token
+   38 |   '\0'};
+      |       ^
+      |       )
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:29:3: note: to match this ‘(’
+   29 |   ('0' + ((SIZE / 10000)%10)),
+      |   ^
+gmake[1]: *** [CMakeFiles/cmTC_227b2.dir/build.make:78：CMakeFiles/cmTC_227b2.dir/HAVE___UINT16.cpp.o] 错误 1
+gmake[1]: 离开目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_227b2/fast] 错误 2
+
+
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CheckTypeSize/HAVE___UINT16.cpp:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__PPC64__)
+# define KEY '_','_','P','P','C','6','4','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__PPC__)
+# define KEY '_','_','P','P','C','_','_'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int16))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C++ SOURCE FILE Test HAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9525f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9525f.dir/build.make CMakeFiles/cmTC_9525f.dir/build
+gmake[1]: Entering directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9525f.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_NO_UNNAMED_TYPE_TEMPLATE_ARGS  -Wunnamed-type-template-args -o CMakeFiles/cmTC_9525f.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wunnamed-type-template-args'
+gmake[1]: *** [CMakeFiles/cmTC_9525f.dir/build.make:78: CMakeFiles/cmTC_9525f.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9525f/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Determining if the snprintf exist failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a7946/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a7946.dir/build.make CMakeFiles/cmTC_a7946.dir/build
+gmake[1]: 进入目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a7946.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a7946.dir/CheckSymbolExists.c.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:10: fatal error: cstdio: 没有那个文件或目录
+    2 | #include <cstdio>
+      |          ^~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_a7946.dir/build.make:78：CMakeFiles/cmTC_a7946.dir/CheckSymbolExists.c.o] 错误 1
+gmake[1]: 离开目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_a7946/fast] 错误 2
+
+
+File /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <cstdio>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef snprintf
+  return ((int*)(&snprintf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function UnDecorateSymbolName exists in the dbghelp failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4725e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4725e.dir/build.make CMakeFiles/cmTC_4725e.dir/build
+gmake[1]: 进入目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4725e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=UnDecorateSymbolName -o CMakeFiles/cmTC_4725e.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4725e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4725e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=UnDecorateSymbolName CMakeFiles/cmTC_4725e.dir/CheckFunctionExists.c.o -o cmTC_4725e  -ldbghelp 
+/usr/bin/ld: 找不到 -ldbghelp: 没有那个文件或目录
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_4725e.dir/build.make:99：cmTC_4725e] 错误 1
+gmake[1]: 离开目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_4725e/fast] 错误 2
+
+
+
+Performing C++ SOURCE FILE Test HAVE___DECLSPEC failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7fa85/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7fa85.dir/build.make CMakeFiles/cmTC_7fa85.dir/build
+gmake[1]: 进入目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_7fa85.dir/src.cxx.o
+/usr/bin/c++ -DHAVE___DECLSPEC   -o CMakeFiles/cmTC_7fa85.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx:2:11: error: expected constructor, destructor, or type conversion before ‘(’ token
+    2 | __declspec(selectany) int a;
+      |           ^
+gmake[1]: *** [CMakeFiles/cmTC_7fa85.dir/build.make:78：CMakeFiles/cmTC_7fa85.dir/src.cxx.o] 错误 1
+gmake[1]: 离开目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_7fa85/fast] 错误 2
+
+
+Source file was:
+
+__declspec(selectany) int a;
+int main(void) { return 0; }
+
+Performing C++ SOURCE FILE Test STL_NO_NAMESPACE failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0f817/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0f817.dir/build.make CMakeFiles/cmTC_0f817.dir/build
+gmake[1]: 进入目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_0f817.dir/src.cxx.o
+/usr/bin/c++ -DSTL_NO_NAMESPACE   -o CMakeFiles/cmTC_0f817.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx:3:1: error: ‘vector’ does not name a type
+    3 | vector<int> t; int main() { }
+      | ^~~~~~
+gmake[1]: *** [CMakeFiles/cmTC_0f817.dir/build.make:78：CMakeFiles/cmTC_0f817.dir/src.cxx.o] 错误 1
+gmake[1]: 离开目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_0f817/fast] 错误 2
+
+
+Source file was:
+
+#include <vector>
+vector<int> t; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_MSVC_TLS failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_124c7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_124c7.dir/build.make CMakeFiles/cmTC_124c7.dir/build
+gmake[1]: 进入目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_124c7.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_MSVC_TLS   -o CMakeFiles/cmTC_124c7.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx
+/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx:2:11: error: expected constructor, destructor, or type conversion before ‘(’ token
+    2 | __declspec(thread) int tls;
+      |           ^
+gmake[1]: *** [CMakeFiles/cmTC_124c7.dir/build.make:78：CMakeFiles/cmTC_124c7.dir/src.cxx.o] 错误 1
+gmake[1]: 离开目录“/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:127：cmTC_124c7/fast] 错误 2
+
+
+Source file was:
+
+__declspec(thread) int tls;
+int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bbd0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bbd0f.dir/build.make CMakeFiles/cmTC_bbd0f.dir/build
+gmake[1]: Entering directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bbd0f.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32   -Wshorten-64-to-32 -std=c++14 -o CMakeFiles/cmTC_bbd0f.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+gmake[1]: *** [CMakeFiles/cmTC_bbd0f.dir/build.make:78: CMakeFiles/cmTC_bbd0f.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bbd0f/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_182e0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_182e0.dir/build.make CMakeFiles/cmTC_182e0.dir/build
+gmake[1]: Entering directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_182e0.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX_FLAG_WD654  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -wd654   -wd654 -std=c++14 -o CMakeFiles/cmTC_182e0.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-wd654'
+c++: error: unrecognized command-line option '-wd654'
+gmake[1]: *** [CMakeFiles/cmTC_182e0.dir/build.make:78: CMakeFiles/cmTC_182e0.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_182e0/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WTHREAD_SAFETY failed with the following output:
+Change Dir: /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bfd31/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bfd31.dir/build.make CMakeFiles/cmTC_bfd31.dir/build
+gmake[1]: Entering directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bfd31.dir/src.cxx.o
+/usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -Wall  -Wextra  -Wshadow  -Wfloat-equal  -Wold-style-cast  -Wconversion  -Wsuggest-override  -pedantic  -pedantic-errors  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety   -Wthread-safety -std=c++14 -o CMakeFiles/cmTC_bfd31.dir/src.cxx.o -c /home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command-line option '-Wthread-safety'
+c++: error: unrecognized command-line option '-Wthread-safety'
+gmake[1]: *** [CMakeFiles/cmTC_bfd31.dir/build.make:78: CMakeFiles/cmTC_bfd31.dir/src.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/czz/nvblox_ws/build/nvblox/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bfd31/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }

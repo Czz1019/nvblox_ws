@@ -1,0 +1,154 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/ext_gflags-build/bin/gflags_unittest_main"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src/test/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 1,
+					"define" : "GFLAGS_IS_A_DLL=0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src/test"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/include/gflags"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 1,
+			"id" : "gflags_static::@640cdaef2eb3a17b9a5b"
+		}
+	],
+	"id" : "gflags_unittest_main::@85a49fcac2eaf27d3d8a",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 1,
+				"fragment" : "../libgflags.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "gflags_unittest_main",
+	"nameOnDisk" : "gflags_unittest_main",
+	"paths" : 
+	{
+		"build" : "_deps/ext_gflags-build/test",
+		"source" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-src/test"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/_deps/ext_gflags-build/test/gflags_unittest_main.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

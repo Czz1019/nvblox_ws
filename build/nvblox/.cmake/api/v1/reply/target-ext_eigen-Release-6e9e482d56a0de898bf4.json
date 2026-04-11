@@ -1,0 +1,146 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"ExternalProject_Add",
+			"include"
+		],
+		"files" : 
+		[
+			"/usr/share/cmake-3.22/Modules/ExternalProject.cmake",
+			"nvblox/thirdparty/eigen/eigen.cmake",
+			"nvblox/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 9,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 3530,
+				"parent" : 3
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "ExternalProjectTargets/ext_eigen"
+	},
+	"id" : "ext_eigen::@1f05a77c997284e844eb",
+	"name" : "ext_eigen",
+	"paths" : 
+	{
+		"build" : "nvblox",
+		"source" : "nvblox"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/CMakeFiles/ext_eigen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/CMakeFiles/ext_eigen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/CMakeFiles/ext_eigen-complete.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-stamp/ext_eigen-build.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-stamp/ext_eigen-configure.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-stamp/ext_eigen-download.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-stamp/ext_eigen-install.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-stamp/ext_eigen-mkdir.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-stamp/ext_eigen-patch.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/czz/nvblox_ws/build/nvblox/nvblox/eigen/src/ext_eigen-stamp/ext_eigen-update.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}
