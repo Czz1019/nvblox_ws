@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000240] (-) JobUnselected: {'identifier': 'my_nvblox'}
+[0.000266] (-) JobUnselected: {'identifier': 'nvblox'}
+[0.000345] (-) JobUnselected: {'identifier': 'sim_gazebo_scene'}
+[0.000362] (-) JobUnselected: {'identifier': 'sim_gazebo_scene_two_d435'}
+[0.000378] (-) JobUnselected: {'identifier': 'sim_nvblox'}
+[0.000393] (-) JobUnselected: {'identifier': 'sim_nvblox_two_d435'}
+[0.000408] (-) EventReactorShutdown: {}

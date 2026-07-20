@@ -16,7 +16,7 @@ set(_my_nvblox_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT my_nvblox_FIND_QUIETLY)
-  message(STATUS "Found my_nvblox: 0.0.0 (${my_nvblox_DIR})")
+  message(STATUS "Found my_nvblox: 0.1.0 (${my_nvblox_DIR})")
 endif()
 
 # warn when using a deprecated package

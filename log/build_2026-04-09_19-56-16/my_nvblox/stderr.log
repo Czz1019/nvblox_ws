@@ -1,7 +1,0 @@
-[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MyNvbloxNode::processMappingOutput()[m[K’:
-[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:109:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class nvblox::Mapper[m[K’ {aka ‘[01m[Kclass nvblox::Mapper[m[K’} has no member named ‘[01m[KupdateMesh[m[K’
-  109 |         mapper_->[01;31m[KupdateMesh[m[K();
-      |                  [01;31m[K^~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/mapper_node.dir/build.make:76：CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/mapper_node.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

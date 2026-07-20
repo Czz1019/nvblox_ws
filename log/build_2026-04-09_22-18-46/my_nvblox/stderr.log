@@ -1,4 +1,0 @@
-[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:[m[K In member function ‘[01m[Kvoid MyNvbloxNode::publishMesh()[m[K’:
-[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/mapper_node.cpp:369:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Khas_colors[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
-  369 |             bool [01;35m[Khas_colors[m[K = false;
-      |                  [01;35m[K^~~~~~~~~~[m[K

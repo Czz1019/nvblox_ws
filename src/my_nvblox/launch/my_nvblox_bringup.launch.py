@@ -2,38 +2,57 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
+    realsense_node = Node(
+        package='realsense2_camera',
+        executable='realsense2_camera_node',
+        output='screen',
+        namespace='',
+        parameters=[{
+            'enable_color': True,
+            'enable_depth': True,
+            'align_depth.enable': True,
+            'rgb_camera.profile': '1280x720x15',
+            'depth_module.profile': '1280x720x15',
+            'pointcloud.enable': False,
+            'enable_infra1': False,
+            'enable_infra2': False,
+        }]
+    )
+
+    static_tf_node = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='odom_to_camera_link_broadcaster',
+        arguments=[
+            '0', '0', '0',
+            '0', '0', '0',
+            'odom', 'camera_link'
+        ],
+        output='screen'
+    )
+
+    my_nvblox_node = Node(
+        package='my_nvblox',
+        executable='nvblox_node',
+        name='my_nvblox',
+        output='screen',
+        parameters=[{
+            'global_frame': 'odom',
+            'camera_frame': 'camera_color_optical_frame',
+            'depth_topic': '/camera/aligned_depth_to_color/image_raw',
+            'color_topic': '/camera/color/image_raw',
+            'camera_info_topic': '/camera/color/camera_info',
+            'voxel_size': 0.05,
+            'publish_period_ms': 500,
+            'esdf_slice_height': 0.5,
+            'esdf_xy_min': -5.0,
+            'esdf_xy_max': 5.0,
+            'esdf_resolution': 0.1,
+        }]
+    )
+
     return LaunchDescription([
-        # 1. 传感器输入层：启动 RealSense D435i
-        # 作用：开启深度与彩色对齐，开启时间戳同步，确保图像质量
-        Node(
-            package='realsense2_camera',
-            executable='realsense2_camera_node',
-            name='camera',
-            namespace='',
-            parameters=[{
-                'align_depth.enable': True,
-                'enable_sync': True,
-            }],
-            output='screen'
-        ),
-
-        # 2. 空间定位层：发布静态 TF (odom -> camera_link)
-        # 作用：在真实 SLAM 接入前提供一个原点不变的坐标系，避免底层建图引擎因缺少位姿而崩溃
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='static_transform_publisher',
-            # 参数依次为：x y z yaw pitch roll frame_id child_frame_id
-            arguments=['0', '0', '0', '0', '0', '0', 'odom', 'camera_link'],
-            output='screen'
-        ),
-
-        # 3. 3D 语义建图层：启动自定义的 nvblox 核心节点
-        # 作用：接收图像与 TF，送入 GPU 进行体素建图
-        Node(
-            package='my_nvblox',
-            executable='nvblox_node',
-            name='nvblox_node',
-            output='screen'
-        )
+        realsense_node,
+        static_tf_node,
+        my_nvblox_node
     ])

@@ -1,6 +1,6 @@
 /home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/uninstall.dir
 /home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/my_nvblox_uninstall.dir
-/home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/mapper_node.dir
+/home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/nvblox_node.dir
 /home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/test.dir
 /home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/edit_cache.dir
 /home/czz/nvblox_ws/build/my_nvblox/CMakeFiles/rebuild_cache.dir

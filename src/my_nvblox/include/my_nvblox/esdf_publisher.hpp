@@ -1,18 +1,54 @@
-#ifndef MY_NVBLOX_ESDF_PUBLISHER_HPP_
-#define MY_NVBLOX_ESDF_PUBLISHER_HPP_
+#pragma once
 
-#include <rclcpp/rclcpp.hpp>
-#include <sensor_msgs/msg/point_cloud2.hpp>
-#include <nvblox/nvblox.h>
+#include <memory>
+#include <string>
+#include <vector>
 
-class EsdfPublisher {
+#include "rclcpp/rclcpp.hpp"
+#include "sensor_msgs/msg/point_cloud2.hpp"
+#include "sensor_msgs/point_cloud2_iterator.hpp"
+
+#include "nvblox/mapper/mapper.h"
+#include "nvblox/map/common_names.h"
+
+namespace my_nvblox
+{
+
+class EsdfPublisher
+{
 public:
-    explicit EsdfPublisher(rclcpp::Node* node);
-    // 触发增量式 ESDF 更新并提取切片 [cite: 163, 245]
-    void publish(const std::shared_ptr<nvblox::Mapper>& mapper);
+  EsdfPublisher(
+    rclcpp::Node * node,
+    const std::string & topic_name,
+    const std::string & frame_id,
+    float slice_height,
+    float xy_min,
+    float xy_max,
+    float resolution);
+
+  void publish(const nvblox::Mapper & mapper);
 
 private:
-    rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr esdf_pub_;
+  struct SamplePoint
+  {
+    float x;
+    float y;
+    float z;
+    float distance;
+    bool valid;
+  };
+
+  std::vector<SamplePoint> sample_esdf_slice(const nvblox::EsdfLayer & esdf_layer) const;
+
+  static void distance_to_rgb(float distance, uint8_t & r, uint8_t & g, uint8_t & b);
+
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr publisher_;
+  std::string frame_id_;
+
+  float slice_height_;
+  float xy_min_;
+  float xy_max_;
+  float resolution_;
 };
 
-#endif
+}  // namespace my_nvblox

@@ -1,18 +1,36 @@
-#ifndef MY_NVBLOX_MESH_PUBLISHER_HPP_
-#define MY_NVBLOX_MESH_PUBLISHER_HPP_
+#pragma once
 
-#include <rclcpp/rclcpp.hpp>
-#include <visualization_msgs/msg/marker_array.hpp>
-#include <nvblox/nvblox.h>
+#include <memory>
+#include <string>
+#include <vector>
 
-class MeshPublisher {
+#include "rclcpp/rclcpp.hpp"
+#include "visualization_msgs/msg/marker_array.hpp"
+
+#include "nvblox/mapper/mapper.h"
+#include "nvblox/map/common_names.h"
+#include "nvblox/mesh/mesh_block.h"
+
+namespace my_nvblox
+{
+
+class MeshPublisher
+{
 public:
-    explicit MeshPublisher(rclcpp::Node* node);
-    // 提取 GPU 中的 MeshLayer 并发布 [cite: 114]
-    void publish(const std::shared_ptr<nvblox::Mapper>& mapper);
+  MeshPublisher(
+    rclcpp::Node * node,
+    const std::string & topic_name,
+    const std::string & frame_id);
+
+  void publish(const nvblox::Mapper & mapper);
 
 private:
-    rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr mesh_pub_;
+  visualization_msgs::msg::Marker make_triangle_list_marker(
+    const nvblox::ColorMeshLayer & mesh_layer,
+    const std::vector<nvblox::Index3D> & block_indices) const;
+
+  rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr publisher_;
+  std::string frame_id_;
 };
 
-#endif
+}  // namespace my_nvblox

@@ -1,31 +1,32 @@
 <?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
 <package format="3">
   <name>my_nvblox</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="zhizhengcao1019@gmail.com">czz</maintainer>
+  <version>0.1.0</version>
+  <description>Pure C++ ROS 2 wrapper around NVIDIA nvblox for x86 discrete GPU platforms.</description>
+
+  <maintainer email="you@example.com">czz</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <depend>rclcpp</depend>
   <depend>sensor_msgs</depend>
+  <depend>visualization_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
   <depend>tf2</depend>
   <depend>tf2_ros</depend>
-  <depend>tf2_geometry_msgs</depend>
-  <depend>cv_bridge</depend>
+  <depend>tf2_eigen</depend>
   <depend>message_filters</depend>
-  <depend>std_msgs</depend>
-  <depend>visualization_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>realsense2_camera</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
 
-  <!-- python  -->
+  <exec_depend>rviz2</exec_depend>
 
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>sensor_msgs_py</exec_depend>
-  
-  <!--  -->
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 

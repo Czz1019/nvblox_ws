@@ -198,41 +198,89 @@ my_nvblox_uninstall/fast:
 .PHONY : my_nvblox_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named mapper_node
+# Target rules for targets named nvblox_node
 
 # Build rule for target.
-mapper_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mapper_node
-.PHONY : mapper_node
+nvblox_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nvblox_node
+.PHONY : nvblox_node
 
 # fast build rule for target.
-mapper_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mapper_node.dir/build.make CMakeFiles/mapper_node.dir/build
-.PHONY : mapper_node/fast
+nvblox_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/build
+.PHONY : nvblox_node/fast
 
-src/mapper_node.o: src/mapper_node.cpp.o
-.PHONY : src/mapper_node.o
+src/esdf_publisher.o: src/esdf_publisher.cpp.o
+.PHONY : src/esdf_publisher.o
 
 # target to build an object file
-src/mapper_node.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mapper_node.dir/build.make CMakeFiles/mapper_node.dir/src/mapper_node.cpp.o
-.PHONY : src/mapper_node.cpp.o
+src/esdf_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o
+.PHONY : src/esdf_publisher.cpp.o
 
-src/mapper_node.i: src/mapper_node.cpp.i
-.PHONY : src/mapper_node.i
+src/esdf_publisher.i: src/esdf_publisher.cpp.i
+.PHONY : src/esdf_publisher.i
 
 # target to preprocess a source file
-src/mapper_node.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mapper_node.dir/build.make CMakeFiles/mapper_node.dir/src/mapper_node.cpp.i
-.PHONY : src/mapper_node.cpp.i
+src/esdf_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.i
+.PHONY : src/esdf_publisher.cpp.i
 
-src/mapper_node.s: src/mapper_node.cpp.s
-.PHONY : src/mapper_node.s
+src/esdf_publisher.s: src/esdf_publisher.cpp.s
+.PHONY : src/esdf_publisher.s
 
 # target to generate assembly for a file
-src/mapper_node.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mapper_node.dir/build.make CMakeFiles/mapper_node.dir/src/mapper_node.cpp.s
-.PHONY : src/mapper_node.cpp.s
+src/esdf_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.s
+.PHONY : src/esdf_publisher.cpp.s
+
+src/mesh_publisher.o: src/mesh_publisher.cpp.o
+.PHONY : src/mesh_publisher.o
+
+# target to build an object file
+src/mesh_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o
+.PHONY : src/mesh_publisher.cpp.o
+
+src/mesh_publisher.i: src/mesh_publisher.cpp.i
+.PHONY : src/mesh_publisher.i
+
+# target to preprocess a source file
+src/mesh_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.i
+.PHONY : src/mesh_publisher.cpp.i
+
+src/mesh_publisher.s: src/mesh_publisher.cpp.s
+.PHONY : src/mesh_publisher.s
+
+# target to generate assembly for a file
+src/mesh_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.s
+.PHONY : src/mesh_publisher.cpp.s
+
+src/nvblox_node.o: src/nvblox_node.cpp.o
+.PHONY : src/nvblox_node.o
+
+# target to build an object file
+src/nvblox_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o
+.PHONY : src/nvblox_node.cpp.o
+
+src/nvblox_node.i: src/nvblox_node.cpp.i
+.PHONY : src/nvblox_node.i
+
+# target to preprocess a source file
+src/nvblox_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.i
+.PHONY : src/nvblox_node.cpp.i
+
+src/nvblox_node.s: src/nvblox_node.cpp.s
+.PHONY : src/nvblox_node.s
+
+# target to generate assembly for a file
+src/nvblox_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/nvblox_node.dir/build.make CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.s
+.PHONY : src/nvblox_node.cpp.s
 
 # Help Target
 help:
@@ -249,10 +297,16 @@ help:
 	@echo "... test"
 	@echo "... my_nvblox_uninstall"
 	@echo "... uninstall"
-	@echo "... mapper_node"
-	@echo "... src/mapper_node.o"
-	@echo "... src/mapper_node.i"
-	@echo "... src/mapper_node.s"
+	@echo "... nvblox_node"
+	@echo "... src/esdf_publisher.o"
+	@echo "... src/esdf_publisher.i"
+	@echo "... src/esdf_publisher.s"
+	@echo "... src/mesh_publisher.o"
+	@echo "... src/mesh_publisher.i"
+	@echo "... src/mesh_publisher.s"
+	@echo "... src/nvblox_node.o"
+	@echo "... src/nvblox_node.i"
+	@echo "... src/nvblox_node.s"
 .PHONY : help
 
 
