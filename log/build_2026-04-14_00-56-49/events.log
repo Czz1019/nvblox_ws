@@ -1,0 +1,408 @@
+[0.000000] (-) TimerEvent: {}
+[0.000857] (-) JobUnselected: {'identifier': 'nvblox'}
+[0.000929] (-) JobUnselected: {'identifier': 'sim_gazebo_scene'}
+[0.000979] (-) JobUnselected: {'identifier': 'sim_gazebo_scene_two_d435'}
+[0.001288] (-) JobUnselected: {'identifier': 'sim_nvblox'}
+[0.001555] (-) JobUnselected: {'identifier': 'sim_nvblox_two_d435'}
+[0.001675] (my_nvblox) JobQueued: {'identifier': 'my_nvblox', 'dependencies': OrderedDict()}
+[0.001794] (my_nvblox) JobStarted: {'identifier': 'my_nvblox'}
+[0.033951] (my_nvblox) JobProgress: {'identifier': 'my_nvblox', 'progress': 'cmake'}
+[0.035917] (my_nvblox) JobProgress: {'identifier': 'my_nvblox', 'progress': 'build'}
+[0.037509] (my_nvblox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/czz/nvblox_ws/build/my_nvblox', '--', '-j20', '-l20'], 'cwd': '/home/czz/nvblox_ws/build/my_nvblox', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'czz'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('LC_TIME', 'en_US.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/czz/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/231/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/czz/nvblox_ws/install/nvblox/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/lib:/home/czz/ros_pack/install/moveit_task_constructor_visualization/lib:/home/czz/ros_pack/install/moveit_task_constructor_demo/lib:/home/czz/ros_pack/install/moveit_task_constructor_capabilities/lib:/home/czz/ros_pack/install/moveit_task_constructor_core/lib:/home/czz/ros_pack/install/rviz_marker_tools/lib:/home/czz/ros_pack/install/negotiated_examples/lib:/home/czz/ros_pack/install/negotiated/lib:/home/czz/ros_pack/install/negotiated_interfaces/lib:/home/czz/ros_pack/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/tritonserver/lib:/opt/tritonserver/lib'), ('HOME', '/home/czz'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/231/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/czz/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/231/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/231/usr/share/code/code'), ('MANAGERPID', '1814'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2085'), ('BUNDLED_DEBUGPY_PATH', '/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3858'), ('COLCON_PREFIX_PATH', '/home/czz/nvblox_ws/install:/home/czz/ros_pack/install:/home/czz/workspaces/isaac_ros-dev/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'czz'), ('JOURNAL_STREAM', '8:5970'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'czz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/czz/workspaces/isaac_ros-dev/'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/czz/nvblox_ws/install/nvblox/bin:/usr/local/cuda/bin:/home/czz/.local/bin:/usr/local/cuda/bin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/bin:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/czz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvidia/tao:/opt/nvidia/tao:/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/czz-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2058,unix/czz-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2058'), ('GTK_EXE_PREFIX', '/snap/code/231/usr'), ('INVOCATION_ID', 'bf04fd8f70254644bad317906bb62926'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/231/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1a246897762eecf8.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/czz/.config/Code/User/workspaceStorage/e7e85a687770ae295e2230c98bcf4a4f/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/czz/snap/code/231/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e639a37a26.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/czz/snap/code/231/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/czz/nvblox_ws/install/my_nvblox:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('CMAKE_MODULE_PATH', '/home/czz/ros_pack/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/czz/nvblox_ws/build/my_nvblox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/czz/snap/code/231/.local/share/flatpak/exports/share:/home/czz/snap/code/231/.local/share:/home/czz/snap/code/231:/snap/code/231/usr/share:/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/negotiated_interfaces/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib:/usr/local/lib'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/czz/nvblox_ws/install/nvblox:/home/czz/nvblox_ws/install/my_nvblox:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[0.099684] (-) TimerEvent: {}
+[0.161217] (my_nvblox) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199938] (-) TimerEvent: {}
+[0.300439] (-) TimerEvent: {}
+[0.400920] (-) TimerEvent: {}
+[0.419528] (my_nvblox) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.439132] (my_nvblox) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.501023] (-) TimerEvent: {}
+[0.503602] (my_nvblox) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.507979] (my_nvblox) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.520075] (my_nvblox) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.540135] (my_nvblox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.564852] (my_nvblox) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.601188] (-) TimerEvent: {}
+[0.632527] (my_nvblox) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.638068] (my_nvblox) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701355] (-) TimerEvent: {}
+[0.801865] (-) TimerEvent: {}
+[0.895861] (my_nvblox) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.902050] (-) TimerEvent: {}
+[0.996264] (my_nvblox) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.002175] (-) TimerEvent: {}
+[1.049735] (my_nvblox) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.084121] (my_nvblox) StdoutLine: {'line': b'-- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.091487] (my_nvblox) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.102324] (-) TimerEvent: {}
+[1.202883] (-) TimerEvent: {}
+[1.230594] (my_nvblox) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.17 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[1.236339] (my_nvblox) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.253748] (my_nvblox) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.303152] (-) TimerEvent: {}
+[1.403767] (-) TimerEvent: {}
+[1.406983] (my_nvblox) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.503884] (-) TimerEvent: {}
+[1.587929] (my_nvblox) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.588386] (my_nvblox) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/czz/nvblox_ws/src/my_nvblox/include;$<BUILD_INTERFACE:/home/czz/nvblox_ws/src/my_nvblox/include>\n'}
+[1.588576] (my_nvblox) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.589212] (my_nvblox) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.590165] (my_nvblox) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.590928] (my_nvblox) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.592825] (my_nvblox) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.593122] (my_nvblox) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.593718] (my_nvblox) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.595566] (my_nvblox) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.604146] (-) TimerEvent: {}
+[1.633248] (my_nvblox) StdoutLine: {'line': b'-- Generating done\n'}
+[1.641366] (my_nvblox) StdoutLine: {'line': b'-- Build files have been written to: /home/czz/nvblox_ws/build/my_nvblox\n'}
+[1.702578] (my_nvblox) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nvblox_node\x1b[0m\n'}
+[1.704342] (-) TimerEvent: {}
+[1.800703] (my_nvblox) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o\x1b[0m\n'}
+[1.804551] (-) TimerEvent: {}
+[1.807056] (my_nvblox) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o\x1b[0m\n'}
+[1.904725] (-) TimerEvent: {}
+[2.005163] (-) TimerEvent: {}
+[2.105681] (-) TimerEvent: {}
+[2.206176] (-) TimerEvent: {}
+[2.306723] (-) TimerEvent: {}
+[2.407152] (-) TimerEvent: {}
+[2.507641] (-) TimerEvent: {}
+[2.608288] (-) TimerEvent: {}
+[2.708787] (-) TimerEvent: {}
+[2.809478] (-) TimerEvent: {}
+[2.910099] (-) TimerEvent: {}
+[3.010615] (-) TimerEvent: {}
+[3.111041] (-) TimerEvent: {}
+[3.211623] (-) TimerEvent: {}
+[3.312116] (-) TimerEvent: {}
+[3.412670] (-) TimerEvent: {}
+[3.513235] (-) TimerEvent: {}
+[3.613846] (-) TimerEvent: {}
+[3.714422] (-) TimerEvent: {}
+[3.814881] (-) TimerEvent: {}
+[3.915376] (-) TimerEvent: {}
+[4.015882] (-) TimerEvent: {}
+[4.116354] (-) TimerEvent: {}
+[4.216920] (-) TimerEvent: {}
+[4.317592] (-) TimerEvent: {}
+[4.418362] (-) TimerEvent: {}
+[4.518982] (-) TimerEvent: {}
+[4.619571] (-) TimerEvent: {}
+[4.720157] (-) TimerEvent: {}
+[4.820824] (-) TimerEvent: {}
+[4.921558] (-) TimerEvent: {}
+[5.022302] (-) TimerEvent: {}
+[5.123203] (-) TimerEvent: {}
+[5.223897] (-) TimerEvent: {}
+[5.324435] (-) TimerEvent: {}
+[5.424938] (-) TimerEvent: {}
+[5.525516] (-) TimerEvent: {}
+[5.626088] (-) TimerEvent: {}
+[5.726650] (-) TimerEvent: {}
+[5.827190] (-) TimerEvent: {}
+[5.927700] (-) TimerEvent: {}
+[6.028128] (-) TimerEvent: {}
+[6.128622] (-) TimerEvent: {}
+[6.229205] (-) TimerEvent: {}
+[6.329744] (-) TimerEvent: {}
+[6.430336] (-) TimerEvent: {}
+[6.530933] (-) TimerEvent: {}
+[6.631364] (-) TimerEvent: {}
+[6.731809] (-) TimerEvent: {}
+[6.832279] (-) TimerEvent: {}
+[6.932821] (-) TimerEvent: {}
+[7.033497] (-) TimerEvent: {}
+[7.134033] (-) TimerEvent: {}
+[7.234619] (-) TimerEvent: {}
+[7.335223] (-) TimerEvent: {}
+[7.435770] (-) TimerEvent: {}
+[7.536236] (-) TimerEvent: {}
+[7.636871] (-) TimerEvent: {}
+[7.737384] (-) TimerEvent: {}
+[7.837948] (-) TimerEvent: {}
+[7.938584] (-) TimerEvent: {}
+[8.039362] (-) TimerEvent: {}
+[8.139889] (-) TimerEvent: {}
+[8.240390] (-) TimerEvent: {}
+[8.340945] (-) TimerEvent: {}
+[8.441408] (-) TimerEvent: {}
+[8.541873] (-) TimerEvent: {}
+[8.642468] (-) TimerEvent: {}
+[8.743095] (-) TimerEvent: {}
+[8.843625] (-) TimerEvent: {}
+[8.944281] (-) TimerEvent: {}
+[9.045155] (-) TimerEvent: {}
+[9.145853] (-) TimerEvent: {}
+[9.246689] (-) TimerEvent: {}
+[9.347561] (-) TimerEvent: {}
+[9.448305] (-) TimerEvent: {}
+[9.548867] (-) TimerEvent: {}
+[9.649400] (-) TimerEvent: {}
+[9.749967] (-) TimerEvent: {}
+[9.850432] (-) TimerEvent: {}
+[9.950970] (-) TimerEvent: {}
+[10.051524] (-) TimerEvent: {}
+[10.152076] (-) TimerEvent: {}
+[10.252516] (-) TimerEvent: {}
+[10.353143] (-) TimerEvent: {}
+[10.453674] (-) TimerEvent: {}
+[10.554170] (-) TimerEvent: {}
+[10.654731] (-) TimerEvent: {}
+[10.755166] (-) TimerEvent: {}
+[10.855684] (-) TimerEvent: {}
+[10.888904] (my_nvblox) StderrLine: {'line': b'\x1b[01m\x1b[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<my_nvblox::EsdfPublisher::SamplePoint> my_nvblox::EsdfPublisher::sample_esdf_slice(const EsdfLayer&) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.889256] (my_nvblox) StderrLine: {'line': b'\x1b[01m\x1b[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:56:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst EsdfLayer\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class nvblox::VoxelBlockLayer<nvblox::EsdfVoxel>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[KcomputeBlockIndexFromCoordinates\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.889377] (my_nvblox) StderrLine: {'line': b'   56 |       const auto block_idx = esdf_layer.\x1b[01;31m\x1b[KcomputeBlockIndexFromCoordinates\x1b[m\x1b[K(p_L);\n'}
+[10.889470] (my_nvblox) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.889557] (my_nvblox) StderrLine: {'line': b'\x1b[01m\x1b[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:57:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst EsdfLayer\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class nvblox::VoxelBlockLayer<nvblox::EsdfVoxel>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[KcomputeVoxelIndexFromCoordinates\x1b[m\x1b[K\xe2\x80\x99\n'}
+[10.889679] (my_nvblox) StderrLine: {'line': b'   57 |       const auto voxel_idx = esdf_layer.\x1b[01;31m\x1b[KcomputeVoxelIndexFromCoordinates\x1b[m\x1b[K(p_L);\n'}
+[10.889769] (my_nvblox) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.955942] (-) TimerEvent: {}
+[11.056397] (-) TimerEvent: {}
+[11.157004] (-) TimerEvent: {}
+[11.257550] (-) TimerEvent: {}
+[11.358108] (-) TimerEvent: {}
+[11.458756] (-) TimerEvent: {}
+[11.559283] (-) TimerEvent: {}
+[11.659765] (-) TimerEvent: {}
+[11.760229] (-) TimerEvent: {}
+[11.860763] (-) TimerEvent: {}
+[11.961308] (-) TimerEvent: {}
+[12.061924] (-) TimerEvent: {}
+[12.162403] (-) TimerEvent: {}
+[12.262983] (-) TimerEvent: {}
+[12.363581] (-) TimerEvent: {}
+[12.464197] (-) TimerEvent: {}
+[12.564778] (-) TimerEvent: {}
+[12.665344] (-) TimerEvent: {}
+[12.766082] (-) TimerEvent: {}
+[12.866750] (-) TimerEvent: {}
+[12.967373] (-) TimerEvent: {}
+[13.067930] (-) TimerEvent: {}
+[13.168445] (-) TimerEvent: {}
+[13.268966] (-) TimerEvent: {}
+[13.369495] (-) TimerEvent: {}
+[13.469925] (-) TimerEvent: {}
+[13.570429] (-) TimerEvent: {}
+[13.670868] (-) TimerEvent: {}
+[13.771346] (-) TimerEvent: {}
+[13.871943] (-) TimerEvent: {}
+[13.972540] (-) TimerEvent: {}
+[14.073164] (-) TimerEvent: {}
+[14.173724] (-) TimerEvent: {}
+[14.274141] (-) TimerEvent: {}
+[14.374642] (-) TimerEvent: {}
+[14.475164] (-) TimerEvent: {}
+[14.575679] (-) TimerEvent: {}
+[14.676081] (-) TimerEvent: {}
+[14.687218] (my_nvblox) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/nvblox_node.dir/build.make:104\xef\xbc\x9aCMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[14.687497] (my_nvblox) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[14.776231] (-) TimerEvent: {}
+[14.876683] (-) TimerEvent: {}
+[14.977075] (-) TimerEvent: {}
+[15.077566] (-) TimerEvent: {}
+[15.177993] (-) TimerEvent: {}
+[15.278440] (-) TimerEvent: {}
+[15.379138] (-) TimerEvent: {}
+[15.479584] (-) TimerEvent: {}
+[15.580146] (-) TimerEvent: {}
+[15.680588] (-) TimerEvent: {}
+[15.781048] (-) TimerEvent: {}
+[15.881591] (-) TimerEvent: {}
+[15.982189] (-) TimerEvent: {}
+[16.082755] (-) TimerEvent: {}
+[16.183281] (-) TimerEvent: {}
+[16.283724] (-) TimerEvent: {}
+[16.384234] (-) TimerEvent: {}
+[16.484621] (-) TimerEvent: {}
+[16.585096] (-) TimerEvent: {}
+[16.685509] (-) TimerEvent: {}
+[16.786004] (-) TimerEvent: {}
+[16.886493] (-) TimerEvent: {}
+[16.986881] (-) TimerEvent: {}
+[17.087362] (-) TimerEvent: {}
+[17.187871] (-) TimerEvent: {}
+[17.288258] (-) TimerEvent: {}
+[17.388736] (-) TimerEvent: {}
+[17.489175] (-) TimerEvent: {}
+[17.589567] (-) TimerEvent: {}
+[17.690016] (-) TimerEvent: {}
+[17.790455] (-) TimerEvent: {}
+[17.890974] (-) TimerEvent: {}
+[17.991540] (-) TimerEvent: {}
+[18.092229] (-) TimerEvent: {}
+[18.192886] (-) TimerEvent: {}
+[18.293454] (-) TimerEvent: {}
+[18.394059] (-) TimerEvent: {}
+[18.494522] (-) TimerEvent: {}
+[18.594890] (-) TimerEvent: {}
+[18.695295] (-) TimerEvent: {}
+[18.795694] (-) TimerEvent: {}
+[18.896057] (-) TimerEvent: {}
+[18.996424] (-) TimerEvent: {}
+[19.096807] (-) TimerEvent: {}
+[19.197229] (-) TimerEvent: {}
+[19.297740] (-) TimerEvent: {}
+[19.398263] (-) TimerEvent: {}
+[19.498780] (-) TimerEvent: {}
+[19.599236] (-) TimerEvent: {}
+[19.699746] (-) TimerEvent: {}
+[19.800242] (-) TimerEvent: {}
+[19.900733] (-) TimerEvent: {}
+[20.001176] (-) TimerEvent: {}
+[20.101695] (-) TimerEvent: {}
+[20.202145] (-) TimerEvent: {}
+[20.302723] (-) TimerEvent: {}
+[20.403409] (-) TimerEvent: {}
+[20.503895] (-) TimerEvent: {}
+[20.604381] (-) TimerEvent: {}
+[20.704788] (-) TimerEvent: {}
+[20.805174] (-) TimerEvent: {}
+[20.905755] (-) TimerEvent: {}
+[21.006178] (-) TimerEvent: {}
+[21.106740] (-) TimerEvent: {}
+[21.207267] (-) TimerEvent: {}
+[21.307925] (-) TimerEvent: {}
+[21.408637] (-) TimerEvent: {}
+[21.509121] (-) TimerEvent: {}
+[21.609723] (-) TimerEvent: {}
+[21.710163] (-) TimerEvent: {}
+[21.810637] (-) TimerEvent: {}
+[21.911268] (-) TimerEvent: {}
+[22.011837] (-) TimerEvent: {}
+[22.112517] (-) TimerEvent: {}
+[22.213185] (-) TimerEvent: {}
+[22.313837] (-) TimerEvent: {}
+[22.414477] (-) TimerEvent: {}
+[22.515038] (-) TimerEvent: {}
+[22.615635] (-) TimerEvent: {}
+[22.716171] (-) TimerEvent: {}
+[22.816722] (-) TimerEvent: {}
+[22.917189] (-) TimerEvent: {}
+[23.017747] (-) TimerEvent: {}
+[23.118209] (-) TimerEvent: {}
+[23.218748] (-) TimerEvent: {}
+[23.319287] (-) TimerEvent: {}
+[23.419698] (-) TimerEvent: {}
+[23.520258] (-) TimerEvent: {}
+[23.620785] (-) TimerEvent: {}
+[23.721339] (-) TimerEvent: {}
+[23.821821] (-) TimerEvent: {}
+[23.922264] (-) TimerEvent: {}
+[24.022768] (-) TimerEvent: {}
+[24.123292] (-) TimerEvent: {}
+[24.224012] (-) TimerEvent: {}
+[24.324973] (-) TimerEvent: {}
+[24.425883] (-) TimerEvent: {}
+[24.526494] (-) TimerEvent: {}
+[24.627092] (-) TimerEvent: {}
+[24.727727] (-) TimerEvent: {}
+[24.828311] (-) TimerEvent: {}
+[24.928834] (-) TimerEvent: {}
+[25.029381] (-) TimerEvent: {}
+[25.129839] (-) TimerEvent: {}
+[25.230378] (-) TimerEvent: {}
+[25.330808] (-) TimerEvent: {}
+[25.431258] (-) TimerEvent: {}
+[25.531856] (-) TimerEvent: {}
+[25.632327] (-) TimerEvent: {}
+[25.732958] (-) TimerEvent: {}
+[25.833494] (-) TimerEvent: {}
+[25.934056] (-) TimerEvent: {}
+[26.034590] (-) TimerEvent: {}
+[26.135155] (-) TimerEvent: {}
+[26.235652] (-) TimerEvent: {}
+[26.336083] (-) TimerEvent: {}
+[26.436555] (-) TimerEvent: {}
+[26.537064] (-) TimerEvent: {}
+[26.637571] (-) TimerEvent: {}
+[26.738288] (-) TimerEvent: {}
+[26.838875] (-) TimerEvent: {}
+[26.939332] (-) TimerEvent: {}
+[27.039757] (-) TimerEvent: {}
+[27.140177] (-) TimerEvent: {}
+[27.240710] (-) TimerEvent: {}
+[27.341207] (-) TimerEvent: {}
+[27.441768] (-) TimerEvent: {}
+[27.542295] (-) TimerEvent: {}
+[27.642854] (-) TimerEvent: {}
+[27.743311] (-) TimerEvent: {}
+[27.843767] (-) TimerEvent: {}
+[27.944227] (-) TimerEvent: {}
+[28.044764] (-) TimerEvent: {}
+[28.145232] (-) TimerEvent: {}
+[28.245741] (-) TimerEvent: {}
+[28.346260] (-) TimerEvent: {}
+[28.446840] (-) TimerEvent: {}
+[28.547383] (-) TimerEvent: {}
+[28.647877] (-) TimerEvent: {}
+[28.748419] (-) TimerEvent: {}
+[28.848837] (-) TimerEvent: {}
+[28.949263] (-) TimerEvent: {}
+[29.049800] (-) TimerEvent: {}
+[29.150209] (-) TimerEvent: {}
+[29.250727] (-) TimerEvent: {}
+[29.351306] (-) TimerEvent: {}
+[29.451811] (-) TimerEvent: {}
+[29.552388] (-) TimerEvent: {}
+[29.652959] (-) TimerEvent: {}
+[29.753420] (-) TimerEvent: {}
+[29.853789] (-) TimerEvent: {}
+[29.954144] (-) TimerEvent: {}
+[30.054629] (-) TimerEvent: {}
+[30.155005] (-) TimerEvent: {}
+[30.255468] (-) TimerEvent: {}
+[30.355849] (-) TimerEvent: {}
+[30.456286] (-) TimerEvent: {}
+[30.556825] (-) TimerEvent: {}
+[30.657285] (-) TimerEvent: {}
+[30.757722] (-) TimerEvent: {}
+[30.858182] (-) TimerEvent: {}
+[30.958750] (-) TimerEvent: {}
+[31.059153] (-) TimerEvent: {}
+[31.159630] (-) TimerEvent: {}
+[31.260002] (-) TimerEvent: {}
+[31.360396] (-) TimerEvent: {}
+[31.460791] (-) TimerEvent: {}
+[31.561166] (-) TimerEvent: {}
+[31.661592] (-) TimerEvent: {}
+[31.761960] (-) TimerEvent: {}
+[31.862415] (-) TimerEvent: {}
+[31.962803] (-) TimerEvent: {}
+[32.063182] (-) TimerEvent: {}
+[32.163636] (-) TimerEvent: {}
+[32.263993] (-) TimerEvent: {}
+[32.364457] (-) TimerEvent: {}
+[32.464877] (-) TimerEvent: {}
+[32.565268] (-) TimerEvent: {}
+[32.665697] (-) TimerEvent: {}
+[32.766264] (-) TimerEvent: {}
+[32.866720] (-) TimerEvent: {}
+[32.967085] (-) TimerEvent: {}
+[33.067526] (-) TimerEvent: {}
+[33.167981] (-) TimerEvent: {}
+[33.268420] (-) TimerEvent: {}
+[33.368947] (-) TimerEvent: {}
+[33.469381] (-) TimerEvent: {}
+[33.569777] (-) TimerEvent: {}
+[33.670175] (-) TimerEvent: {}
+[33.770571] (-) TimerEvent: {}
+[33.871006] (-) TimerEvent: {}
+[33.971402] (-) TimerEvent: {}
+[34.071837] (-) TimerEvent: {}
+[34.172332] (-) TimerEvent: {}
+[34.272810] (-) TimerEvent: {}
+[34.373203] (-) TimerEvent: {}
+[34.473701] (-) TimerEvent: {}
+[34.574181] (-) TimerEvent: {}
+[34.674718] (-) TimerEvent: {}
+[34.775283] (-) TimerEvent: {}
+[34.875991] (-) TimerEvent: {}
+[34.976941] (-) TimerEvent: {}
+[35.077506] (-) TimerEvent: {}
+[35.130768] (my_nvblox) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/nvblox_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[35.131279] (my_nvblox) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[35.135121] (my_nvblox) CommandEnded: {'returncode': 2}
+[35.162225] (my_nvblox) JobEnded: {'identifier': 'my_nvblox', 'rc': 2}
+[35.173301] (-) EventReactorShutdown: {}

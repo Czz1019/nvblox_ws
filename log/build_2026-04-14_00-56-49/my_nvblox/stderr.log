@@ -1,0 +1,11 @@
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:[m[K In member function ‘[01m[Kstd::vector<my_nvblox::EsdfPublisher::SamplePoint> my_nvblox::EsdfPublisher::sample_esdf_slice(const EsdfLayer&) const[m[K’:
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:56:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst EsdfLayer[m[K’ {aka ‘[01m[Kconst class nvblox::VoxelBlockLayer<nvblox::EsdfVoxel>[m[K’} has no member named ‘[01m[KcomputeBlockIndexFromCoordinates[m[K’
+   56 |       const auto block_idx = esdf_layer.[01;31m[KcomputeBlockIndexFromCoordinates[m[K(p_L);
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:57:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst EsdfLayer[m[K’ {aka ‘[01m[Kconst class nvblox::VoxelBlockLayer<nvblox::EsdfVoxel>[m[K’} has no member named ‘[01m[KcomputeVoxelIndexFromCoordinates[m[K’
+   57 |       const auto voxel_idx = esdf_layer.[01;31m[KcomputeVoxelIndexFromCoordinates[m[K(p_L);
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nvblox_node.dir/build.make:104：CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/nvblox_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

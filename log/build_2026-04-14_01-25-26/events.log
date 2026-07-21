@@ -1,0 +1,399 @@
+[0.000000] (-) TimerEvent: {}
+[0.000595] (-) JobUnselected: {'identifier': 'nvblox'}
+[0.000743] (-) JobUnselected: {'identifier': 'sim_gazebo_scene'}
+[0.000841] (-) JobUnselected: {'identifier': 'sim_gazebo_scene_two_d435'}
+[0.000897] (-) JobUnselected: {'identifier': 'sim_nvblox'}
+[0.000993] (-) JobUnselected: {'identifier': 'sim_nvblox_two_d435'}
+[0.001078] (my_nvblox) JobQueued: {'identifier': 'my_nvblox', 'dependencies': OrderedDict()}
+[0.001202] (my_nvblox) JobStarted: {'identifier': 'my_nvblox'}
+[0.023633] (my_nvblox) JobProgress: {'identifier': 'my_nvblox', 'progress': 'cmake'}
+[0.025220] (my_nvblox) JobProgress: {'identifier': 'my_nvblox', 'progress': 'build'}
+[0.026863] (my_nvblox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/czz/nvblox_ws/build/my_nvblox', '--', '-j20', '-l20'], 'cwd': '/home/czz/nvblox_ws/build/my_nvblox', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'czz'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('LC_TIME', 'en_US.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/czz/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/231/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/lib:/home/czz/ros_pack/install/moveit_task_constructor_visualization/lib:/home/czz/ros_pack/install/moveit_task_constructor_demo/lib:/home/czz/ros_pack/install/moveit_task_constructor_capabilities/lib:/home/czz/ros_pack/install/moveit_task_constructor_core/lib:/home/czz/ros_pack/install/rviz_marker_tools/lib:/home/czz/ros_pack/install/negotiated_examples/lib:/home/czz/ros_pack/install/negotiated/lib:/home/czz/ros_pack/install/negotiated_interfaces/lib:/home/czz/ros_pack/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/tritonserver/lib:/opt/tritonserver/lib'), ('HOME', '/home/czz'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/231/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/czz/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/231/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/231/usr/share/code/code'), ('MANAGERPID', '1814'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2085'), ('BUNDLED_DEBUGPY_PATH', '/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3858'), ('COLCON_PREFIX_PATH', '/home/czz/ros_pack/install:/home/czz/workspaces/isaac_ros-dev/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'czz'), ('JOURNAL_STREAM', '8:5970'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'czz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/czz/workspaces/isaac_ros-dev/'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/home/czz/.local/bin:/usr/local/cuda/bin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/bin:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/czz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvidia/tao:/opt/nvidia/tao:/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/czz-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2058,unix/czz-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2058'), ('GTK_EXE_PREFIX', '/snap/code/231/usr'), ('INVOCATION_ID', 'bf04fd8f70254644bad317906bb62926'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/231/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1a246897762eecf8.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/czz/.config/Code/User/workspaceStorage/e7e85a687770ae295e2230c98bcf4a4f/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/czz/snap/code/231/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e639a37a26.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/czz/snap/code/231/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('CMAKE_MODULE_PATH', '/home/czz/ros_pack/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/czz/nvblox_ws/build/my_nvblox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/czz/snap/code/231/.local/share/flatpak/exports/share:/home/czz/snap/code/231/.local/share:/home/czz/snap/code/231:/snap/code/231/usr/share:/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/negotiated_interfaces/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib:/usr/local/lib'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[0.098527] (-) TimerEvent: {}
+[0.175861] (my_nvblox) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target nvblox_node\x1b[0m\n'}
+[0.198683] (-) TimerEvent: {}
+[0.258132] (my_nvblox) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o\x1b[0m\n'}
+[0.261380] (my_nvblox) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o\x1b[0m\n'}
+[0.298878] (-) TimerEvent: {}
+[0.399568] (-) TimerEvent: {}
+[0.500231] (-) TimerEvent: {}
+[0.600919] (-) TimerEvent: {}
+[0.701551] (-) TimerEvent: {}
+[0.802197] (-) TimerEvent: {}
+[0.902869] (-) TimerEvent: {}
+[1.003520] (-) TimerEvent: {}
+[1.104136] (-) TimerEvent: {}
+[1.204748] (-) TimerEvent: {}
+[1.305436] (-) TimerEvent: {}
+[1.406162] (-) TimerEvent: {}
+[1.506940] (-) TimerEvent: {}
+[1.607647] (-) TimerEvent: {}
+[1.708280] (-) TimerEvent: {}
+[1.808938] (-) TimerEvent: {}
+[1.909568] (-) TimerEvent: {}
+[2.010127] (-) TimerEvent: {}
+[2.110782] (-) TimerEvent: {}
+[2.211374] (-) TimerEvent: {}
+[2.311964] (-) TimerEvent: {}
+[2.412700] (-) TimerEvent: {}
+[2.513387] (-) TimerEvent: {}
+[2.613936] (-) TimerEvent: {}
+[2.714510] (-) TimerEvent: {}
+[2.815104] (-) TimerEvent: {}
+[2.915575] (-) TimerEvent: {}
+[3.016160] (-) TimerEvent: {}
+[3.116675] (-) TimerEvent: {}
+[3.217122] (-) TimerEvent: {}
+[3.317658] (-) TimerEvent: {}
+[3.418153] (-) TimerEvent: {}
+[3.518754] (-) TimerEvent: {}
+[3.619270] (-) TimerEvent: {}
+[3.719934] (-) TimerEvent: {}
+[3.820432] (-) TimerEvent: {}
+[3.921069] (-) TimerEvent: {}
+[4.021586] (-) TimerEvent: {}
+[4.122127] (-) TimerEvent: {}
+[4.222627] (-) TimerEvent: {}
+[4.323139] (-) TimerEvent: {}
+[4.423631] (-) TimerEvent: {}
+[4.524150] (-) TimerEvent: {}
+[4.624723] (-) TimerEvent: {}
+[4.725291] (-) TimerEvent: {}
+[4.825807] (-) TimerEvent: {}
+[4.926399] (-) TimerEvent: {}
+[5.026970] (-) TimerEvent: {}
+[5.127544] (-) TimerEvent: {}
+[5.228102] (-) TimerEvent: {}
+[5.328660] (-) TimerEvent: {}
+[5.429321] (-) TimerEvent: {}
+[5.529857] (-) TimerEvent: {}
+[5.630401] (-) TimerEvent: {}
+[5.730927] (-) TimerEvent: {}
+[5.831480] (-) TimerEvent: {}
+[5.932119] (-) TimerEvent: {}
+[6.032650] (-) TimerEvent: {}
+[6.133286] (-) TimerEvent: {}
+[6.234187] (-) TimerEvent: {}
+[6.335016] (-) TimerEvent: {}
+[6.435868] (-) TimerEvent: {}
+[6.536591] (-) TimerEvent: {}
+[6.637255] (-) TimerEvent: {}
+[6.737846] (-) TimerEvent: {}
+[6.838504] (-) TimerEvent: {}
+[6.939083] (-) TimerEvent: {}
+[7.039581] (-) TimerEvent: {}
+[7.140121] (-) TimerEvent: {}
+[7.240644] (-) TimerEvent: {}
+[7.341251] (-) TimerEvent: {}
+[7.442060] (-) TimerEvent: {}
+[7.542726] (-) TimerEvent: {}
+[7.643450] (-) TimerEvent: {}
+[7.744115] (-) TimerEvent: {}
+[7.844888] (-) TimerEvent: {}
+[7.945484] (-) TimerEvent: {}
+[8.046085] (-) TimerEvent: {}
+[8.146675] (-) TimerEvent: {}
+[8.247171] (-) TimerEvent: {}
+[8.347784] (-) TimerEvent: {}
+[8.448331] (-) TimerEvent: {}
+[8.548852] (-) TimerEvent: {}
+[8.649380] (-) TimerEvent: {}
+[8.750229] (-) TimerEvent: {}
+[8.850987] (-) TimerEvent: {}
+[8.951665] (-) TimerEvent: {}
+[9.052482] (-) TimerEvent: {}
+[9.153161] (-) TimerEvent: {}
+[9.253677] (-) TimerEvent: {}
+[9.354298] (-) TimerEvent: {}
+[9.454735] (-) TimerEvent: {}
+[9.555146] (-) TimerEvent: {}
+[9.655667] (-) TimerEvent: {}
+[9.756096] (-) TimerEvent: {}
+[9.856613] (-) TimerEvent: {}
+[9.957323] (-) TimerEvent: {}
+[10.058035] (-) TimerEvent: {}
+[10.158705] (-) TimerEvent: {}
+[10.259426] (-) TimerEvent: {}
+[10.360072] (-) TimerEvent: {}
+[10.460570] (-) TimerEvent: {}
+[10.561229] (-) TimerEvent: {}
+[10.661871] (-) TimerEvent: {}
+[10.762372] (-) TimerEvent: {}
+[10.863009] (-) TimerEvent: {}
+[10.963597] (-) TimerEvent: {}
+[11.064253] (-) TimerEvent: {}
+[11.164898] (-) TimerEvent: {}
+[11.265421] (-) TimerEvent: {}
+[11.366048] (-) TimerEvent: {}
+[11.466663] (-) TimerEvent: {}
+[11.567171] (-) TimerEvent: {}
+[11.667846] (-) TimerEvent: {}
+[11.768374] (-) TimerEvent: {}
+[11.869189] (-) TimerEvent: {}
+[11.969970] (-) TimerEvent: {}
+[12.070760] (-) TimerEvent: {}
+[12.171472] (-) TimerEvent: {}
+[12.272157] (-) TimerEvent: {}
+[12.373087] (-) TimerEvent: {}
+[12.473852] (-) TimerEvent: {}
+[12.574465] (-) TimerEvent: {}
+[12.675044] (-) TimerEvent: {}
+[12.775474] (-) TimerEvent: {}
+[12.875974] (-) TimerEvent: {}
+[12.976442] (-) TimerEvent: {}
+[13.076970] (-) TimerEvent: {}
+[13.177560] (-) TimerEvent: {}
+[13.278254] (-) TimerEvent: {}
+[13.378983] (-) TimerEvent: {}
+[13.479594] (-) TimerEvent: {}
+[13.580225] (-) TimerEvent: {}
+[13.680783] (-) TimerEvent: {}
+[13.781286] (-) TimerEvent: {}
+[13.881908] (-) TimerEvent: {}
+[13.982341] (-) TimerEvent: {}
+[14.082874] (-) TimerEvent: {}
+[14.183305] (-) TimerEvent: {}
+[14.283775] (-) TimerEvent: {}
+[14.384330] (-) TimerEvent: {}
+[14.484859] (-) TimerEvent: {}
+[14.585439] (-) TimerEvent: {}
+[14.686110] (-) TimerEvent: {}
+[14.786720] (-) TimerEvent: {}
+[14.887452] (-) TimerEvent: {}
+[14.987992] (-) TimerEvent: {}
+[15.088459] (-) TimerEvent: {}
+[15.189054] (-) TimerEvent: {}
+[15.289663] (-) TimerEvent: {}
+[15.390239] (-) TimerEvent: {}
+[15.490717] (-) TimerEvent: {}
+[15.591308] (-) TimerEvent: {}
+[15.691971] (-) TimerEvent: {}
+[15.792480] (-) TimerEvent: {}
+[15.893022] (-) TimerEvent: {}
+[15.993552] (-) TimerEvent: {}
+[16.094148] (-) TimerEvent: {}
+[16.194900] (-) TimerEvent: {}
+[16.295493] (-) TimerEvent: {}
+[16.396073] (-) TimerEvent: {}
+[16.496556] (-) TimerEvent: {}
+[16.597067] (-) TimerEvent: {}
+[16.697608] (-) TimerEvent: {}
+[16.798104] (-) TimerEvent: {}
+[16.898663] (-) TimerEvent: {}
+[16.999244] (-) TimerEvent: {}
+[17.099798] (-) TimerEvent: {}
+[17.200387] (-) TimerEvent: {}
+[17.300913] (-) TimerEvent: {}
+[17.401419] (-) TimerEvent: {}
+[17.501929] (-) TimerEvent: {}
+[17.602437] (-) TimerEvent: {}
+[17.703001] (-) TimerEvent: {}
+[17.803587] (-) TimerEvent: {}
+[17.904145] (-) TimerEvent: {}
+[18.004643] (-) TimerEvent: {}
+[18.105132] (-) TimerEvent: {}
+[18.205650] (-) TimerEvent: {}
+[18.306294] (-) TimerEvent: {}
+[18.407051] (-) TimerEvent: {}
+[18.507661] (-) TimerEvent: {}
+[18.608210] (-) TimerEvent: {}
+[18.708773] (-) TimerEvent: {}
+[18.809367] (-) TimerEvent: {}
+[18.909884] (-) TimerEvent: {}
+[19.010386] (-) TimerEvent: {}
+[19.110904] (-) TimerEvent: {}
+[19.211366] (-) TimerEvent: {}
+[19.311874] (-) TimerEvent: {}
+[19.412378] (-) TimerEvent: {}
+[19.512929] (-) TimerEvent: {}
+[19.613500] (-) TimerEvent: {}
+[19.713975] (-) TimerEvent: {}
+[19.814463] (-) TimerEvent: {}
+[19.915016] (-) TimerEvent: {}
+[20.015455] (-) TimerEvent: {}
+[20.116034] (-) TimerEvent: {}
+[20.216576] (-) TimerEvent: {}
+[20.317030] (-) TimerEvent: {}
+[20.417618] (-) TimerEvent: {}
+[20.518050] (-) TimerEvent: {}
+[20.618532] (-) TimerEvent: {}
+[20.718955] (-) TimerEvent: {}
+[20.819473] (-) TimerEvent: {}
+[20.919931] (-) TimerEvent: {}
+[21.020356] (-) TimerEvent: {}
+[21.120874] (-) TimerEvent: {}
+[21.221434] (-) TimerEvent: {}
+[21.322083] (-) TimerEvent: {}
+[21.422581] (-) TimerEvent: {}
+[21.523157] (-) TimerEvent: {}
+[21.623650] (-) TimerEvent: {}
+[21.724721] (-) TimerEvent: {}
+[21.825172] (-) TimerEvent: {}
+[21.925573] (-) TimerEvent: {}
+[22.026015] (-) TimerEvent: {}
+[22.126510] (-) TimerEvent: {}
+[22.226917] (-) TimerEvent: {}
+[22.327428] (-) TimerEvent: {}
+[22.427917] (-) TimerEvent: {}
+[22.528407] (-) TimerEvent: {}
+[22.628907] (-) TimerEvent: {}
+[22.729342] (-) TimerEvent: {}
+[22.829735] (-) TimerEvent: {}
+[22.930203] (-) TimerEvent: {}
+[23.030655] (-) TimerEvent: {}
+[23.131067] (-) TimerEvent: {}
+[23.231483] (-) TimerEvent: {}
+[23.332037] (-) TimerEvent: {}
+[23.432645] (-) TimerEvent: {}
+[23.533238] (-) TimerEvent: {}
+[23.633781] (-) TimerEvent: {}
+[23.734280] (-) TimerEvent: {}
+[23.834742] (-) TimerEvent: {}
+[23.935169] (-) TimerEvent: {}
+[24.035590] (-) TimerEvent: {}
+[24.135997] (-) TimerEvent: {}
+[24.236363] (-) TimerEvent: {}
+[24.336895] (-) TimerEvent: {}
+[24.437313] (-) TimerEvent: {}
+[24.537743] (-) TimerEvent: {}
+[24.638123] (-) TimerEvent: {}
+[24.738515] (-) TimerEvent: {}
+[24.839016] (-) TimerEvent: {}
+[24.939404] (-) TimerEvent: {}
+[25.039787] (-) TimerEvent: {}
+[25.140199] (-) TimerEvent: {}
+[25.240644] (-) TimerEvent: {}
+[25.341040] (-) TimerEvent: {}
+[25.441502] (-) TimerEvent: {}
+[25.541952] (-) TimerEvent: {}
+[25.642406] (-) TimerEvent: {}
+[25.742878] (-) TimerEvent: {}
+[25.843294] (-) TimerEvent: {}
+[25.943748] (-) TimerEvent: {}
+[26.044242] (-) TimerEvent: {}
+[26.144719] (-) TimerEvent: {}
+[26.245116] (-) TimerEvent: {}
+[26.345473] (-) TimerEvent: {}
+[26.445911] (-) TimerEvent: {}
+[26.546329] (-) TimerEvent: {}
+[26.646791] (-) TimerEvent: {}
+[26.747235] (-) TimerEvent: {}
+[26.847694] (-) TimerEvent: {}
+[26.948081] (-) TimerEvent: {}
+[27.048498] (-) TimerEvent: {}
+[27.148990] (-) TimerEvent: {}
+[27.249391] (-) TimerEvent: {}
+[27.349778] (-) TimerEvent: {}
+[27.450398] (-) TimerEvent: {}
+[27.550796] (-) TimerEvent: {}
+[27.651237] (-) TimerEvent: {}
+[27.751784] (-) TimerEvent: {}
+[27.852226] (-) TimerEvent: {}
+[27.952775] (-) TimerEvent: {}
+[28.053285] (-) TimerEvent: {}
+[28.153854] (-) TimerEvent: {}
+[28.254268] (-) TimerEvent: {}
+[28.354846] (-) TimerEvent: {}
+[28.455398] (-) TimerEvent: {}
+[28.555953] (-) TimerEvent: {}
+[28.656522] (-) TimerEvent: {}
+[28.757103] (-) TimerEvent: {}
+[28.857669] (-) TimerEvent: {}
+[28.958281] (-) TimerEvent: {}
+[29.058709] (-) TimerEvent: {}
+[29.159182] (-) TimerEvent: {}
+[29.259885] (-) TimerEvent: {}
+[29.360435] (-) TimerEvent: {}
+[29.460969] (-) TimerEvent: {}
+[29.561412] (-) TimerEvent: {}
+[29.661979] (-) TimerEvent: {}
+[29.762439] (-) TimerEvent: {}
+[29.863003] (-) TimerEvent: {}
+[29.963557] (-) TimerEvent: {}
+[30.063989] (-) TimerEvent: {}
+[30.164445] (-) TimerEvent: {}
+[30.264987] (-) TimerEvent: {}
+[30.365538] (-) TimerEvent: {}
+[30.466194] (-) TimerEvent: {}
+[30.566609] (-) TimerEvent: {}
+[30.667023] (-) TimerEvent: {}
+[30.767443] (-) TimerEvent: {}
+[30.867923] (-) TimerEvent: {}
+[30.968312] (-) TimerEvent: {}
+[31.068758] (-) TimerEvent: {}
+[31.169133] (-) TimerEvent: {}
+[31.269583] (-) TimerEvent: {}
+[31.370002] (-) TimerEvent: {}
+[31.470384] (-) TimerEvent: {}
+[31.570852] (-) TimerEvent: {}
+[31.671203] (-) TimerEvent: {}
+[31.771648] (-) TimerEvent: {}
+[31.872040] (-) TimerEvent: {}
+[31.972424] (-) TimerEvent: {}
+[32.072903] (-) TimerEvent: {}
+[32.173260] (-) TimerEvent: {}
+[32.273718] (-) TimerEvent: {}
+[32.374090] (-) TimerEvent: {}
+[32.474469] (-) TimerEvent: {}
+[32.574924] (-) TimerEvent: {}
+[32.675285] (-) TimerEvent: {}
+[32.775734] (-) TimerEvent: {}
+[32.876152] (-) TimerEvent: {}
+[32.976674] (-) TimerEvent: {}
+[33.077060] (-) TimerEvent: {}
+[33.177457] (-) TimerEvent: {}
+[33.277936] (-) TimerEvent: {}
+[33.357714] (my_nvblox) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable nvblox_node\x1b[0m\n'}
+[33.378038] (-) TimerEvent: {}
+[33.478402] (-) TimerEvent: {}
+[33.578902] (-) TimerEvent: {}
+[33.679387] (-) TimerEvent: {}
+[33.779905] (-) TimerEvent: {}
+[33.880375] (-) TimerEvent: {}
+[33.980862] (-) TimerEvent: {}
+[34.081239] (-) TimerEvent: {}
+[34.181758] (-) TimerEvent: {}
+[34.282161] (-) TimerEvent: {}
+[34.382569] (-) TimerEvent: {}
+[34.483062] (-) TimerEvent: {}
+[34.583462] (-) TimerEvent: {}
+[34.683981] (-) TimerEvent: {}
+[34.784464] (-) TimerEvent: {}
+[34.885136] (-) TimerEvent: {}
+[34.985854] (-) TimerEvent: {}
+[35.086399] (-) TimerEvent: {}
+[35.186893] (-) TimerEvent: {}
+[35.287350] (-) TimerEvent: {}
+[35.387925] (-) TimerEvent: {}
+[35.488444] (-) TimerEvent: {}
+[35.588882] (-) TimerEvent: {}
+[35.611645] (my_nvblox) StdoutLine: {'line': b'[100%] Built target nvblox_node\n'}
+[35.636436] (my_nvblox) CommandEnded: {'returncode': 0}
+[35.637646] (my_nvblox) JobProgress: {'identifier': 'my_nvblox', 'progress': 'install'}
+[35.656619] (my_nvblox) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/czz/nvblox_ws/build/my_nvblox'], 'cwd': '/home/czz/nvblox_ws/build/my_nvblox', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'czz'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('LC_TIME', 'en_US.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/czz/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/231/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/cuda/lib64:/usr/local/cuda/lib64:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera/lib:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2/lib:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/lib:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/lib:/home/czz/ros_pack/install/moveit_task_constructor_visualization/lib:/home/czz/ros_pack/install/moveit_task_constructor_demo/lib:/home/czz/ros_pack/install/moveit_task_constructor_capabilities/lib:/home/czz/ros_pack/install/moveit_task_constructor_core/lib:/home/czz/ros_pack/install/rviz_marker_tools/lib:/home/czz/ros_pack/install/negotiated_examples/lib:/home/czz/ros_pack/install/negotiated/lib:/home/czz/ros_pack/install/negotiated_interfaces/lib:/home/czz/ros_pack/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib::/opt/tritonserver/lib:/opt/tritonserver/lib'), ('HOME', '/home/czz'), ('CHROME_DESKTOP', 'code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/231/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/czz/snap/code/common/.cache/immodules/immodules.cache'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/code_code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/231/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/231/usr/share/code/code'), ('MANAGERPID', '1814'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2085'), ('BUNDLED_DEBUGPY_PATH', '/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3858'), ('COLCON_PREFIX_PATH', '/home/czz/ros_pack/install:/home/czz/workspaces/isaac_ros-dev/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'czz'), ('JOURNAL_STREAM', '8:5970'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'czz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ISAAC_ROS_WS', '/home/czz/workspaces/isaac_ros-dev/'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/home/czz/.local/bin:/usr/local/cuda/bin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros/bin:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/bin:/opt/ros/humble/bin:/home/czz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvidia/tao:/opt/nvidia/tao:/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/czz-Legion-Y7000P-IRH8:@/tmp/.ICE-unix/2058,unix/czz-Legion-Y7000P-IRH8:/tmp/.ICE-unix/2058'), ('GTK_EXE_PREFIX', '/snap/code/231/usr'), ('INVOCATION_ID', 'bf04fd8f70254644bad317906bb62926'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/231/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/czz/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-1a246897762eecf8.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/czz/.config/Code/User/workspaceStorage/e7e85a687770ae295e2230c98bcf4a4f/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/czz/snap/code/231/.local/share'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-e639a37a26.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/czz/snap/code/231/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('CMAKE_MODULE_PATH', '/home/czz/ros_pack/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/czz/nvblox_ws/build/my_nvblox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/czz/snap/code/231/.local/share/flatpak/exports/share:/home/czz/snap/code/231/.local/share:/home/czz/snap/code/231:/snap/code/231/usr/share:/usr/share/ubuntu:/usr/share/gnome:/home/czz/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces/local/lib/python3.10/dist-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/build/isaac_ros_launch_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils/lib/python3.10/site-packages:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/negotiated_interfaces/local/lib/python3.10/dist-packages:/home/czz/ros_pack/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/usr/local/lib:/usr/local/lib'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_nvblox:/home/czz/workspaces/isaac_ros-dev/install/nvblox_examples_bringup:/home/czz/workspaces/isaac_ros-dev/install/semantic_label_conversion:/home/czz/workspaces/isaac_ros-dev/install/realsense_splitter:/home/czz/workspaces/isaac_ros-dev/install/realsense2_description:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera:/home/czz/workspaces/isaac_ros-dev/install/realsense2_camera_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros:/home/czz/workspaces/isaac_ros-dev/install/nvblox_rviz_plugin:/home/czz/workspaces/isaac_ros-dev/install/nvblox_image_padding:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_common:/home/czz/workspaces/isaac_ros-dev/install/nvblox_nav2:/home/czz/workspaces/isaac_ros-dev/install/nvblox_msgs:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_visual_slam_interfaces:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test_cmake:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_common:/home/czz/workspaces/isaac_ros-dev/install/isaac_common:/home/czz/ros_pack/install/moveit_task_constructor_visualization:/home/czz/ros_pack/install/moveit_task_constructor_demo:/home/czz/ros_pack/install/moveit_task_constructor_capabilities:/home/czz/ros_pack/install/moveit_task_constructor_core:/home/czz/ros_pack/install/rviz_marker_tools:/home/czz/ros_pack/install/negotiated_examples:/home/czz/ros_pack/install/negotiated:/home/czz/ros_pack/install/negotiated_interfaces:/home/czz/ros_pack/install/moveit_task_constructor_msgs:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[35.674510] (my_nvblox) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[35.675309] (my_nvblox) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[35.675644] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/lib/my_nvblox/nvblox_node\n'}
+[35.676453] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/include/my_nvblox/esdf_publisher.hpp\n'}
+[35.676714] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/include/my_nvblox/mesh_publisher.hpp\n'}
+[35.676898] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/include/my_nvblox/nvblox_node.hpp\n'}
+[35.677266] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/my_nvblox_bringup.launch.py\n'}
+[35.677530] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/package_run_dependencies/my_nvblox\n'}
+[35.677698] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/parent_prefix_path/my_nvblox\n'}
+[35.677894] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/ament_prefix_path.sh\n'}
+[35.678128] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/ament_prefix_path.dsv\n'}
+[35.678331] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/path.sh\n'}
+[35.678465] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/path.dsv\n'}
+[35.678669] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.bash\n'}
+[35.678862] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.sh\n'}
+[35.679054] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.zsh\n'}
+[35.679242] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.dsv\n'}
+[35.679375] (my_nvblox) StdoutLine: {'line': b'-- Symlinking: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.dsv\n'}
+[35.688966] (-) TimerEvent: {}
+[35.695968] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/packages/my_nvblox\n'}
+[35.696302] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/cmake/my_nvbloxConfig.cmake\n'}
+[35.696407] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/cmake/my_nvbloxConfig-version.cmake\n'}
+[35.696552] (my_nvblox) StdoutLine: {'line': b'-- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.xml\n'}
+[35.699748] (my_nvblox) CommandEnded: {'returncode': 0}
+[35.730408] (my_nvblox) JobEnded: {'identifier': 'my_nvblox', 'rc': 0}
+[35.731126] (-) EventReactorShutdown: {}

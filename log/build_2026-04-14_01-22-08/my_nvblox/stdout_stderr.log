@@ -1,0 +1,22 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/czz/nvblox_ws/src/my_nvblox/include/my_nvblox/esdf_publisher.hpp:115[m[K,
+                 from [01m[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:390[m[K:
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:[m[K In lambda function:
+[01m[K/home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp:523:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct rcl_clock_s[m[K’ has no member named ‘[01m[Know[m[K’
+  523 |   [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+      |   [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/nvblox_node.dir/build.make:104：CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/nvblox_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

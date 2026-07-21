@@ -1,15 +1,122 @@
+// // #pragma once
+
+// // #include <string>
+// // #include <vector>
+
+// // #include "rclcpp/rclcpp.hpp"
+// // #include "sensor_msgs/msg/point_cloud2.hpp"
+
+// // #include "nvblox/core/types.h"
+// // #include "nvblox/mapper/mapper.h"
+
+// // namespace my_nvblox
+// // {
+
+// // class EsdfPublisher
+// // {
+// // public:
+// //   struct SamplePoint
+// //   {
+// //     float x;
+// //     float y;
+// //     float z;
+// //     float distance;
+// //     bool observed;
+// //     bool inside;
+// //   };
+
+// //   EsdfPublisher(
+// //     rclcpp::Node * node,
+// //     const std::string & topic_name,
+// //     const std::string & frame_id,
+// //     float slice_height,
+// //     float xy_min,
+// //     float xy_max,
+// //     float resolution);
+
+// //   void publish(const nvblox::Mapper & mapper);
+
+// // private:
+// //   std::vector<SamplePoint> sample_esdf_slice(const nvblox::EsdfLayer & esdf_layer) const;
+// //   sensor_msgs::msg::PointCloud2 make_cloud(
+// //     const std::vector<SamplePoint> & samples) const;
+
+// //   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr publisher_;
+// //   std::string frame_id_;
+
+// //   float slice_height_;
+// //   float xy_min_;
+// //   float xy_max_;
+// //   float resolution_;
+// // };
+
+// // }  // namespace my_nvblox
+
+// #pragma once
+
+// #include <string>
+// #include <vector>
+
+// #include "rclcpp/rclcpp.hpp"
+// #include "sensor_msgs/msg/point_cloud2.hpp"
+
+// #include "nvblox/core/types.h"
+// #include "nvblox/mapper/mapper.h"
+
+// namespace my_nvblox
+// {
+
+// class EsdfPublisher
+// {
+// public:
+//   struct SamplePoint
+//   {
+//     float x;
+//     float y;
+//     float z;
+//     float distance;
+//     bool observed;
+//     bool inside;
+//   };
+
+//   EsdfPublisher(
+//     rclcpp::Node * node,
+//     const std::string & topic_name,
+//     const std::string & frame_id,
+//     float slice_height,
+//     float xy_min,
+//     float xy_max,
+//     float resolution,
+//     float max_visualized_distance);
+
+//   void publish(const nvblox::Mapper & mapper);
+
+// private:
+//   std::vector<SamplePoint> sample_esdf_slice(const nvblox::EsdfLayer & esdf_layer) const;
+//   sensor_msgs::msg::PointCloud2 make_cloud(
+//     const std::vector<SamplePoint> & samples) const;
+
+//   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr publisher_;
+//   std::string frame_id_;
+
+//   float slice_height_;
+//   float xy_min_;
+//   float xy_max_;
+//   float resolution_;
+//   float max_visualized_distance_;
+// };
+
+// }  // namespace my_nvblox
 #pragma once
 
-#include <memory>
 #include <string>
 #include <vector>
 
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
-#include "sensor_msgs/point_cloud2_iterator.hpp"
 
+#include "nvblox/core/types.h"
 #include "nvblox/mapper/mapper.h"
-#include "nvblox/map/common_names.h"
 
 namespace my_nvblox
 {
@@ -17,6 +124,17 @@ namespace my_nvblox
 class EsdfPublisher
 {
 public:
+  struct SamplePoint
+  {
+    float x;
+    float y;
+    float z;
+    float distance;
+    bool observed;
+    bool inside;
+    bool valid_block;
+  };
+
   EsdfPublisher(
     rclcpp::Node * node,
     const std::string & topic_name,
@@ -29,19 +147,12 @@ public:
   void publish(const nvblox::Mapper & mapper);
 
 private:
-  struct SamplePoint
-  {
-    float x;
-    float y;
-    float z;
-    float distance;
-    bool valid;
-  };
+  std::vector<SamplePoint> sample_esdf_slice(const nvblox::EsdfLayer & esdf_layer);
+  sensor_msgs::msg::PointCloud2 make_cloud(
+    const std::vector<SamplePoint> & samples) const;
 
-  std::vector<SamplePoint> sample_esdf_slice(const nvblox::EsdfLayer & esdf_layer) const;
-
-  static void distance_to_rgb(float distance, uint8_t & r, uint8_t & g, uint8_t & b);
-
+  rclcpp::Logger logger_;
+  rclcpp::Clock::SharedPtr clock_;
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr publisher_;
   std::string frame_id_;
 

@@ -4,8 +4,7 @@
 CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_nvblox/src/esdf_publisher.cpp \
   /usr/include/stdc-predef.h \
   /home/czz/nvblox_ws/src/my_nvblox/include/my_nvblox/esdf_publisher.hpp \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -18,6 +17,10 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -34,52 +37,15 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -87,11 +53,36 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
@@ -99,8 +90,6 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -125,31 +114,12 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/cstdint \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdlib \
@@ -184,6 +154,7 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
@@ -219,6 +190,35 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
   /usr/include/c++/11/future \
   /usr/include/c++/11/mutex \
@@ -695,11 +695,6 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/point_cloud2_iterator.hpp \
-  /usr/include/c++/11/cstdarg \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/impl/point_cloud2_iterator.hpp \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/mapper/mapper.h \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/hash.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/types.h \
   /home/czz/nvblox_ws/install/nvblox/include/glog/logging.h \
   /usr/include/c++/11/cstddef \
@@ -918,6 +913,8 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/bitmask.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/internal/impl/bitmask_impl.h \
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/mapper/mapper.h \
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/hash.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/parameter_tree.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/dynamics/dynamics_detection.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/cuda_stream.h \
@@ -1361,13 +1358,15 @@ CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/serialization/layer_cake_streamer.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/serialization/internal/impl/layer_cake_streamer_impl.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/mapper/internal/impl/mapper_impl.h \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/sensors/pointcloud_to_depth_conversion.h
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/sensors/pointcloud_to_depth_conversion.h \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_field.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp
 
 CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_nvblox/src/mesh_publisher.cpp \
   /usr/include/stdc-predef.h \
   /home/czz/nvblox_ws/src/my_nvblox/include/my_nvblox/mesh_publisher.hpp \
-  /usr/include/c++/11/memory \
-  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -1380,6 +1379,10 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -1396,52 +1399,15 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_tempbuf.h \
-  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/11/bits/align.h \
-  /usr/include/c++/11/bit \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/shared_ptr.h \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -1449,11 +1415,36 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/c++/11/bits/shared_ptr_base.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/allocated_ptr.h \
-  /usr/include/c++/11/bits/refwrap.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
@@ -1461,8 +1452,6 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -1487,31 +1476,12 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/c++/11/ext/concurrence.h \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/shared_ptr_atomic.h \
-  /usr/include/c++/11/bits/atomic_base.h \
-  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/11/backward/auto_ptr.h \
-  /usr/include/c++/11/pstl/glue_memory_defs.h \
-  /usr/include/c++/11/pstl/execution_defs.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/cstdint \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/cctype \
-  /usr/include/ctype.h \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/string_view \
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/string_view.tcc \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdlib \
@@ -1545,10 +1515,6 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
   /usr/include/c++/11/csignal \
   /usr/include/signal.h \
@@ -1581,6 +1547,36 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
   /usr/include/x86_64-linux-gnu/bits/sigthread.h \
   /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h \
   /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
   /usr/include/c++/11/future \
   /usr/include/c++/11/mutex \
@@ -1621,6 +1617,10 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/c++/11/bits/uniform_int_dist.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
   /usr/include/c++/11/iostream \
@@ -2073,23 +2073,14 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp \
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.hpp \
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/mapper/mapper.h \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/hash.h \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/types.h \
-  /home/czz/nvblox_ws/install/nvblox/include/glog/logging.h \
-  /usr/include/c++/11/cstddef \
-  /home/czz/nvblox_ws/install/nvblox/include/glog/export.h \
-  /usr/include/inttypes.h \
-  /home/czz/nvblox_ws/install/nvblox/include/glog/log_severity.h \
-  /home/czz/nvblox_ws/install/nvblox/include/glog/vlog_is_on.h \
-  /usr/local/cuda/include/cuda_fp16.h \
-  /usr/local/cuda/include/vector_types.h \
-  /usr/local/cuda/include/crt/host_defines.h \
-  /usr/local/cuda/include/vector_functions.h \
-  /usr/local/cuda/include/cuda_runtime_api.h \
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/cuda_stream.h \
+  /usr/local/cuda/include/cuda_runtime.h \
+  /usr/local/cuda/include/crt/host_config.h \
   /usr/local/cuda/include/builtin_types.h \
   /usr/local/cuda/include/device_types.h \
+  /usr/local/cuda/include/crt/host_defines.h \
   /usr/local/cuda/include/driver_types.h \
+  /usr/local/cuda/include/vector_types.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
   /usr/include/limits.h \
@@ -2101,17 +2092,26 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/local/cuda/include/surface_types.h \
   /usr/local/cuda/include/texture_types.h \
+  /usr/local/cuda/include/library_types.h \
+  /usr/local/cuda/include/channel_descriptor.h \
+  /usr/local/cuda/include/cuda_runtime_api.h \
   /usr/local/cuda/include/cuda_device_runtime_api.h \
+  /usr/local/cuda/include/driver_functions.h \
+  /usr/local/cuda/include/vector_functions.h \
   /usr/local/cuda/include/vector_functions.hpp \
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/parameter_tree.h \
+  /home/czz/nvblox_ws/install/nvblox/include/glog/logging.h \
+  /usr/include/c++/11/cstddef \
+  /home/czz/nvblox_ws/install/nvblox/include/glog/export.h \
+  /usr/include/inttypes.h \
+  /home/czz/nvblox_ws/install/nvblox/include/glog/log_severity.h \
+  /home/czz/nvblox_ws/install/nvblox/include/glog/vlog_is_on.h \
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/types.h \
+  /usr/local/cuda/include/cuda_fp16.h \
   /usr/local/cuda/include/nv/target \
   /usr/local/cuda/include/nv/detail/__target_macros \
   /usr/local/cuda/include/nv/detail/__preprocessor \
   /usr/local/cuda/include/cuda_fp16.hpp \
-  /usr/local/cuda/include/cuda_runtime.h \
-  /usr/local/cuda/include/crt/host_config.h \
-  /usr/local/cuda/include/library_types.h \
-  /usr/local/cuda/include/channel_descriptor.h \
-  /usr/local/cuda/include/driver_functions.h \
   /usr/include/eigen3/Eigen/Core \
   /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
   /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -2293,9 +2293,9 @@ CMakeFiles/nvblox_node.dir/src/mesh_publisher.cpp.o: /home/czz/nvblox_ws/src/my_
   /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/bitmask.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/internal/impl/bitmask_impl.h \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/parameter_tree.h \
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/mapper/mapper.h \
+  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/hash.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/dynamics/dynamics_detection.h \
-  /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/cuda_stream.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/map/common_names.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/map/blox.h \
   /home/czz/nvblox_ws/install/nvblox/include/nvblox/core/unified_ptr.h \
@@ -4262,9 +4262,6 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__type_support.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/point_cloud2_iterator.hpp \
-  /usr/include/c++/11/cstdarg \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/impl/point_cloud2_iterator.hpp \
   /home/czz/nvblox_ws/src/my_nvblox/include/my_nvblox/mesh_publisher.hpp \
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/marker_array.hpp \
   /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp \
@@ -4499,6 +4496,10 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__struct.hpp:
 
 /home/czz/nvblox_ws/src/my_nvblox/include/my_nvblox/mesh_publisher.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__type_support.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__builder.hpp:
 
 /home/czz/nvblox_ws/install/nvblox/include/nvblox/mapper/internal/impl/mapper_impl.h:
 
@@ -4824,12 +4825,6 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/local/cuda/include/cuda/std/__tuple_dir/tuple_element.h:
 
-/usr/local/cuda/include/cuda/std/__fwd/tuple.h:
-
-/usr/local/cuda/include/cuda/std/__memory/addressof.h:
-
-/usr/local/cuda/include/cuda/std/__memory/pointer_traits.h:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
@@ -4969,6 +4964,8 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
 /opt/ros/humble/include/rcl/rcl/logging_rosout.h:
+
+/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
 
@@ -5342,23 +5339,43 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/c++/11/cassert:
 
-/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
+/usr/include/stdlib.h:
 
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/types.h:
+/usr/include/c++/11/bits/string_view.tcc:
 
-/usr/include/c++/11/exception:
+/usr/include/features.h:
 
-/usr/include/c++/11/bits/stl_set.h:
+/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
 
-/usr/include/c++/11/ext/concurrence.h:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp:
 
-/usr/include/c++/11/pstl/pstl_config.h:
+/usr/include/c++/11/bits/functional_hash.h:
 
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp:
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/integrators/occupancy_decay_integrator_params.h:
 
-/usr/include/c++/11/cmath:
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
+/usr/local/cuda/include/driver_types.h:
+
+/usr/include/c++/11/ext/new_allocator.h:
+
+/usr/include/eigen3/Eigen/src/Core/Visitor.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
+
+/usr/include/c++/11/bits/specfun.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/eigen3/Eigen/src/Core/Assign.h:
+
+/usr/local/cuda/include/cuda/std/detail/libcxx/include/__availability:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -5402,137 +5419,15 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/local/cuda/include/cuda/std/__type_traits/is_default_constructible.h:
 
-/usr/include/c++/11/bits/unordered_map.h:
+/usr/include/pthread.h:
 
-/usr/local/cuda/include/cuda/std/__type_traits/void_t.h:
+/usr/include/c++/11/ext/concurrence.h:
+
+/usr/include/c++/11/bits/basic_string.h:
 
 /usr/include/c++/11/set:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/pthread.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
-
-/usr/include/c++/11/bits/specfun.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/include/eigen3/Eigen/src/Core/Assign.h:
-
-/usr/local/cuda/include/cuda/std/detail/libcxx/include/__availability:
-
-/usr/include/c++/11/ext/new_allocator.h:
-
-/usr/include/eigen3/Eigen/src/Core/Visitor.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
-
-/usr/local/cuda/include/cuda/std/type_traits:
-
-/opt/ros/humble/include/rcl/rcl/publisher.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/c++/11/system_error:
-
-/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/c++/11/unordered_set:
-
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/include/c++/11/iostream:
-
-/usr/local/cuda/include/cuda/std/__cccl/attributes.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
-
-/usr/include/c++/11/bits/std_mutex.h:
-
-/usr/include/locale.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/local/cuda/include/cuda/std/__type_traits/copy_cvref.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/11/bits/uniform_int_dist.h:
-
-/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
-
-/usr/include/c++/11/cwchar:
-
-/opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
-
-/opt/ros/humble/include/rcutils/rcutils/qsort.h:
-
-/opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
-
-/opt/ros/humble/include/rmw/rmw/names_and_types.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
-
-/usr/include/eigen3/Eigen/Cholesky:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/c++/11/bits/postypes.h:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
-/usr/include/features.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/color_rgba__type_support.hpp:
-
-/usr/include/c++/11/bits/functional_hash.h:
 
 /usr/include/c++/11/backward/binders.h:
 
@@ -5546,21 +5441,63 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/c++/11/tr1/poly_hermite.tcc:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/c++/11/bits/memoryfwd.h:
+/usr/include/locale.h:
 
-/usr/local/cuda/include/cuda/std/__tuple_dir/tuple_types.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/c++/11/bits/stl_function.h:
+/usr/include/c++/11/bits/localefwd.h:
 
-/usr/include/c++/11/ext/type_traits.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/bits/exception_ptr.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
+
+/usr/include/math.h:
+
+/usr/include/c++/11/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/c++/11/bits/stl_set.h:
+
+/usr/local/cuda/include/cuda/std/__fwd/tuple.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/c++/11/atomic:
+
+/usr/include/c++/11/ext/type_traits.h:
+
+/usr/include/c++/11/pstl/pstl_config.h:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__struct.hpp:
+
+/usr/include/c++/11/cmath:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
+
+/usr/include/c++/11/complex:
+
+/opt/ros/humble/include/rmw/rmw/subscription_options.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:
 
@@ -5568,45 +5505,27 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/usr/include/c++/11/bits/this_thread_sleep.h:
+/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
 
-/usr/include/c++/11/bits/stl_construct.h:
+/usr/include/c++/11/bits/stringfwd.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+/usr/local/cuda/include/cuda/std/__tuple_dir/tuple_types.h:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
+/usr/include/c++/11/bits/stl_function.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+/usr/include/c++/11/tr1/poly_hermite.tcc:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+/usr/include/c++/11/bits/memoryfwd.h:
 
-/usr/local/cuda/include/vector_functions.h:
+/usr/include/c++/11/unordered_set:
 
-/usr/include/c++/11/bits/shared_ptr.h:
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/local/cuda/include/cuda/std/__type_traits/integral_constant.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/local/cuda/include/cuda/std/__type_traits/remove_volatile.h:
-
-/usr/local/cuda/include/vector_functions.hpp:
-
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__traits.hpp:
-
-/opt/ros/humble/include/rcl/rcl/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/11/bits/range_access.h:
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
@@ -5632,41 +5551,43 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/c++/11/bits/stl_tree.h:
 
-/usr/include/c++/11/bits/stl_relops.h:
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
 
-/usr/include/c++/11/bits/unique_ptr.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
-/usr/local/cuda/include/cuda/std/__type_traits/is_signed.h:
+/usr/include/c++/11/bits/std_thread.h:
 
-/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/usr/local/cuda/include/cuda/std/__cuda/cstdint_prelude.h:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-/usr/include/c++/11/tr1/beta_function.tcc:
+/usr/include/c++/11/bits/postypes.h:
 
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/internal/error_check.h:
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
-/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
+/usr/include/opencv4/opencv2/core/utility.hpp:
 
-/usr/include/c++/11/array:
+/usr/include/linux/errno.h:
 
-/usr/include/c++/11/bits/sstream.tcc:
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/integrators/projective_integrator_params.h:
 
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/bitmask.h:
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/usr/include/c++/11/streambuf:
 
-/usr/include/c++/11/ext/atomicity.h:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
-/usr/include/c++/11/bits/stl_iterator.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/c++/11/bits/stl_algobase.h:
 
-/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+/opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
-/usr/local/cuda/include/cuda_runtime.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/include/c++/11/cwchar:
 
 /usr/include/c++/11/initializer_list:
 
@@ -5682,147 +5603,19 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
-/opt/ros/humble/include/rcl/rcl/node_options.h:
-
-/usr/include/features-time64.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /usr/local/cuda/include/nppi_linear_transforms.h:
 
 /usr/include/c++/11/ctime:
 
-/usr/include/opencv4/opencv2/core/utility.hpp:
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__traits.hpp:
 
-/usr/include/linux/errno.h:
+/opt/ros/humble/include/rcl/rcl/allocator.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/c++/11/debug/debug.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
-
-/opt/ros/humble/include/rcl/rcl/graph.h:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
-
-/usr/include/math.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
-
-/opt/ros/humble/include/tracetools/tracetools/config.h:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/internal/impl/variadic_template_tools_impl.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
-
-/usr/include/c++/11/tr1/legendre_function.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h:
-
-/usr/local/cuda/include/nvtx3/nvtxDetail/nvtxInit.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/opt/ros/humble/include/message_filters/message_filters/signal1.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/c++/11/bits/stl_algobase.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/opt/ros/humble/include/rmw/rmw/serialized_message.h:
-
-/usr/include/c++/11/cstring:
-
-/usr/include/c++/11/bits/atomic_futex.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
-
-/usr/include/c++/11/backward/auto_ptr.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/c++/11/bits/codecvt.h:
-
-/usr/local/cuda/include/nppi_threshold_and_compare_operations.h:
-
-/opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
-
-/usr/include/eigen3/Eigen/SVD:
-
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/map/internal/impl/blox_impl.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/include/opencv4/opencv2/core/types.hpp:
-
-/usr/include/c++/11/typeindex:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/local/cuda/include/cuda/std/__type_traits/is_trivially_destructible.h:
-
-/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/stdc-predef.h:
-
-/opt/ros/humble/include/tracetools/tracetools/visibility_control.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
-
-/usr/local/cuda/include/cuda/std/__type_traits/is_copy_constructible.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/opt/ros/humble/include/tf2/tf2/time.hpp:
-
-/usr/include/libintl.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
+/usr/include/c++/11/bits/range_access.h:
 
 /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
 
@@ -5830,29 +5623,19 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
-/opt/ros/humble/include/rcl/rcl/init_options.h:
+/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+/usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+/usr/local/cuda/include/cuda/std/__type_traits/is_copy_assignable.h:
 
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/integrators/occupancy_decay_integrator_params.h:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
-/usr/include/c++/11/bits/cxxabi_forced.h:
+/opt/ros/humble/include/message_filters/message_filters/signal1.h:
 
-/usr/local/cuda/include/driver_types.h:
-
-/usr/include/c++/11/iterator:
-
-/usr/local/cuda/include/cuda/std/__type_traits/is_trivially_default_constructible.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
 
@@ -5872,29 +5655,257 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
 
-/usr/include/c++/11/bits/stl_uninitialized.h:
+/usr/local/cuda/include/cuda/std/__type_traits/is_trivially_default_constructible.h:
 
-/usr/include/c++/11/typeinfo:
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
 
-/usr/local/cuda/include/cuda/std/__type_traits/is_void.h:
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
+/usr/include/c++/11/iostream:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
+/usr/local/cuda/include/cuda/std/__cccl/attributes.h:
 
-/usr/include/c++/11/bits/align.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
+/usr/include/c++/11/ext/atomicity.h:
 
-/usr/include/c++/11/vector:
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/11/bits/codecvt.h:
+
+/usr/local/cuda/include/nppi_threshold_and_compare_operations.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
+
+/usr/include/eigen3/Eigen/SVD:
+
+/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
+/opt/ros/humble/include/rcl/rcl/init_options.h:
+
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/map/internal/impl/blox_impl.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/local/cuda/include/cuda/std/type_traits:
+
+/opt/ros/humble/include/rcl/rcl/publisher.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/opt/ros/humble/include/rcl/rcl/node_options.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/11/system_error:
+
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/integrators/projective_occupancy_integrator.h:
+
+/usr/local/cuda/include/nvtx3/nvtxDetail/nvtxInit.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/11/debug/debug.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
+
+/opt/ros/humble/include/rcl/rcl/graph.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+
+/opt/ros/humble/include/rcutils/rcutils/qsort.h:
+
+/opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
+
+/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+
+/usr/include/eigen3/Eigen/Cholesky:
+
+/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/c++/11/iterator:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
+
+/opt/ros/humble/include/tracetools/tracetools/config.h:
+
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/internal/impl/variadic_template_tools_impl.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/opencv4/opencv2/core/types.hpp:
+
+/usr/include/c++/11/typeindex:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/local/cuda/include/cuda/std/__type_traits/is_trivially_destructible.h:
+
+/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/opt/ros/humble/include/tracetools/tracetools/visibility_control.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
+
+/usr/local/cuda/include/cuda/std/__type_traits/is_copy_constructible.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/opt/ros/humble/include/tf2/tf2/time.hpp:
+
+/usr/include/libintl.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/opencv4/opencv2/core/fast_math.hpp:
+
+/usr/include/c++/11/locale:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/11/bits/unordered_map.h:
+
+/usr/local/cuda/include/cuda/std/__type_traits/void_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
+
+/usr/include/c++/11/bits/alloc_traits.h:
+
+/usr/local/cuda/include/cuda/std/__type_traits/is_object.h:
+
+/usr/include/c++/11/cstdint:
+
+/usr/include/c++/11/cstring:
+
+/usr/include/c++/11/bits/atomic_futex.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/c++/11/bits/sstream.tcc:
+
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/bitmask.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+
+/usr/include/c++/11/bits/stl_construct.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/usr/local/cuda/include/vector_functions.h:
+
+/usr/include/c++/11/cstdlib:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/c++/11/string_view:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
+
+/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/c++/11/tr1/legendre_function.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
+
+/usr/local/cuda/include/cuda_runtime.h:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/local/cuda/include/cuda/std/__type_traits/copy_cvref.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/11/bits/uniform_int_dist.h:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/context.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /opt/ros/humble/include/rcl/rcl/wait.h:
 
@@ -5914,70 +5925,6 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/local/cuda/include/thrust/version.h:
 
-/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
-
-/opt/ros/humble/include/rmw/rmw/publisher_options.h:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-/usr/local/cuda/include/cuda/std/__type_traits/is_array.h:
-
-/usr/local/cuda/include/npps_conversion_functions.h:
-
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
-
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/unified_ptr.h:
-
-/usr/include/c++/11/bits/std_thread.h:
-
-/usr/include/c++/11/complex:
-
-/opt/ros/humble/include/rmw/rmw/subscription_options.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
-
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/local/cuda/include/cuda/std/__type_traits/is_object.h:
-
-/usr/include/c++/11/cstdint:
-
-/usr/include/c++/11/bits/localefwd.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/home/czz/nvblox_ws/install/nvblox/include/nvblox/integrators/projective_integrator_params.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
-
-/usr/include/c++/11/streambuf:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/11/iomanip:
-
 /usr/include/c++/11/cctype:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
@@ -5986,43 +5933,21 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
 
-/usr/include/opencv4/opencv2/core/fast_math.hpp:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/c++/11/locale:
+/usr/include/c++/11/tr1/special_function_util.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
+/usr/local/cuda/include/cuda/std/__type_traits/integral_constant.h:
 
-/usr/include/ctype.h:
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/c++/11/bits/ostream_insert.h:
+/usr/local/cuda/include/cuda/std/__type_traits/remove_volatile.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
+/usr/local/cuda/include/vector_functions.hpp:
 
-/usr/local/cuda/include/cuda/std/__type_traits/is_copy_assignable.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
-
-/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/usr/include/c++/11/cstdlib:
-
-/usr/include/c++/11/string_view:
-
-/usr/include/stdlib.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/c++/11/bits/shared_ptr.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
@@ -6039,6 +5964,8 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/11/cerrno:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -6057,6 +5984,20 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/c++/11/vector:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
+
+/usr/include/c++/11/bits/align.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
@@ -6136,10 +6077,6 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/local/cuda/include/cuda/std/__type_traits/is_nothrow_constructible.h:
-
 /usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
@@ -6147,6 +6084,10 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /usr/local/cuda/include/builtin_types.h:
 
 /usr/include/stdint.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/local/cuda/include/cuda/std/__type_traits/is_nothrow_constructible.h:
 
 /usr/include/c++/11/bits/erase_if.h:
 
@@ -6170,11 +6111,11 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
 
+/usr/include/c++/11/bits/exception_defines.h:
+
 /usr/local/cuda/include/nvtx3/nvtxDetail/nvtxImpl.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
-
-/usr/include/c++/11/bits/exception_defines.h:
 
 /home/czz/nvblox_ws/src/my_nvblox/src/mesh_publisher.cpp:
 
@@ -6186,13 +6127,71 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
+/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
 /usr/include/c++/11/bits/uses_allocator.h:
 
 /usr/local/cuda/include/cuda/std/__type_traits/remove_const_ref.h:
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
-/usr/include/c++/11/bits/unique_lock.h:
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/local/cuda/include/cuda/std/__type_traits/is_signed.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/local/cuda/include/cuda/std/__cuda/cstdint_prelude.h:
+
+/usr/include/c++/11/tr1/beta_function.tcc:
+
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/internal/error_check.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/typeinfo:
+
+/usr/local/cuda/include/cuda/std/__type_traits/is_void.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
+
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/types.h:
+
+/usr/include/c++/11/exception:
+
+/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
+
+/opt/ros/humble/include/rmw/rmw/publisher_options.h:
+
+/usr/include/c++/11/bits/nested_exception.h:
+
+/usr/local/cuda/include/cuda/std/__type_traits/is_array.h:
+
+/usr/local/cuda/include/npps_conversion_functions.h:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
+
+/usr/include/c++/11/iomanip:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
+
+/home/czz/nvblox_ws/install/nvblox/include/nvblox/core/unified_ptr.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -6209,6 +6208,8 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /usr/local/cuda/include/cuda/std/__concepts/semiregular.h:
 
 /usr/include/c++/11/ratio:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_field.hpp:
 
 /usr/local/cuda/include/thrust/detail/config/compiler.h:
 
@@ -6516,8 +6517,6 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/local/cuda/include/cuda/std/__type_traits/is_polymorphic.h:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/point_cloud2_iterator.hpp:
-
 /usr/local/cuda/include/cuda/std/detail/libcxx/include/__verbose_abort:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
@@ -6599,12 +6598,6 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__traits.hpp:
 
 /usr/local/cuda/include/cuda/std/__fwd/get.h:
-
-/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/impl/point_cloud2_iterator.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
 
 /home/czz/nvblox_ws/install/nvblox/include/glog/logging.h:
 
@@ -6970,6 +6963,8 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
 
+/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
 /usr/include/eigen3/Eigen/Geometry:
 
 /usr/local/cuda/include/cuda/std/__functional/identity.h:
@@ -7026,8 +7021,6 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
 
-/usr/include/c++/11/cstdarg:
-
 /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp:
@@ -7076,9 +7069,9 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 
 /usr/local/cuda/include/nppi_geometry_transforms.h:
 
-/usr/include/c++/11/bits/invoke.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/usr/include/c++/11/bits/invoke.h:
 
 /usr/local/cuda/include/npps.h:
 
@@ -7325,3 +7318,7 @@ CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o: /home/czz/nvblox_ws/src/my_nvb
 /usr/local/cuda/include/cuda/std/__concepts/boolean_testable.h:
 
 /usr/local/cuda/include/cuda/std/__type_traits/make_signed.h:
+
+/usr/local/cuda/include/cuda/std/__memory/pointer_traits.h:
+
+/usr/local/cuda/include/cuda/std/__memory/addressof.h:

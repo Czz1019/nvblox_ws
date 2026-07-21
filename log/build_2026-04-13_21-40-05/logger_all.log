@@ -1,0 +1,299 @@
+[0.079s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'my_nvblox']
+[0.079s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['my_nvblox'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b73e40b23e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b73e41979a0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b73e41979a0>>)
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.248s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/czz/nvblox_ws'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nvblox) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_nvblox' with type 'ros.ament_cmake' and name 'my_nvblox'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extension 'ros'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extensions ['cmake', 'python']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extension 'cmake'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox) by extension 'python'
+[0.495s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nvblox' with type 'cmake' and name 'nvblox'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extensions ['cmake', 'python']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'cmake'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'python'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extensions ['python_setup_py']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435) by extension 'python_setup_py'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extensions ['cmake', 'python']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'cmake'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'python'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extensions ['python_setup_py']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'ros'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extensions ['cmake', 'python']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/__pycache__) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'ros'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extensions ['cmake', 'python']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'ros'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extensions ['cmake', 'python']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/launch/__pycache__) by extension 'python_setup_py'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'ros'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extensions ['cmake', 'python']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'cmake'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'python'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extensions ['python_setup_py']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/nvblox_D435i/result) by extension 'python_setup_py'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'ros'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extensions ['cmake', 'python']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'cmake'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'python'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extensions ['python_setup_py']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/realsense_gazebo_plugin) by extension 'python_setup_py'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extensions ['colcon_meta']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extension 'colcon_meta'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extensions ['ros']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene) by extension 'ros'
+[0.498s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nvblox_realsenseD435/sim_gazebo_scene' with type 'ros.ament_python' and name 'sim_gazebo_scene'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extensions ['ignore', 'ignore_ament_install']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_gazebo_scene_two_d435) by extension 'ros'
+[0.499s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nvblox_realsenseD435/sim_gazebo_scene_two_d435' with type 'ros.ament_python' and name 'sim_gazebo_scene_two_d435'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extension 'ignore_ament_install'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extensions ['colcon_pkg']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extension 'colcon_pkg'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extensions ['colcon_meta']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extension 'colcon_meta'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extensions ['ros']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox) by extension 'ros'
+[0.499s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nvblox_realsenseD435/sim_nvblox' with type 'ros.ament_python' and name 'sim_nvblox'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extensions ['ignore', 'ignore_ament_install']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extension 'ignore'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extension 'ignore_ament_install'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extensions ['colcon_pkg']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extension 'colcon_pkg'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extensions ['colcon_meta']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extension 'colcon_meta'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extensions ['ros']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/nvblox_realsenseD435/sim_nvblox_two_d435) by extension 'ros'
+[0.500s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nvblox_realsenseD435/sim_nvblox_two_d435' with type 'ros.ament_python' and name 'sim_nvblox_two_d435'
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.500s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.512s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'nvblox' in 'src/nvblox'
+[0.512s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sim_gazebo_scene' in 'src/nvblox_realsenseD435/sim_gazebo_scene'
+[0.512s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sim_gazebo_scene_two_d435' in 'src/nvblox_realsenseD435/sim_gazebo_scene_two_d435'
+[0.512s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sim_nvblox' in 'src/nvblox_realsenseD435/sim_nvblox'
+[0.512s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'sim_nvblox_two_d435' in 'src/nvblox_realsenseD435/sim_nvblox_two_d435'
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.512s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.514s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/czz/nvblox_ws/install
+[0.514s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/czz/ros_pack/install
+[0.515s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 21 installed packages in /home/czz/workspaces/isaac_ros-dev/install
+[0.516s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 435 installed packages in /opt/ros/humble
+[0.517s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'cmake_target' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'cmake_clean_cache' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'cmake_clean_first' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'cmake_force_configure' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'ament_cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'catkin_cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'my_nvblox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.543s] DEBUG:colcon.colcon_core.verb:Building package 'my_nvblox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/czz/nvblox_ws/build/my_nvblox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/czz/nvblox_ws/install/my_nvblox', 'merge_install': False, 'path': '/home/czz/nvblox_ws/src/my_nvblox', 'symlink_install': True, 'test_result_base': None}
+[0.543s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.544s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.544s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/czz/nvblox_ws/src/my_nvblox' with build type 'ament_cmake'
+[0.544s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/czz/nvblox_ws/src/my_nvblox'
+[0.545s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.545s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.546s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/czz/nvblox_ws/build/my_nvblox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --build /home/czz/nvblox_ws/build/my_nvblox -- -j20 -l20
+[14.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/czz/nvblox_ws/build/my_nvblox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --build /home/czz/nvblox_ws/build/my_nvblox -- -j20 -l20
+[14.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/czz/nvblox_ws/build/my_nvblox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --install /home/czz/nvblox_ws/build/my_nvblox
+[14.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_nvblox)
+[14.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/czz/nvblox_ws/build/my_nvblox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --install /home/czz/nvblox_ws/build/my_nvblox
+[14.138s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox' for CMake module files
+[14.138s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox' for CMake config files
+[14.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_nvblox', 'cmake_prefix_path')
+[14.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/hook/cmake_prefix_path.ps1'
+[14.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/hook/cmake_prefix_path.dsv'
+[14.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/hook/cmake_prefix_path.sh'
+[14.140s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/lib'
+[14.140s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/bin'
+[14.140s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/lib/pkgconfig/my_nvblox.pc'
+[14.140s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/lib/python3.10/site-packages'
+[14.140s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/bin'
+[14.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.ps1'
+[14.141s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.dsv'
+[14.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.sh'
+[14.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.bash'
+[14.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.zsh'
+[14.142s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/czz/nvblox_ws/install/my_nvblox/share/colcon-core/packages/my_nvblox)
+[14.142s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_nvblox)
+[14.142s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox' for CMake module files
+[14.143s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox' for CMake config files
+[14.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_nvblox', 'cmake_prefix_path')
+[14.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/hook/cmake_prefix_path.ps1'
+[14.143s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/hook/cmake_prefix_path.dsv'
+[14.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/hook/cmake_prefix_path.sh'
+[14.144s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/lib'
+[14.144s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/bin'
+[14.144s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/lib/pkgconfig/my_nvblox.pc'
+[14.144s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/lib/python3.10/site-packages'
+[14.144s] Level 1:colcon.colcon_core.environment:checking '/home/czz/nvblox_ws/install/my_nvblox/bin'
+[14.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.ps1'
+[14.144s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.dsv'
+[14.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.sh'
+[14.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.bash'
+[14.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.zsh'
+[14.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/czz/nvblox_ws/install/my_nvblox/share/colcon-core/packages/my_nvblox)
+[14.145s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[14.146s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[14.146s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[14.146s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[14.150s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[14.150s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[14.150s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.162s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.162s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/czz/nvblox_ws/install/local_setup.ps1'
+[14.163s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/czz/nvblox_ws/install/_local_setup_util_ps1.py'
+[14.165s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/czz/nvblox_ws/install/setup.ps1'
+[14.166s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/czz/nvblox_ws/install/local_setup.sh'
+[14.167s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/czz/nvblox_ws/install/_local_setup_util_sh.py'
+[14.167s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/czz/nvblox_ws/install/setup.sh'
+[14.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/czz/nvblox_ws/install/local_setup.bash'
+[14.169s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/czz/nvblox_ws/install/setup.bash'
+[14.170s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/czz/nvblox_ws/install/local_setup.zsh'
+[14.170s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/czz/nvblox_ws/install/setup.zsh'

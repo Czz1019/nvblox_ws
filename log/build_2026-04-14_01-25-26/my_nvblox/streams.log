@@ -1,0 +1,31 @@
+[0.028s] Invoking command in '/home/czz/nvblox_ws/build/my_nvblox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --build /home/czz/nvblox_ws/build/my_nvblox -- -j20 -l20
+[0.175s] [35m[1mConsolidate compiler generated dependencies of target nvblox_node[0m
+[0.257s] [ 25%] [32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/nvblox_node.cpp.o[0m
+[0.260s] [ 50%] [32mBuilding CXX object CMakeFiles/nvblox_node.dir/src/esdf_publisher.cpp.o[0m
+[33.357s] [ 75%] [32m[1mLinking CXX executable nvblox_node[0m
+[35.611s] [100%] Built target nvblox_node
+[35.636s] Invoked command in '/home/czz/nvblox_ws/build/my_nvblox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --build /home/czz/nvblox_ws/build/my_nvblox -- -j20 -l20
+[35.657s] Invoking command in '/home/czz/nvblox_ws/build/my_nvblox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --install /home/czz/nvblox_ws/build/my_nvblox
+[35.673s] -- Install configuration: ""
+[35.674s] -- Execute custom install script
+[35.674s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/lib/my_nvblox/nvblox_node
+[35.675s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/include/my_nvblox/esdf_publisher.hpp
+[35.676s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/include/my_nvblox/mesh_publisher.hpp
+[35.676s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/include/my_nvblox/nvblox_node.hpp
+[35.676s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/my_nvblox_bringup.launch.py
+[35.676s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/package_run_dependencies/my_nvblox
+[35.677s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/parent_prefix_path/my_nvblox
+[35.677s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/ament_prefix_path.sh
+[35.677s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/ament_prefix_path.dsv
+[35.677s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/path.sh
+[35.677s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/environment/path.dsv
+[35.677s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.bash
+[35.678s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.sh
+[35.678s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.zsh
+[35.678s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/local_setup.dsv
+[35.678s] -- Symlinking: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.dsv
+[35.695s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/ament_index/resource_index/packages/my_nvblox
+[35.695s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/cmake/my_nvbloxConfig.cmake
+[35.695s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/cmake/my_nvbloxConfig-version.cmake
+[35.695s] -- Up-to-date symlink: /home/czz/nvblox_ws/install/my_nvblox/share/my_nvblox/package.xml
+[35.699s] Invoked command in '/home/czz/nvblox_ws/build/my_nvblox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/czz/workspaces/isaac_ros-dev/install/nvblox_ros_python_utils:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_test:/home/czz/workspaces/isaac_ros-dev/install/isaac_ros_launch_utils:/opt/ros/humble /usr/bin/cmake --install /home/czz/nvblox_ws/build/my_nvblox
