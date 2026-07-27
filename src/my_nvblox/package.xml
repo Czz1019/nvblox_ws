@@ -24,6 +24,7 @@
   <depend>realsense2_camera</depend>
   <depend>launch</depend>
   <depend>launch_ros</depend>
+  <depend>visualization_msgs</depend>
 
   <exec_depend>rviz2</exec_depend>
 

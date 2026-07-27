@@ -21,6 +21,7 @@
 # find_package(cv_bridge REQUIRED)
 # find_package(image_transport REQUIRED)
 
+
 # find_package(gflags REQUIRED)
 # find_package(glog REQUIRED)
 # find_package(nvblox REQUIRED)
@@ -111,6 +112,7 @@ find_package(tf2_eigen REQUIRED)
 find_package(message_filters REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(image_transport REQUIRED)
+find_package(visualization_msgs REQUIRED)
 
 find_package(gflags REQUIRED)
 find_package(glog REQUIRED)
@@ -154,6 +156,24 @@ target_link_libraries(nvblox_node
   ${OpenCV_LIBRARIES}
 )
 
+add_executable(saved_map_visualizer
+  src/saved_map_visualizer.cpp
+)
+
+ament_target_dependencies(saved_map_visualizer
+  rclcpp
+  sensor_msgs
+  geometry_msgs
+  visualization_msgs
+)
+
+target_link_libraries(saved_map_visualizer
+  PRIVATE
+    nvblox_lib
+    nvblox_gpu_hash
+    nvblox_stdgpu
+)
+
 target_include_directories(nvblox_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -171,6 +191,13 @@ install(DIRECTORY launch/
   DESTINATION share/${PROJECT_NAME}
 )
 
+
+install(
+  TARGETS
+    esdf_node
+    saved_map_visualizer
+  DESTINATION lib/${MY_NVBLOX_PACKAGE_NAME}
+)
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   set(ament_cmake_cpplint_FOUND TRUE)

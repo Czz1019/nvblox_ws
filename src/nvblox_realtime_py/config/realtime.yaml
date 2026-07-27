@@ -1,0 +1,28 @@
+nvblox_realtime_node:
+  ros__parameters:
+    # nvblox参数
+    voxel_size_m: 0.05
+    max_integration_distance_m: 5.0
+
+    # ESDF不需要每一帧都更新
+    esdf_update_hz: 5.0
+
+    # RealSense启动后，先跳过一定数量的红外帧
+    warmup_ir_frames: 60
+
+    # 等待前后位姿进行插值的深度帧队列
+    max_pending_depth_frames: 64
+
+    # ROS Path最多保留的位姿数量
+    maximum_path_poses: 2000
+
+    # ROS坐标系
+    world_frame: odom
+    camera_frame: camera_left_ir
+
+    # 输出路径
+    map_output_path: >-
+      /home/czz/nvblox_ws/output/realtime_map.nvblox
+
+    mesh_output_path: >-
+      /home/czz/nvblox_ws/output/realtime_mesh.ply

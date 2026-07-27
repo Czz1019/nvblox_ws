@@ -1,0 +1,18 @@
+
+# ROS generated files
+build/
+install/
+log/
+
+# Python user/cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Mapping outputs
+output/
+*.ply
+*.nvblox
+
+# Third-party source
+src/cuVSLAM/
