@@ -390,9 +390,11 @@
 #include "my_nvblox/esdf_publisher.hpp"
 
 #include <algorithm>
+#include <chrono>
 #include <cmath>
 #include <cstdint>
 #include <cstring>
+#include <stdexcept>
 #include <vector>
 
 #include "sensor_msgs/msg/point_field.hpp"
@@ -451,17 +453,38 @@ EsdfPublisher::EsdfPublisher(
   slice_height_(slice_height),
   xy_min_(xy_min),
   xy_max_(xy_max),
-  resolution_(resolution)
+  resolution_(resolution),
+  cuda_stream_(cudaStreamNonBlocking)
 {
+  if (resolution_ <= 0.0F || xy_max_ < xy_min_) {
+    throw std::invalid_argument("Invalid ESDF query bounds or resolution");
+  }
   publisher_ = node->create_publisher<sensor_msgs::msg::PointCloud2>(topic_name, 1);
+}
+
+bool EsdfPublisher::has_subscribers() const
+{
+  return publisher_->get_subscription_count() > 0 ||
+         publisher_->get_intra_process_subscription_count() > 0;
 }
 
 void EsdfPublisher::publish(const nvblox::Mapper & mapper)
 {
+  const auto start = std::chrono::steady_clock::now();
   const auto & esdf_layer = mapper.esdf_layer();
   auto samples = sample_esdf_slice(esdf_layer);
+  const auto sampled = std::chrono::steady_clock::now();
   auto cloud = make_cloud(samples);
+  const auto cloud_built = std::chrono::steady_clock::now();
   publisher_->publish(cloud);
+  const auto finished = std::chrono::steady_clock::now();
+
+  RCLCPP_INFO_THROTTLE(
+    logger_, *clock_, 2000,
+    "ESDF publish timing: device_snapshot+query=%.2f ms cloud=%.2f ms ros_publish=%.2f ms",
+    std::chrono::duration<double, std::milli>(sampled - start).count(),
+    std::chrono::duration<double, std::milli>(cloud_built - sampled).count(),
+    std::chrono::duration<double, std::milli>(finished - cloud_built).count());
 }
 
 std::vector<EsdfPublisher::SamplePoint> EsdfPublisher::sample_esdf_slice(
@@ -472,6 +495,37 @@ std::vector<EsdfPublisher::SamplePoint> EsdfPublisher::sample_esdf_slice(
   const float voxel_size = esdf_layer.voxel_size();
   const float block_size = esdf_layer.block_size();
   constexpr int kVoxelsPerSide = nvblox::VoxelBlock<nvblox::EsdfVoxel>::kVoxelsPerSide;
+
+  const int slice_block_z = static_cast<int>(std::floor(slice_height_ / block_size));
+  const int min_block_x = static_cast<int>(std::floor(xy_min_ / block_size));
+  const int max_block_x = static_cast<int>(std::floor(xy_max_ / block_size));
+  const int min_block_y = static_cast<int>(std::floor(xy_min_ / block_size));
+  const int max_block_y = static_cast<int>(std::floor(xy_max_ / block_size));
+
+  std::vector<nvblox::Index3D> slice_blocks;
+  for (const auto & block_idx : esdf_layer.getAllBlockIndices()) {
+    if (block_idx.z() == slice_block_z &&
+      block_idx.x() >= min_block_x && block_idx.x() <= max_block_x &&
+      block_idx.y() >= min_block_y && block_idx.y() <= max_block_y)
+    {
+      slice_blocks.push_back(block_idx);
+    }
+  }
+
+  if (slice_blocks.empty()) {
+    return samples;
+  }
+
+  const auto serialized = serializer_.serialize(esdf_layer, slice_blocks, cuda_stream_);
+  nvblox::Index3DHashMapType<size_t>::type block_to_serialized_index;
+  block_to_serialized_index.reserve(serialized->block_indices.size());
+  for (size_t i = 0; i < serialized->block_indices.size(); ++i) {
+    block_to_serialized_index.emplace(serialized->block_indices[i], i);
+  }
+
+  const size_t query_count_per_axis = static_cast<size_t>(
+    std::floor((xy_max_ - xy_min_) / resolution_)) + 1U;
+  samples.reserve(query_count_per_axis * query_count_per_axis);
 
   size_t total_queries = 0;
   size_t valid_block_count = 0;
@@ -497,13 +551,17 @@ std::vector<EsdfPublisher::SamplePoint> EsdfPublisher::sample_esdf_slice(
       const auto voxel_idx = compute_voxel_index_in_block_from_position(
         p_L, block_size, voxel_size, kVoxelsPerSide);
 
-      auto block = esdf_layer.getBlockAtIndex(block_idx);
-      if (block) {
+      const auto block_it = block_to_serialized_index.find(block_idx);
+      if (block_it != block_to_serialized_index.end()) {
         s.valid_block = true;
         ++valid_block_count;
 
-        const auto & voxel =
-          block->voxels[voxel_idx.x()][voxel_idx.y()][voxel_idx.z()];
+        const size_t serialized_block_idx = block_it->second;
+        const size_t voxel_offset = static_cast<size_t>(
+          serialized->block_offsets[serialized_block_idx]) +
+          static_cast<size_t>(voxel_idx.x() * kVoxelsPerSide * kVoxelsPerSide +
+          voxel_idx.y() * kVoxelsPerSide + voxel_idx.z());
+        const auto & voxel = serialized->voxels[voxel_offset];
 
         s.observed = voxel.observed;
         s.inside = voxel.is_inside;

@@ -59,6 +59,7 @@ public:
     const std::string & frame_id);
 
   void publish(const nvblox::Mapper & mapper);
+  bool has_subscribers() const;
 
 private:
   visualization_msgs::msg::Marker make_triangle_list_marker(

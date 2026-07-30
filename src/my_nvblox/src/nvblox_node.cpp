@@ -1403,6 +1403,7 @@
 
 #include "my_nvblox/nvblox_node.hpp"
 
+#include <chrono>
 #include <stdexcept>
 #include <vector>
 
@@ -1449,8 +1450,13 @@ NvbloxNode::NvbloxNode(const rclcpp::NodeOptions & options)
 
   voxel_size_ = declare_parameter<double>("voxel_size", 0.05);
   publish_period_ms_ = declare_parameter<int>("publish_period_ms", 500);
+  esdf_update_period_ms_ = declare_parameter<int>("esdf_update_period_ms", 100);
+  mesh_update_period_ms_ = declare_parameter<int>(
+    "mesh_update_period_ms", publish_period_ms_);
 
   esdf_slice_height_ = declare_parameter<double>("esdf_slice_height", 0.5);
+  esdf_slice_min_height_ = declare_parameter<double>("esdf_slice_min_height", 0.0);
+  esdf_slice_max_height_ = declare_parameter<double>("esdf_slice_max_height", 1.0);
   esdf_xy_min_ = declare_parameter<double>("esdf_xy_min", -5.0);
   esdf_xy_max_ = declare_parameter<double>("esdf_xy_max", 5.0);
   esdf_resolution_ = declare_parameter<double>("esdf_resolution", 0.1);
@@ -1464,6 +1470,14 @@ NvbloxNode::NvbloxNode(const rclcpp::NodeOptions & options)
     nvblox::ProjectiveLayerType::kTsdf);
 
   mapper_->esdf_integrator().max_esdf_distance_m(2.0f);
+  // updateEsdfSlice() writes its result at esdf_slice_height.  Keep that
+  // output plane identical to the plane queried by EsdfPublisher.
+  mapper_->esdf_integrator().esdf_slice_height(
+    static_cast<float>(esdf_slice_height_));
+  mapper_->esdf_integrator().esdf_slice_min_height(
+    static_cast<float>(esdf_slice_min_height_));
+  mapper_->esdf_integrator().esdf_slice_max_height(
+    static_cast<float>(esdf_slice_max_height_));
 
   camera_info_sub_raw_ = this->create_subscription<CameraInfoMsg>(
     camera_info_topic_,
@@ -1496,17 +1510,20 @@ NvbloxNode::NvbloxNode(const rclcpp::NodeOptions & options)
   // static_cast<float>(esdf_resolution_),
   // 1.0f);
   esdf_publisher_ = std::make_unique<EsdfPublisher>(
-  this,
-  "~/static_esdf_pointcloud",
-  global_frame_,
-  static_cast<float>(esdf_slice_height_),
-  static_cast<float>(esdf_xy_min_),
-  static_cast<float>(esdf_xy_max_),
-  static_cast<float>(esdf_resolution_));
+    this,
+    "~/static_esdf_pointcloud",
+    global_frame_,
+    static_cast<float>(esdf_slice_height_),
+    static_cast<float>(esdf_xy_min_),
+    static_cast<float>(esdf_xy_max_),
+    static_cast<float>(esdf_resolution_));
 
-  publish_timer_ = this->create_wall_timer(
-    std::chrono::milliseconds(publish_period_ms_),
-    std::bind(&NvbloxNode::publish_timer_callback, this));
+  esdf_timer_ = this->create_wall_timer(
+    std::chrono::milliseconds(std::max(1, esdf_update_period_ms_)),
+    std::bind(&NvbloxNode::esdf_timer_callback, this));
+  mesh_timer_ = this->create_wall_timer(
+    std::chrono::milliseconds(std::max(1, mesh_update_period_ms_)),
+    std::bind(&NvbloxNode::mesh_timer_callback, this));
 
   RCLCPP_INFO(get_logger(), "my_nvblox node initialized.");
   RCLCPP_INFO(get_logger(), "depth_topic      : %s", depth_topic_.c_str());
@@ -1515,6 +1532,8 @@ NvbloxNode::NvbloxNode(const rclcpp::NodeOptions & options)
   RCLCPP_INFO(get_logger(), "global_frame     : %s", global_frame_.c_str());
   RCLCPP_INFO(get_logger(), "camera_frame     : %s", camera_frame_.c_str());
   RCLCPP_INFO(get_logger(), "voxel_size       : %.3f", voxel_size_);
+  RCLCPP_INFO(get_logger(), "esdf period      : %d ms", esdf_update_period_ms_);
+  RCLCPP_INFO(get_logger(), "mesh period      : %d ms", mesh_update_period_ms_);
 }
 
 void NvbloxNode::camera_info_callback(const CameraInfoMsg::SharedPtr msg)
@@ -1611,14 +1630,49 @@ void NvbloxNode::synced_callback(
   }
 }
 
-void NvbloxNode::publish_timer_callback()
+void NvbloxNode::esdf_timer_callback()
 {
+  if (integrated_frame_count_ == last_esdf_integrated_frame_count_) {
+    return;
+  }
+
+  const auto start = std::chrono::steady_clock::now();
+  std::scoped_lock<std::mutex> lock(mapper_mutex_);
+  const auto lock_acquired = std::chrono::steady_clock::now();
+  mapper_->updateEsdfSlice(nvblox::UpdateFullLayer::kNo);
+  const auto updated = std::chrono::steady_clock::now();
+  if (esdf_publisher_->has_subscribers()) {
+    esdf_publisher_->publish(*mapper_);
+  }
+  last_esdf_integrated_frame_count_ = integrated_frame_count_;
+  const auto finished = std::chrono::steady_clock::now();
+
+  const auto wait_ms = std::chrono::duration<double, std::milli>(
+    lock_acquired - start).count();
+  const auto update_ms = std::chrono::duration<double, std::milli>(
+    updated - lock_acquired).count();
+  const auto publish_ms = std::chrono::duration<double, std::milli>(
+    finished - updated).count();
+  RCLCPP_INFO_THROTTLE(
+    get_logger(), *get_clock(), 2000,
+    "ESDF timing: lock=%.2f ms update=%.2f ms snapshot+publish=%.2f ms total=%.2f ms",
+    wait_ms, update_ms, publish_ms, wait_ms + update_ms + publish_ms);
+}
+
+void NvbloxNode::mesh_timer_callback()
+{
+  if (!mesh_publisher_->has_subscribers()) {
+    return;
+  }
+
+  const auto start = std::chrono::steady_clock::now();
   std::scoped_lock<std::mutex> lock(mapper_mutex_);
   mapper_->updateColorMesh(nvblox::UpdateFullLayer::kNo);
   mesh_publisher_->publish(*mapper_);
-
-  mapper_->updateEsdfSlice(nvblox::UpdateFullLayer::kNo);
-  esdf_publisher_->publish(*mapper_);
+  const auto finished = std::chrono::steady_clock::now();
+  RCLCPP_INFO_THROTTLE(
+    get_logger(), *get_clock(), 5000, "Mesh update+publish: %.2f ms",
+    std::chrono::duration<double, std::milli>(finished - start).count());
 }
 
 nvblox::Camera NvbloxNode::make_camera_from_info(const CameraInfoMsg & msg) const

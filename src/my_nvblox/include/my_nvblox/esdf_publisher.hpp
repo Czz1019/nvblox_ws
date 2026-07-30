@@ -115,8 +115,11 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
 
+#include "nvblox/core/cuda_stream.h"
+#include "nvblox/core/hash.h"
 #include "nvblox/core/types.h"
 #include "nvblox/mapper/mapper.h"
+#include "nvblox/serialization/layer_serializer_gpu.h"
 
 namespace my_nvblox
 {
@@ -145,6 +148,7 @@ public:
     float resolution);
 
   void publish(const nvblox::Mapper & mapper);
+  bool has_subscribers() const;
 
 private:
   std::vector<SamplePoint> sample_esdf_slice(const nvblox::EsdfLayer & esdf_layer);
@@ -160,6 +164,12 @@ private:
   float xy_min_;
   float xy_max_;
   float resolution_;
+
+  // ESDF blocks live in device memory by default.  Serialize the blocks in
+  // the requested slice once, rather than dereferencing device pointers from
+  // the CPU for every query point.
+  nvblox::EsdfLayerSerializerGpu serializer_;
+  nvblox::CudaStreamOwning cuda_stream_;
 };
 
 }  // namespace my_nvblox

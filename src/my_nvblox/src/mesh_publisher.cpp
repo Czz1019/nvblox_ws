@@ -209,6 +209,12 @@ void MeshPublisher::publish(const nvblox::Mapper & mapper)
   publisher_->publish(array);
 }
 
+bool MeshPublisher::has_subscribers() const
+{
+  return publisher_->get_subscription_count() > 0 ||
+         publisher_->get_intra_process_subscription_count() > 0;
+}
+
 visualization_msgs::msg::Marker MeshPublisher::make_triangle_list_marker(
   const nvblox::SerializedColorMeshLayer & serialized_mesh) const
 {

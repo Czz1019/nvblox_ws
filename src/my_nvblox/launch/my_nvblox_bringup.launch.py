@@ -167,7 +167,12 @@ def generate_launch_description():
             'color_topic': '/camera/color/image_raw',
             'camera_info_topic': '/camera/color/camera_info',
             'voxel_size': 0.05,
-            'publish_period_ms': 500,
+            # ESDF is latency-sensitive; mesh visualization is not.
+            'esdf_update_period_ms': 100,
+            'mesh_update_period_ms': 1000,
+            'esdf_slice_height': 0.5,
+            'esdf_slice_min_height': 0.0,
+            'esdf_slice_max_height': 1.0,
         }]
     )
 

@@ -455,7 +455,8 @@ private:
 
   void camera_info_callback(const CameraInfoMsg::SharedPtr msg);
 
-  void publish_timer_callback();
+  void esdf_timer_callback();
+  void mesh_timer_callback();
 
   nvblox::Camera make_camera_from_info(const CameraInfoMsg & msg) const;
 
@@ -484,7 +485,11 @@ private:
 
   double voxel_size_;
   int publish_period_ms_;
+  int esdf_update_period_ms_;
+  int mesh_update_period_ms_;
   double esdf_slice_height_;
+  double esdf_slice_min_height_;
+  double esdf_slice_max_height_;
   double esdf_xy_min_;
   double esdf_xy_max_;
   double esdf_resolution_;
@@ -505,9 +510,11 @@ private:
 
   std::unique_ptr<MeshPublisher> mesh_publisher_;
   std::unique_ptr<EsdfPublisher> esdf_publisher_;
-  rclcpp::TimerBase::SharedPtr publish_timer_;
+  rclcpp::TimerBase::SharedPtr esdf_timer_;
+  rclcpp::TimerBase::SharedPtr mesh_timer_;
 
   size_t integrated_frame_count_{0};
+  size_t last_esdf_integrated_frame_count_{0};
 };
 
 }  // namespace my_nvblox
